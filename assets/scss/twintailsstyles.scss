@@ -1,0 +1,33 @@
+body {
+	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
+	color: #222;
+    text-transform: uppercase;
+    
+    background: #222;
+    
+}
+
+/* Box Sizing */
+:root {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+/* Center */
+html, body {
+	height: 100%;
+}
+
+html {
+	display: table;
+	width: 100%;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}

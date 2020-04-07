@@ -1,0 +1,1 @@
+body{font-size:16px;font-family:noto sans jp,sans-serif;color:#222;text-transform:uppercase;background:#222}:root{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}html,body{height:100%}html{display:table;width:100%}body{display:table-cell;vertical-align:middle;text-align:center}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/characters/</loc>
+    <lastmod>2020-02-16T00:49:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/characters/mei-yu/</loc>
+    <lastmod>2020-02-16T00:49:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-02-16T00:49:43+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/characters/alizee/</loc>
+    <lastmod>2020-02-16T00:49:23+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/characters/samara/</loc>
+    <lastmod>2020-02-16T00:49:03+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/characters/athena/</loc>
+    <lastmod>2020-02-15T23:53:42+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/a/</loc>
+    <lastmod>2020-02-11T22:37:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>
