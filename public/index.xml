@@ -6,37 +6,10 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 00:49:43 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 15 Feb 2020 23:53:42 +0100</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Mei-Yu</title>
-      <link>http://example.org/characters/mei-yu/</link>
-      <pubDate>Sun, 16 Feb 2020 00:49:43 +0100</pubDate>
-      
-      <guid>http://example.org/characters/mei-yu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Alizée</title>
-      <link>http://example.org/characters/alizee/</link>
-      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
-      
-      <guid>http://example.org/characters/alizee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Samara</title>
-      <link>http://example.org/characters/samara/</link>
-      <pubDate>Sun, 16 Feb 2020 00:49:03 +0100</pubDate>
-      
-      <guid>http://example.org/characters/samara/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Athena</title>
