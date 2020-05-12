@@ -2,9 +2,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Oswald:400,700&display=swap&subset=japanese" rel="stylesheet">
+    {{ $scss := resources.Get "scss/style.scss" }}
+    {{ $style := $scss | resources.ToCSS | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <title>{{.Title}}</title>
 </head>
-<body>
-    <h1>Hello world!</h1>
+{{partial "header.html" .}}
+    
+    <article>{{.Content}}</article>
 </body>
 </html>

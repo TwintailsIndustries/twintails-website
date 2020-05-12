@@ -8,6 +8,10 @@
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Oswald:400,700&display=swap&subset=japanese" rel="stylesheet">
+    {{ $scss := resources.Get "scss/style.scss" }}
+    {{ $style := $scss | resources.ToCSS | resources.Minify }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}

@@ -1,10 +1,8 @@
 body {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Noto Sans JP', sans-serif;
-	color: #222;
-    text-transform: uppercase;
-    
-    background: #222;
+	color: $color-blue-darkest;
+    background: $color-blue-darkest;
     
 }
 
@@ -27,7 +25,4 @@ html {
 }
 
 body {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
 }
