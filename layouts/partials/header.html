@@ -1,7 +1,18 @@
 <header>
-	
-	<img src="/img/TwintailsIndustries-Logo-2020-small.png">
-	<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+	<nav class="main-navigation">
+		<ul class="navigation-left-ul">
+			<li class="navigation-list-item">Top</li>
+			<li class="navigation-list-item">About</li>
+			<li class="navigation-list-item">Propaganda</li>
+		</ul>
+		<img src="/img/TwintailsIndustries-Logo-2020-small.png">
+		<ul class="navigation-right-ul">
+			<li class="navigation-list-item">Story</li>
+			<li class="navigation-list-item">Characters</li>
+			<li class="navigation-list-item">Archive</li>
+		</ul>
+	</nav>
+	<!--<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	{{ with .Site.Menus.main }}
 	<nav>
 		<ul>
@@ -10,5 +21,5 @@
 			{{ end }}
 		</ul>
 	</nav>
-	{{ end }}
+	{{ end }}-->
 </header>

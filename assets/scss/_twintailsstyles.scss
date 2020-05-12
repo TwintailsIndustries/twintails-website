@@ -1,7 +1,7 @@
 body {
-	font-size: 18px;
+	font-size: $font-size-standard;
 	font-family: 'Noto Sans JP', sans-serif;
-	color: $color-blue-darkest;
+	color: $color-text-light;
     background: $color-blue-darkest;
     
 }
@@ -14,15 +14,37 @@ body {
 	box-sizing: inherit;
 }
 
-/* Center */
-html, body {
-	height: 100%;
-}
+//=== Main Navigation Container =====
+.main-navigation {
+	display: flex;
+	justify-content: center;
 
-html {
-	display: table;
-	width: 100%;
-}
+	text-transform: uppercase;
+	font-size: $font-size-big;
 
-body {
+	// === Main Navigation Lists =====
+	ul {
+		display: flex;
+
+		width: 432px;
+		margin-top: 72px;
+	}
+
+	.navigation-left-ul {
+		justify-content: flex-end;
+	}
+
+	.navigation-right-ul {
+		justify-content: flex-start;
+	}
+	
+	//=== Main Navigation List Items =====
+	.navigation-list-item {
+		margin: 0 24px auto 0;
+		cursor: pointer;
+
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+	}
 }
