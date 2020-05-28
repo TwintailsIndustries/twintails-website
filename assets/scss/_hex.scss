@@ -142,12 +142,11 @@
 	background: #ff0;
 	transform: rotate(120deg);
 	transition: all 0.3s $ease-out-quart;
+	transition-delay: 0.15s;
 
 	&:hover {
-		animation-iteration-count: infinite;
-		animation-name: example;
-		animation-duration: 2s;
 		transform: scale(1.12) rotate(120deg);
+		transition-delay: 0s;
 	}
 
 	&:after {
@@ -221,12 +220,14 @@
 	pointer-events: none;
 	transition: all 0.75s $ease-out-quart;
 	overflow: hidden;
+	transition-delay: 0.35s;
 
 	text-transform: uppercase;
 
 	&:hover {
 		background: #ddaa00;
 		transition: all 0.75s $ease-out-quart;
+		transition-delay: 0s;
 	}
 
 	@media (min-width: 720px) {
