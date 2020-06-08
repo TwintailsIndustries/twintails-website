@@ -3,65 +3,244 @@
 
     .char-headline-container {
         position: relative;
-        width: 60%;
+
+        width: 50%;
         min-width: 720px;
-        height: 25vh;
-        margin: 276px 0 144px 0;
+        height: 54vh;
 
-    }
+        //margin: 276px 0 144px 0;
 
-    .char-headline {
-        position: absolute;
-        bottom: 10px;
+        .char-headline {
+            position: absolute;
+            bottom: 10px;
+    
+            width: 100%;
 
-        width: 100%;
-        padding-left: 72px;
-        transform: rotate(-12deg);
+            padding-left: 48px;
 
-        h3 {
-            padding-bottom: 6px;
+            transform: rotate(-12deg);
+    
+            h3 {
+                padding-bottom: 6px;
+            }
+        }
+    
+        .char-headline-bg {
+            position: absolute;
+            bottom: 0;
+
+            height: 216px;
+            width: 100%;
+
+            transform: skewY(-12deg);
+        }
+    
+        .char-subheadline {
+            position: absolute;
+            bottom: 0;
+
+            height: 40px;
+            width: 100%;
+
+            transform: skewY(-12deg);
+        }
+    
+        .noisy-texture {
+            position: absolute;
+            bottom: 0;
+
+            height: 216px;
+            width: 100%;
+
+            background: url("/img/noisy-texture2.png") repeat;
+            -webkit-mask-image:-webkit-gradient(linear, left top, right bottom, from(rgba($color-red-dark,1)), to(rgba($color-red-dark,0)));
+            mask-image: linear-gradient(to right, rgba($color-red-dark,1), rgba($color-red-dark,0.05));
+
+            transform: skewY(-12deg);
         }
     }
 
-    .char-headline-bg {
+    .char-main {
+        display:flex;
+        flex-wrap: no-wrap;
+
+        margin-top: 276px;
+
+        .char-side-content {
+            min-width: 480px;
+            max-width: 672px;
+            width: 25%;
+            //background-color: $color-red-dark;
+
+            h5 {
+                padding-top: 4px;
+            }
+        }
+
+        .char-affipath {
+            position: relative;
+
+            color: $color-text-lightest;
+            text-transform: uppercase;
+
+
+            &:nth-child(2) {
+                margin-top: 96px;
+            }
+        }
+
+        .char-affipath-flag {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 0;
+
+            width: 336px;
+            height: 216px;
+
+            background-color: $color-red-dark;
+        }
+
+        .char-affipath-gradient {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+
+            width: 90%;
+            height: 96px;
+        }
+
+        .char-affipath-container {
+            position: relative;
+            z-index: 2;
+
+            padding: 152px 0 18px 120px;
+        }
+
+        .char-affipath-content {
+            font-size: $font-size-second-headline;
+            font-family: $font-family-special; 
+        }
+
+        .char-main-content {
+            max-width: 960px;
+            margin:0 48px 0 192px;
+
+            h6 {
+                margin-bottom: 72px;
+            }
+
+            p {
+                padding-left: 48px;
+            }
+        }
+    }
+
+
+    /* Individual colours and gradients */
+
+    .font-char-red {
+        color: $color-red-light;
+    }
+
+    .font-char-gold {
+        color: $color-gold-lighter;
+    }
+
+    .font-char-blue {
+        color: $color-blue-light;
+    }
+
+    .sub-char-red {
+        background: $color-blue-darkest; /* Old browsers */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba(#832A3B, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .char-red {
+        background: $color-blue-darkest; /* Old browsers */
+        background: -moz-linear-gradient(180deg, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba($color-red-light, 1) 100%); /* FF3.6-15 */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba($color-red-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .mini-char-red {
+        background: $color-blue-darkest; /* Old browsers */
+        background: -moz-linear-gradient(180deg, rgba($color-blue-darkest, 0) 0%, rgba($color-red-grad-inter, 0.75) 25%, rgba($color-red-light, 1) 100%); /* FF3.6-15 */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 0) 0%, rgba($color-red-grad-inter, 0.75) 25%, rgba($color-red-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .sub-char-gold {
+        background: $color-blue-darkest; /* Old browsers */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba(#A48055, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .char-gold {
+        background: $color-blue-darkest; /* Old browsers */
+        background: -moz-linear-gradient(180deg, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba($color-gold-lighter, 1) 100%); /* FF3.6-15 */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba($color-gold-lighter, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    }
+
+    .mini-char-gold {
+        background: $color-blue-darkest; /* Old browsers */
+        background: -moz-linear-gradient(180deg, rgba($color-blue-darkest, 0) 0%, rgba($color-gold-grad-inter, 0.75) 25%, rgba($color-gold-lighter, 1) 100%); /* FF3.6-15 */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 0) 0%, rgba($color-gold-grad-inter, 0.75) 25%, rgba($color-gold-lighter, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    }
+}
+
+.footer-char-navigation {
+    position: relative;
+
+    min-height: auto;
+    height: 288px;
+    
+    margin-top: 10vw;
+
+    background: none;
+    
+    .footer-char-navigation-color-top {
+        background: $color-blue-darkest;
+    }
+
+    .footer-char-navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        
+
+        background: $color-blue-darkest;
+
+        font-weight: 500;
+        color: $color-text-lightest;
+
+        transform: rotate(-12deg);
+    }
+
+    .footer-char-navigation-space {
         position: absolute;
-        bottom: 0;
-        height: 216px;
+        top: 90px;
+        z-index: -1;
+
         width: 100%;
+        height: 288px;
+
+        background: $color-blue-darker;
+
+        transform: skewY(-12deg);
+    }
+    .footer-char-navigation-fix {
+        position: absolute;
+        top: 232px;
+        right: 0;
+        z-index: -1;
+
+        width: 48%;
+        height: 288px;
+        
+        background: $color-blue-darker;
+        //opacity: 0.5;
+
         transform: skewY(-12deg);
     }
 
-    .char-subheadline {
-        position: absolute;
-        bottom: 0;
-        height: 40px;
-        width: 100%;
-        transform: skewY(-12deg);
-    }
-
-    .sub-char-athena {
-        background: #09090c; /* Old browsers */
-        background: linear-gradient(to left, #09090c 0%,#832A3B 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    }
-
-    .char-athena {
-        //background-color: $color-blue-darkest;
-        //background-image: -webkit-linear-gradient(270deg, $color-blue-darkest 0%, $color-red-light 100%);
-        //background-image: -moz-linear-gradient(270deg, $color-blue-darkest 0%, $color-red-light 100%);
-        //background-image: linear-gradient(270deg, $color-blue-darkest 0%, rgba($color-red-light, 1) 100%);
-        background: #09090c; /* Old browsers */
-        background: -moz-linear-gradient(270deg, $color-blue-darkest 0%, $color-red-grad-inter 25%, $color-red-light 100%); /* FF3.6-15 */
-        background: linear-gradient(to left, $color-blue-darkest 0%, $color-red-grad-inter 25%, $color-red-light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-
-    }
-
-    /*.char-athena {
-        background-color: $color-blue-darkest;
-        background-image: -webkit-linear-gradient(270deg, $color-blue-darkest 0%, $color-red-light 100%);
-        background-image: -moz-linear-gradient(270deg, $color-blue-darkest 0%, $color-red-light 100%);
-        background-image: linear-gradient(270deg, $color-blue-darkest 0%, $color-red-light 100%);
-        //background-color: #52ACFF;
-        //background-image: linear-gradient(270deg, #52ACFF 25%, #FFE32C 100%);
-
-    }*/
 }

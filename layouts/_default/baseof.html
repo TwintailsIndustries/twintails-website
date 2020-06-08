@@ -17,8 +17,10 @@
 	{{- end }}
 </head>
 <body>
-	{{ partial "header" . }}
-	{{ block "main" . }}{{ end }}
-	{{ partial "footer" . }}
+	<div class="body-container">
+		{{ partial "header" . }}
+		{{ block "main" . }}{{ end }}
+		{{ partial "footer" . }}
+	</div>
 </body>
 </html>

@@ -1,3 +1,8 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+	<ul class="footer-navigation">
+		<li class="footer-navigation-item">Contact</li>
+		<li class="footer-navigation-item">Imprint</li>
+		<li class="footer-navigation-item">Privacy</li>
+	</ul>
+	<p class="footer-copyright">&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
 </footer>
