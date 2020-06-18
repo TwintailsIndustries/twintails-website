@@ -2,9 +2,10 @@ body {
 	font-size: $font-size-standard;
 	font-family: $font-family-standard;
 	color: $color-text-light;
-    background: $color-blue-darkest;
-    
-}
+	background: $color-blue-darkest;
+	
+	overflow-x: hidden;
+}	
 
 /* Box Sizing */
 :root {
@@ -20,6 +21,8 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 
+	position: relative;
+
 	min-height: 100vh;
 	max-width: 2560px;
 	margin: 0 auto;
@@ -30,8 +33,29 @@ a {
 	color: inherit;
 }
 
+/**** HEADLINES ****/
+
+/**** Categories ****/
+
+h1 {
+	font-size: $font-size-bigger;
+	font-family: $font-family-special;
+	text-transform: uppercase;
+	line-height: calc(1.5 * #{$font-size-bigger});
+
+	color: $color-text-lightest;
+}
+
+h2 {
+
+	font-family: $font-family-standard;
+}
+
+/**** Special Headlines ****/
+
+/**** Character Name ****/
 h3 {
-	font-size: $font-size-biggest;
+	font-size: calc(0.5 * #{$font-size-biggest});
 	font-family: $font-family-special;
 	font-weight: 500;
 	font-style: italic;
@@ -40,6 +64,8 @@ h3 {
 	color: $color-text-lightest;
 }
 
+/**** Character Kana ****/
+
 h4 {
 	font-size: $font-size-big;
 	font-family: $font-family-standard;
@@ -47,11 +73,15 @@ h4 {
 	color: $color-text-lightest;
 }
 
+/**** Path & Affilation ****/
+
 h5 {
 	font: $font-size-standard $font-family-special;
 	color: $color-text-lightest;
 	line-height: $font-size-big;
 }
+
+/**** Character Single Article Headline ****/
 
 h6 {
 	font: italic $font-size-second-headline $font-family-special;
@@ -64,40 +94,143 @@ p {
 	margin-bottom: 24px;
 }
 
+.logo-mobile {
+	position: absolute;
+}
+
 //=== Main Navigation Container =====
 .main-navigation {
-	display: flex;
-	justify-content: center;
+	display: none;
+}
 
-	text-transform: uppercase;
-	font-size: $font-size-big;
-	font-family: $font-family-special;
+.main-navigation-mobile {
+	#menuToggle {
+		display: block;
+		position: fixed;
+		top: 50px;
+		right: 50px;
+		
+		z-index: 5;
+		
+		-webkit-user-select: none;
+		user-select: none;
 
-	// === Main Navigation Lists =====
-	ul {
-		display: flex;
+		a {
+			text-decoration: none;
+			color: #232323;
+			
+			transition: color 0.3s ease;
 
-		width: 432px;
-		margin-top: 48px;
-	}
+			&:hover {
+				color: tomato;
+			}
+		}
+		
+		input {
+			display: block;
+			width: 40px;
+			height: 32px;
+			position: absolute;
+			top: -7px;
+			left: -5px;
+			
+			cursor: pointer;
+			
+			opacity: 0; /* hide this */
+			z-index: 2; /* and place it over the hamburger */
+			
+			-webkit-touch-callout: none;
+		}
 
-	.navigation-left-ul {
-		justify-content: flex-end;
-		margin-right: 24px;
-	}
+		/*
+		* Just a quick hamburger
+		*/
+		span {
+			display: block;
+			width: 33px;
+			height: 4px;
+			margin-bottom: 5px;
+			position: relative;
 
-	.navigation-right-ul {
-		justify-content: flex-start;
-		margin-left: 24px;
-	}
+			background: #cdcdcd;
+			border-radius: 3px;
+
+			z-index: 1;
+			
+			transform-origin: 4px 0px;
+			transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
 	
-	//=== Main Navigation List Items =====
-	.navigation-list-item {
-		margin: 0 24px auto 0;
-		cursor: pointer;
+			&:first-child {
+				transform-origin: 0% 0%;
+			}
+			
+			&:nth-last-child(2) {
+				transform-origin: 0% 100%;
+			}
+		}
+		
 
-		&:nth-child(3) {
-			margin-right: 0;
+		/* 
+		* Transform all the slices of hamburger
+		* into a crossmark.
+		*/
+		input:checked ~ span {
+			opacity: 1;
+			transform: rotate(45deg) translate(-2px, -1px);
+			background: #232323;
+		}
+
+		/*
+		* But let's hide the middle one.
+		*/
+		input:checked ~ span:nth-last-child(3) {
+			opacity: 0;
+			transform: rotate(0deg) scale(0.2, 0.2);
+		}
+		
+		/*
+		* Ohyeah and the last one should go the other direction
+		*/
+		input:checked ~ span:nth-last-child(2) {
+			opacity: 1;
+			transform: rotate(-45deg) translate(0, -1px);
+		}
+
+		/*
+		* Make this absolute positioned
+		* at the top left of the screen
+		*/
+		.navigation-ul-mobile {
+			position: fixed;
+			width: calc(100vw + 83px);
+			height: calc(100vh + 25px);
+			margin: -96px 0 0 0;
+			padding: 48px;
+			padding-top: 120px;
+			right: -100px;
+			
+			text-align: center;
+
+			background: rgba($color-blue-darkest, 0.9);
+			list-style-type: none;
+			-webkit-font-smoothing: antialiased;
+			/* to stop flickering of text in safari */
+	
+			transform-origin: 0% 0%;
+			transform: translate(100%, 0);
+			
+			transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+			.navigation-list-item {
+				padding:  0;
+			}
+		}
+		
+		/*
+		* And let's slide it in from the left
+		*/
+		input:checked ~ ul {
+			transform: none;
+			opacity: 1;
 		}
 	}
 }
@@ -135,5 +268,59 @@ footer {
 		
 		font-size: $font-size-small;
 		text-align: center;
+	}
+}
+
+@media screen and (min-width: 1023px) {
+	h3 {
+		font-size: $font-size-biggest;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.main-navigation-mobile {
+		display: none;
+	}
+
+	.main-navigation {
+		display: flex;
+		justify-content: center;
+	
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 5;
+	
+		text-transform: uppercase;
+		font-size: $font-size-big;
+		font-family: $font-family-special;
+	
+		// === Main Navigation Lists =====
+		ul {
+			display: flex;
+	
+			width: 432px;
+			margin-top: 48px;
+		}
+	
+		.navigation-left-ul {
+			justify-content: flex-end;
+			margin-right: 24px;
+		}
+	
+		.navigation-right-ul {
+			justify-content: flex-start;
+			margin-left: 24px;
+		}
+		
+		//=== Main Navigation List Items =====
+		.navigation-list-item {
+			margin: 0 24px auto 0;
+			cursor: pointer;
+	
+			&:nth-child(3) {
+				margin-right: 0;
+			}
+		}
 	}
 }

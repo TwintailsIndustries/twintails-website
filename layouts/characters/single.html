@@ -10,22 +10,25 @@
             <h4>{{$.Param "subtitle"}}</h4>
         </div>
     </header>
+
+    <figure class="char-bg {{$.Param "title"}}"></figure>
+
     <div class="char-main">
         <div class="char-side-content">
-            <section class="char-affipath">
-                <div class="char-affipath-flag"></div>
-                <div class="char-affipath-gradient mini-{{$.Param "char-class"}}"></div>
-                <div class="char-affipath-container">
+            <section class="char-sidebar">
+                <div class="char-sidebar-flag"></div>
+                <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
+                <div class="char-sidebar-container">
                     <h5>Affilation</h5>
-                    <div class="char-affipath-content">{{$.Param "affilation"}}</div>
+                    <div class="char-sidebar-content">{{$.Param "affilation"}}</div>
                 </div>  
             </section>
-            <section class="char-affipath">
-                <div class="char-affipath-flag"></div>
-                <div class="char-affipath-gradient mini-{{$.Param "char-class"}}"></div>
-                <div class="char-affipath-container">
+            <section class="char-sidebar">
+                <div class="char-sidebar-flag"></div>
+                <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
+                <div class="char-sidebar-container">
                     <h5>Path</h5>
-                    <div class="char-affipath-content">{{$.Param "path"}}</div>
+                    <div class="char-sidebar-content">{{$.Param "path"}}</div>
                 </div>
             </section>
         </div>
@@ -34,6 +37,7 @@
         </div>
     </div>
 </article>
+<!--<figure class="char-bg-gradient"></figure>-->
 <footer class="footer-char-navigation">
     <div class="footer-char-navigation-buttons">
     {{ if .PrevInSection }}

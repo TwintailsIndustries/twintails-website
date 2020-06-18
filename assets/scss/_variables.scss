@@ -3,7 +3,14 @@ $ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 $ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 $color-text-lightest: #FFFFFF;
-$color-text-light: #9DAEED;
+$color-text-light: rgb(170, 192, 231);
+
+$color-violet-darker: #211E32;
+$color-violet-dark: #2B1853;
+$color-violet: #480E81;
+$color-violet-light: #8638AC;
+$color-violet-lighter: #C670D6;
+$color-violet-lightest: #FF99FF;
 
 $color-blue-darkest: #09090C;
 $color-blue-darker: #1D202B;
@@ -26,7 +33,7 @@ $color-gold-grad-inter: #2A231C;
 $font-size-small: 12px;
 $font-size-standard: 18px;
 $font-size-big: 24px;
-$font-size-bigger: 30px;
+$font-size-bigger: 36px;
 $font-size-second-headline: 66px;
 $font-size-biggest: 180px;
 $font-family-special: 'Oswald', 'Noto Sans JP', sans-serif;

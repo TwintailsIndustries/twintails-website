@@ -1,5 +1,9 @@
 {{define "main"}}
 <div class="hex-wrapper">
+    <header class="hex-header">
+        <h1>Characters</h1>
+        <h2>キャラクター</h2>
+    </header>
     <div class="hex-container">
         {{ range .Pages }}
             <a href="{{.Permalink}}" class="hex {{lower .Title}}">

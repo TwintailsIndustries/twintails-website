@@ -213,6 +213,15 @@
 	}
 }
 
+.hex-header {
+	margin-bottom: calc(0.5 * #{$grid-unit});
+	text-align: center;
+}
+
+.hex-wrapper {
+	margin-top: $grid-unit;
+}
+
 .hex-container {
 	padding: 48px;
 	pointer-events: none;
@@ -234,7 +243,7 @@
 	}
 
 	@media (min-width: 720px) {
-		//width: 70%;
+		width: 95%;
 		margin: auto;
 	}
 

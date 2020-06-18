@@ -5,12 +5,35 @@
 			<li class="navigation-list-item">About</li>
 			<li class="navigation-list-item">Propaganda</li>
 		</ul>
-		<img src="/img/TwintailsIndustries-Logo-2020-small.png">
+		<img class="logo-desktop" src="/img/TwintailsIndustries-Logo-2020-small.png">
 		<ul class="navigation-right-ul">
 			<li class="navigation-list-item">Story</li>
 			<li class="navigation-list-item"><a href="/characters/">Characters</a></li>
 			<li class="navigation-list-item">Archive</li>
 		</ul>
+	</nav>
+	
+	<nav class="main-navigation-mobile">
+		<img class="logo-mobile" src="/img/TwintailsIndustries-Logo-2020-small.png">
+		<div id="menuToggle">
+			<input type="checkbox" />
+			
+			<!-- Some spans to act as a hamburger. -->
+			<span></span>
+			<span></span>
+			<span></span>
+			
+
+			<ul class="navigation-ul-mobile">
+				<li class="navigation-list-item"><a href="#">Top</a></li>
+				<li class="navigation-list-item"><a href="#">About</a></li>
+				<li class="navigation-list-item"><a href="#">Propaganda</a></li>
+	
+				<li class="navigation-list-item"><a href="#">Story</a></li>
+				<li class="navigation-list-item"><a href="/characters/">Characters</a></li>
+				<li class="navigation-list-item"><a href="#">Archive</a></li>
+			</ul>
+		</div>
 	</nav>
 	<!--<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	{{ with .Site.Menus.main }}
