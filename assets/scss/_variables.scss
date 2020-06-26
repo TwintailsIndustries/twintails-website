@@ -2,42 +2,47 @@
 $ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 $ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
 
-$color-text-lightest: #FFFFFF;
+$color-text-lightest: #ffffff;
 $color-text-light: rgb(170, 192, 231);
 
-$color-violet-darker: #211E32;
-$color-violet-dark: #2B1853;
-$color-violet: #480E81;
-$color-violet-light: #8638AC;
-$color-violet-lighter: #C670D6;
-$color-violet-lightest: #FF99FF;
+$color-violet-darker: #211e32;
+$color-violet-dark: #2b1853;
+$color-violet: #480e81;
+$color-violet-light: #8638ac;
+$color-violet-lighter: #c670d6;
+$color-violet-lightest: #ff99ff;
 
-$color-blue-darkest: #09090C;
-$color-blue-darker: #1D202B;
-$color-blue-dark: #182B53;
-$color-blue: #0E4781;
-$color-blue-light: #3885AC;
-$color-blue-lighter: #70C5D6;
-$color-blue-lightest: #99FEFF;
+//$color-blue-darkest: #09090C;
+//$color-blue-darkest: #111114;
+$color-blue-darkest: #101113;
+$color-blue-darker: #1d202b;
+$color-blue-dark: #182b53;
+$color-blue: #0e4781;
+$color-blue-light: #3885ac;
+$color-blue-lighter: #70c5d6;
+$color-blue-lightest: #99feff;
 
-$color-red-dark: #53183B;
-$color-red-light: #AC384F;
+$color-red-dark: #53183b;
+$color-red: #810e40;
+//$color-red-light: #AC384F;
+$color-red-light: #d34a6d;
 
-$color-gold-lighter: #D6A770;
+$color-gold-light: #d6a770;
 
 $grid-unit: 96px;
 
 $color-red-grad-inter: #261218;
-$color-gold-grad-inter: #2A231C;
+$color-gold-grad-inter: #2a231c;
 
 $font-size-small: 12px;
 $font-size-standard: 18px;
 $font-size-big: 24px;
 $font-size-bigger: 36px;
+$font-size-headline: 48px;
 $font-size-second-headline: 66px;
 $font-size-biggest: 180px;
-$font-family-special: 'Oswald', 'Noto Sans JP', sans-serif;
-$font-family-standard: 'Noto Sans JP', sans-serif;
+$font-family-special: "Oswald", "Noto Sans JP", sans-serif;
+$font-family-standard: "Noto Sans JP", sans-serif;
 
-$nav-split-position:  49%;
+$nav-split-position: 49%;
 $nav-split-thickness: 1px;

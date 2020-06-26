@@ -3,6 +3,7 @@ title: "Samara"
 date: 2020-02-16T00:49:03+01:00
 draft: true
 
+story: "lorem-ipsum"
 char-class: "char-gold"
 subtitle: "サマラ"
 affilation: "Unknown"

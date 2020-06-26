@@ -3,6 +3,7 @@ title: "Athena"
 date: 2020-02-15T23:53:42+01:00
 draft: true
 
+story: "lorem-ipsum"
 char-class: "char-red"
 subtitle: "アテーナー"
 affilation: "Unknown"
