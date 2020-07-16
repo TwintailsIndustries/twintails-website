@@ -1,24 +1,22 @@
 {{define "main"}}
-<div class="main hex-wrapper">
+<main class="main hex-wrapper">
     <header class="hex-header">
         <h1>Characters</h1>
         <h2>キャラクター</h2>
     </header>
     <div class="input-hex-container">
-        <input class="checkbox all" type="radio" id="color" name="color" checked />
-        <label for="color">all</label>
-
-        <input class="checkbox call-my-name" type="radio" name="color" id="color-1" />
+        <header>Stories:</header>
+        <input class="checkbox call-my-name" type="checkbox" name="color" id="color-1" checked />
         <label for="color-1">Call My Name</label>
 
-        <input class="checkbox lorem-ipsum" type="radio" name="color" id="color-2" />
+        <input class="checkbox lorem-ipsum" type="checkbox" name="color" id="color-2" checked />
         <label for="color-2">Lorem Ipsum</label>
 
     </div>
     <div class="hex-container">
         {{ range .Pages }}
-        <a href="{{.Permalink}}" class="hex {{.Params.story}} {{lower .Title}} ">
-            <div class="hook">
+        <a href="{{.Permalink}}" class="hex {{.Params.story}}">
+            <div class="hook {{lower .Title}}">
                 <div class="hook">
                     <div class="caption">{{.Title}}</div>
                 </div>
@@ -26,5 +24,5 @@
         </a>
         {{end}}
     </div>
-</div>
+</main>
 {{end}}
