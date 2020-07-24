@@ -10,7 +10,7 @@
         </div>
     </header>
 
-    <figure class="char-bg {{$.Param "title"}}"></figure>
+    <figure class="char-bg {{$.Param "title"}} animate__animated animate__fadeIn animate__delay-1s"></figure>
 
     <div class="col-12 char-main">
         <div class="col-3 char-side">
@@ -42,13 +42,13 @@
 <footer class="footer-char-navigation">
     <div class="footer-char-navigation-buttons">
         {{ if .PrevInSection }}
-        <h6><a href="{{.PrevInSection.Permalink}}">Prev</a></h6>
+        <h6 id="prev"><a href="{{.PrevInSection.Permalink}}">Prev</a></h6>
         {{else}}
         <div>&nbsp;</div>
         {{ end }}
 
         {{ if .NextInSection }}
-        <h6><a href="{{.NextInSection.Permalink}}">Next</a></h6>
+        <h6 id="next"><a href="{{.NextInSection.Permalink}}">Next</a></h6>
         {{else}}
         <div>&nbsp;</div>
         {{ end }}

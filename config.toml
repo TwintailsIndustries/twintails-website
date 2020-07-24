@@ -1,4 +1,8 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
+
 title = "Twintails Industries"
 pluralizelisttitles = false
+
+hasCJKLanguage = true
+summarylength = 40

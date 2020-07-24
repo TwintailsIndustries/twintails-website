@@ -1,7 +1,42 @@
 {{ define "main" }}
 	<main class="main no-margin-top">
-		<div class="hero-content"></div>
+		<article class="col-12 hero-content"></article>
+		<article class="col-12 latest-container">
+			<section class="col-4 latest-propaganda">
+				<header class="index-section-header">
+					<h1 class="index-section-headline">Latest </h1>
+				</header>
+				<ul>
+					{{ range first 5 (where site.RegularPages "Section" "propaganda") }}
+						<li>
+							<!--<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>-->
+							{{ .Render "summary"}}
+						</li>
+					{{ end }}
+				</ul>
+			</section>
 
+			<section class="col-4 latest-character">
+				<header class="index-section-header">
+					<h1 class="index-section-headline">Latest Character</h1>
+					<h2 class="index-section-subline">最新のキャラクター</h2>
+				</header>
+				<ul>
+					{{ range first 3 (where site.RegularPages "Section" "characters") }}
+						<li>
+							<!--<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>-->
+							{{ .Render "summary"}}
+						</li>
+					{{ end }}
+				</ul>
+			</section>
+			<section class="col-4 latest-archive">
+				<header class="index-section-header">
+					<h1 class="index-section-headline">Latest Interval</h1>
+					<h2 class="index-section-subline">最新の間隔</h2>
+				</header>
+			</section>
+		</article>
 	</main>
 
 {{ end }}

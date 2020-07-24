@@ -10,12 +10,21 @@ body {
 /* Box Sizing */
 :root {
 	box-sizing: border-box;
+	--animate-delay: 0.5s;
 }
 *,
 *::before,
 *::after {
 	box-sizing: inherit;
 }
+
+/* CSS-animate */
+/*
+.animate__animated.animate__fadeIn {
+	//--animate-duration: 200ms;
+	--animate-delay: 4.9s;
+}*/
+
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -58,7 +67,7 @@ h1 {
 
 h2 {
 	font-size: $font-size-standard;
-	font-family: $font-family-standard;
+	font-family: $font-family-kana;
 
 	color: $color-text-lightest;
 }
@@ -107,6 +116,14 @@ p {
 	margin-bottom: 24px;
 }
 
+#next {
+	padding-right: 24px;
+}
+
+#prev {
+	padding-left: 4px;
+}
+
 .main {
 	margin-top: 72px;
 }
@@ -135,7 +152,7 @@ p {
 			transition: color 0.3s ease;
 
 			&:hover {
-				color: $color-violet-light;
+				color: $color-violet-lighter;
 			}
 		}
 
@@ -165,7 +182,7 @@ p {
 			margin-bottom: 5px;
 			position: relative;
 
-			background: $color-violet-light;
+			background: $color-violet-lighter;
 			border-radius: 3px;
 
 			z-index: 1;
@@ -252,13 +269,11 @@ p {
 
 footer {
 	min-height: 288px;
-
-	margin-top: 80px;
-
 	background: $color-blue-darker;
 
 	.footer-navigation {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 
 		padding-top: 144px;
