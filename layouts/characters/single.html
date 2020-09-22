@@ -5,21 +5,22 @@
         <div class="char-subheadline sub-{{$.Param "char-class"}}"></div>
         <div class="noisy-texture"></div>
         <div class='char-headline'>
-            <h3>{{.Title}}</h3>
-            <h4>{{$.Param "subtitle"}}</h4>
+            <h1 class="char-heading">{{.Title}}</h1>
+            <h2 class="char-kana-subheading">{{$.Param "subtitle"}}</h2>
         </div>
     </header>
 
     <figure class="char-bg {{$.Param "title"}} animate__animated animate__fadeIn animate__delay-1s"></figure>
 
     <div class="col-12 char-main">
+        <div class="col-12 char-background"></div>
         <div class="col-3 char-side">
             <section class="char-sidebar">
                 <div class="char-sidebar-flag"></div>
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>
                 <div class="char-sidebar-container">
-                    <h5>Affilation</h5>
+                    <h3 class="char-sidebar-heading">Affilation</h3>
                     <div class="char-sidebar-content">{{$.Param "affilation"}}</div>
                 </div>
             </section>
@@ -28,7 +29,7 @@
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>
                 <div class="char-sidebar-container">
-                    <h5>Path</h5>
+                    <h3 class="char-sidebar-heading">Path</h3>
                     <div class="char-sidebar-content">{{$.Param "path"}}</div>
                 </div>
             </section>
@@ -42,13 +43,13 @@
 <footer class="footer-char-navigation">
     <div class="footer-char-navigation-buttons">
         {{ if .PrevInSection }}
-        <h6 id="prev"><a href="{{.PrevInSection.Permalink}}">Prev</a></h6>
+        <div class="char-next-prev" id="prev"><a href="{{.PrevInSection.Permalink}}">Prev</a></div>
         {{else}}
         <div>&nbsp;</div>
         {{ end }}
 
         {{ if .NextInSection }}
-        <h6 id="next"><a href="{{.NextInSection.Permalink}}">Next</a></h6>
+        <div class="char-next-prev" id="next"><a href="{{.NextInSection.Permalink}}">Next</a></div>
         {{else}}
         <div>&nbsp;</div>
         {{ end }}

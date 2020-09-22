@@ -138,7 +138,7 @@
 	visibility: hidden;
 	overflow: hidden;
 	pointer-events: auto;
-	background: #ff0;
+	background: $color-violet-light;
 	transform: scale(1) rotate(120deg);
 	transition: all 0.3s $ease-out-quart;
 	transition-delay: 0.15s;
@@ -217,11 +217,6 @@
 	}
 }
 
-.hex-header {
-	margin-bottom: calc(0.5 * #{$grid-unit});
-	text-align: center;
-}
-
 .hex-container {
 	padding: 48px;
 
@@ -234,12 +229,12 @@
 
 	text-transform: uppercase;
 
-	&:hover {
-		background: #ddaa00;
-		//background: linear-gradient(to bottom, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba(#832A3B, 1) 100%);
-		transition: all 0.75s $ease-out-quart;
-		transition-delay: 0s;
-	}
+	// &:hover {
+	// 	background: #fff;
+	// 	//background: linear-gradient(to bottom, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba(#832A3B, 1) 100%);
+	// 	transition: all 0.75s $ease-out-quart;
+	// 	transition-delay: 0s;
+	// }
 
 	.athena {
 		background-image: url("https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg");
@@ -372,10 +367,4 @@
 	opacity: 0.1;
 	transition: all 0.5s cubic-bezier(0.165,0.84,0.44,1);
     transition-delay: .15s;
-}
-
-@media screen and (min-width: 1200px) {
-	.hex-wrapper {
-		margin-top: 288px;
-	}
 }

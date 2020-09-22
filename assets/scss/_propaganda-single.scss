@@ -1,0 +1,34 @@
+.propaganda-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    figure {
+        margin:0;
+        width: 50%;
+        
+        &:first-child {
+            width:100%;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1023px) {
+    .propaganda-gallery {
+        figure {
+            width: calc(50% - 24px);
+            
+            &:nth-child(odd) {
+                margin-right: 48px;
+            }
+
+            &:first-child {
+                width: 100%;
+                margin-right: 48px;
+            }
+        }
+    }
+
+    .propaganda-text-container {
+        float: right;
+    }
+}

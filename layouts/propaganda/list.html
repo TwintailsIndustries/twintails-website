@@ -1,10 +1,10 @@
 {{define "main"}}
-<main class="main hex-wrapper">
-    <header class="hex-header">
-        <h1>Propaganda</h1>
-        <h2>プロパガンダ</h2>
+<main class="main section-list-wrapper">
+    <header class="col-12 section-list-header">
+        <h1 class="main-heading">Propaganda</h1>
+        <h2 class="kana-subheading">プロパガンダ</h2>
     </header>
-    <div class="input-hex-container">
+    <div class="col-12 input-hex-container">
         <header>Categories:</header>
         <input class="checkbox twod-art" type="checkbox" name="color" id="color-1" checked />
         <label for="color-1">2D-Art</label>
@@ -13,7 +13,7 @@
         <label for="color-2">Lorem Ipsum</label>
 
     </div>
-    <div class="hex-container">
+    <div class="col-12 hex-container">
         {{ range .Pages }}
         <a href="{{.Permalink}}" class="hex {{.Params.category}}">
             <div class="hook {{lower .Title}}">

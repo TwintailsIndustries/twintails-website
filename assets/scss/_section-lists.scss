@@ -1,0 +1,11 @@
+.section-list-header {
+	margin-bottom: calc(0.5 * #{$grid-unit});
+	text-align: center;
+}
+
+
+@media screen and (min-width: 1200px) {
+	.section-list-wrapper {
+		padding-top: 288px;
+	}
+}

@@ -1,10 +1,16 @@
 {{ define "main" }}
 	<main class="main no-margin-top">
 		<article class="col-12 hero-content"></article>
+		
+		<article class="col-8 index-introduction">
+			<h1 class="main-heading">{{ .Title}}</h1>
+			<div class="index-introduction-content">{{ .Content }}</div>
+		</article> 
+
 		<article class="col-12 latest-container">
 			<section class="col-4 latest-propaganda">
 				<header class="index-section-header">
-					<h1 class="index-section-headline">Latest </h1>
+					<h3 class="main-heading index-section-heading">Latest </h3>
 				</header>
 				<ul>
 					{{ range first 5 (where site.RegularPages "Section" "propaganda") }}
@@ -18,8 +24,8 @@
 
 			<section class="col-4 latest-character">
 				<header class="index-section-header">
-					<h1 class="index-section-headline">Latest Character</h1>
-					<h2 class="index-section-subline">最新のキャラクター</h2>
+					<h3 class="main-heading index-section-heading">Latest Character</h3>
+					<h4 class="kana-subheading index-section-subheading">最新キャラクター</h4>
 				</header>
 				<ul>
 					{{ range first 3 (where site.RegularPages "Section" "characters") }}
@@ -32,8 +38,8 @@
 			</section>
 			<section class="col-4 latest-archive">
 				<header class="index-section-header">
-					<h1 class="index-section-headline">Latest Interval</h1>
-					<h2 class="index-section-subline">最新の間隔</h2>
+					<h3 class="main-heading index-section-heading">Latest Chapter</h3>
+					<h4 class="kana-subheading index-section-subheading">最新章</h4>
 				</header>
 			</section>
 		</article>

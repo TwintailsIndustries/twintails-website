@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Propaganda on Twintails Industries</title>
+    <link>http://example.org/propaganda/</link>
+    <description>Recent content in Propaganda on Twintails Industries</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 16 Feb 2020 00:49:23 +0100</lastBuildDate>
+    
+	<atom:link href="http://example.org/propaganda/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2d-art-test</title>
+      <link>http://example.org/propaganda/2d-art-test/</link>
+      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
+      
+      <guid>http://example.org/propaganda/2d-art-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lorem Ipsum</title>
+      <link>http://example.org/propaganda/lorem-ipsum/</link>
+      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
+      
+      <guid>http://example.org/propaganda/lorem-ipsum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>space-ship</title>
+      <link>http://example.org/propaganda/space-ship/</link>
+      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
+      
+      <guid>http://example.org/propaganda/space-ship/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

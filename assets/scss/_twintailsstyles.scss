@@ -45,6 +45,9 @@ body {
 	min-height: 100vh;
 	max-width: 2560px;
 	margin: 0 auto;
+
+	background-size: 4px 4px;
+	background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.2) 4px), linear-gradient(transparent, transparent 3px, rgba(0,0,0,0.2) 4px);
 }
 
 a {
@@ -52,11 +55,11 @@ a {
 	color: inherit;
 }
 
-/**** HEADLINES ****/
+/**** HEADINGS ****/
 
 /**** Categories ****/
 
-h1 {
+.main-heading {
 	font-size: $font-size-headline;
 	font-family: $font-family-special;
 	text-transform: uppercase;
@@ -65,17 +68,28 @@ h1 {
 	color: $color-text-lightest;
 }
 
-h2 {
+.kana-subheading {
 	font-size: $font-size-standard;
 	font-family: $font-family-kana;
 
 	color: $color-text-lightest;
 }
 
-/**** Special Headlines ****/
+/**** Section Heading ****/
 
+.section-heading {
+	font-size: $font-size-bigger;
+	font-family: $font-family-special;
+	font-style: italic;
+	text-transform: uppercase;
+	line-height: calc(1.25 * #{$font-size-bigger});
+
+	color: $color-text-lightest;
+}
+
+/**** Special Headlines ****/
 /**** Character Name ****/
-h3 {
+.char-heading {
 	font-size: calc(0.5 * #{$font-size-biggest});
 	font-family: $font-family-special;
 	font-weight: 500;
@@ -87,7 +101,7 @@ h3 {
 
 /**** Character Kana ****/
 
-h4 {
+.char-kana-subheading {
 	font-size: $font-size-big;
 	font-family: $font-family-standard;
 
@@ -96,7 +110,7 @@ h4 {
 
 /**** Sidebar ****/
 
-h5 {
+.char-sidebar-heading {
 	font: $font-size-standard $font-family-special;
 	text-transform: uppercase;
 	color: $color-text-lightest;
@@ -105,7 +119,7 @@ h5 {
 
 /**** Character Single Article Headline ****/
 
-h6 {
+.char-article-heading, .char-next-prev {
 	font: italic $font-size-second-headline $font-family-special;
 	text-transform: uppercase;
 	line-height: $font-size-second-headline;
@@ -114,6 +128,10 @@ h6 {
 p {
 	line-height: $font-size-bigger;
 	margin-bottom: 24px;
+}
+
+img {
+	max-width: 100%;
 }
 
 #next {
@@ -125,7 +143,10 @@ p {
 }
 
 .main {
-	margin-top: 72px;
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 72px;
 }
 
 //=== Main Navigation Container =====
@@ -137,8 +158,8 @@ p {
 	#menuToggle {
 		display: block;
 		position: fixed;
-		top: 48px;
-		right: 48px;
+		top: 34px;
+		right: 28px;
 
 		z-index: 5;
 
@@ -162,7 +183,7 @@ p {
 			height: 32px;
 			position: absolute;
 			top: -7px;
-			left: -5px;
+			left: -7px;
 
 			cursor: pointer;
 
@@ -207,7 +228,7 @@ p {
 		input:checked ~ span {
 			opacity: 1;
 			transform: rotate(45deg) translate(-2px, -1px);
-			background: $color-text-light;
+			background: $color-text-lightest;
 		}
 
 		/*
@@ -226,11 +247,60 @@ p {
 			transform: rotate(-45deg) translate(0, -1px);
 		}
 
+		input:checked ~ .navigation-mobile-wrapper  {
+			clip-path: circle(75%);
+		}
+
+		.navigation-mobile-wrapper {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			/*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
+			/* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
+		   /* background: linear-gradient(-45deg, #e3eefe 0%, #efddfb 100%);*/
+			/* clip-path: circle(25px at calc(0% + 45px) 45px); */
+			background: rgba($color-blue-darkest, 0.9);
+			clip-path: circle(25px at calc(100% - 45px) 45px);
+			transition: all 0.3s ease-in-out;
+
+			.navigation-ul-mobile{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				list-style: none;
+				text-align: center;
+				
+				li{
+					margin: 15px 0;
+					font-size: $font-size-big;
+					color: $color-text-lightest;
+					text-transform: uppercase;
+					
+					a{
+						color: none;
+						text-decoration: none;
+						position: relative;
+						transition: all 0.3s ease;
+
+						&:hover{
+							color: #fff;
+							&:after{
+								transform: scaleY(1);
+							}
+						}
+					}
+				}
+			}
+		}
+
 		/*
 		* Make this absolute positioned
 		* at the top left of the screen
 		*/
-		.navigation-ul-mobile {
+		/*.navigation-ul-mobile {
 			position: fixed;
 			width: calc(100vw + 85px);
 			height: calc(100vh + 25px);
@@ -244,6 +314,7 @@ p {
 			list-style-type: none;
 			-webkit-font-smoothing: antialiased;
 			/* to stop flickering of text in safari */
+			/*
 
 			transform-origin: 0% 0%;
 			transform: translate(100%, 0);
@@ -255,22 +326,24 @@ p {
 				font-size: $font-size-big;
 				text-transform: uppercase;
 			}
-		}
+		}*/
 
 		/*
 		* And let's slide it in from the left
-		*/
+		
 		input:checked ~ ul {
 			transform: none;
 			opacity: 1;
-		}
+		}*/
 	}
 }
 
 footer {
 	min-height: 288px;
 	background: $color-blue-darker;
-
+	background-size: 4px 4px;
+  	background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.2) 4px),
+    linear-gradient(transparent, transparent 3px, rgba(0,0,0,0.2) 4px);
 	.footer-navigation {
 		display: flex;
 		flex-wrap: wrap;
@@ -301,15 +374,6 @@ footer {
 	}
 }
 
-@media screen and (min-width: 768px) {
-	.main-navigation-mobile {
-		#menuToggle {
-			.navigation-ul-mobile {
-				width: 54vw;
-			}
-		}
-	}
-}
 
 @media screen and (min-width: 1023px) {
 	/* Columns erstellen */
@@ -351,7 +415,7 @@ footer {
 		width: 100%;
 	}
 
-	h3 {
+	.char-heading {
 		font-size: $font-size-biggest;
 	}
 }
@@ -370,9 +434,17 @@ footer {
 		right: 0;
 		z-index: 5;
 
+		min-height: 288px;
+
 		text-transform: uppercase;
 		font-size: $font-size-big;
 		font-family: $font-family-special;
+		color: $color-text-lightest;
+
+		a {
+			height: max-content;
+		}
+
 
 		// === Main Navigation Lists =====
 		ul {
@@ -384,22 +456,45 @@ footer {
 
 		.navigation-left-ul {
 			justify-content: flex-end;
-			margin-right: 24px;
+			margin-right: 36px;
 		}
 
 		.navigation-right-ul {
 			justify-content: flex-start;
-			margin-left: 24px;
+			margin-left: 36px;
 		}
 
 		//=== Main Navigation List Items =====
 		.navigation-list-item {
-			margin: 0 24px auto 0;
+			margin: 0 0 auto 0;
+			padding: 9px 12px 10px 12px;
 			cursor: pointer;
 
 			&:nth-child(3) {
 				margin-right: 0;
 			}
+
+			&:hover {
+				color: #fff;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				background: $color-violet-light;
+				//background: linear-gradient(to bottom, rgba($color-blue-darkest, 1) 0%, rgba($color-violet-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			}
+		}
+
+		//=== Main Navigation Background ===
+		.navigation-bg {
+			position: absolute;
+			top: -16px;
+			z-index: -1;
+
+			width: 100%;
+			height: 100%;
+
+			background-image: url("/img/logo-main-nav-bg.png");
+			background-repeat: no-repeat;
+			background-position: 50% 0;
 		}
 	}
 }

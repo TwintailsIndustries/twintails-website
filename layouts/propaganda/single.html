@@ -1,0 +1,17 @@
+{{define "main"}}
+<main class="main section-list-wrapper">
+    <header class="col-12 section-list-header">
+        <h1 class="main-heading">{{.Title}}</h1>
+        <h2 class="kana-subheading">{{$.Param "subtitle"}}</h2>
+    </header>
+
+    <div class="col-12 propaganda-single-container">
+        <div class="col-4 propaganda-text-container">
+            <p>bla!</p>
+        </div>
+        <div class="col-8 propaganda-gallery">
+        {{ partial "propaganda-gallery.html" . }}
+        </div>
+    </div>
+</main>
+{{end}}

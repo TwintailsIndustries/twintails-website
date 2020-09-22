@@ -18,6 +18,10 @@
     background-position: 50% calc(100% - 6px);
 }
 
+.index-introduction {
+    margin: 0 auto;
+}
+
 .latest-container {
     display: flex;
     flex-direction: column;
@@ -27,9 +31,10 @@
 }
 
 .latest-propaganda, .latest-character, .latest-archive {
-    padding: 24px;
-
-    background: #211e32;
+    padding: 24px 0;
+    ul {
+        padding: 0 24px;
+    }
 }
 
 .latest-archive {
@@ -40,7 +45,6 @@
 
 
 .latest-character {
-    background: #182b53;
     .index-section-header {
         background-image: url("/img/section-line-character.png");
     }

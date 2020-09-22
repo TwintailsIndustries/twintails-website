@@ -1,10 +1,10 @@
 {{define "main"}}
-<main class="main hex-wrapper">
-    <header class="hex-header">
-        <h1>Characters</h1>
-        <h2>キャラクター</h2>
+<main class="main section-list-wrapper">
+    <header class="col-12 section-list-header">
+        <h1 class="main-heading">Characters</h1>
+        <h2 class="kana-subheading">キャラクター</h2>
     </header>
-    <div class="input-hex-container">
+    <div class="col-12 input-hex-container">
         <header>Stories:</header>
         <input class="checkbox call-my-name" type="checkbox" name="color" id="color-1" checked />
         <label for="color-1">Call My Name</label>
@@ -13,7 +13,7 @@
         <label for="color-2">Lorem Ipsum</label>
 
     </div>
-    <div class="hex-container">
+    <div class="col-12 hex-container">
         {{ range .Pages }}
         <a href="{{.Permalink}}" class="hex {{.Params.story}}">
             <div class="hook {{lower .Title}}">
