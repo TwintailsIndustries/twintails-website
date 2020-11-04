@@ -1,11 +1,13 @@
 ---
 title: "About"
+subtitle: "自己紹介"
 date: 2018-01-10T23:10:07-02:00
 draft: false
-content1.md: "content1"
-layout: about.html
+layout: about
 ---
+### Millenial wrath and tangerines {.section-heading}
 
+Lorem ipsum dolor sit amet.
 
 ### Sanity is for the weak! {.section-heading}
 

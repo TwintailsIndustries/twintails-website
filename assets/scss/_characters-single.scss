@@ -72,8 +72,8 @@
     }
     .char-background {
         position: absolute;
-       // background: linear-gradient(to bottom, rgba($color-blue-darkest, 0) 0%, rgba($color-blue-darkest, 0.55) 10%, rgba($color-blue-darkest, 0.55) 100%);
-        background: rgba($color-blue-darkest, 0.55);
+        //background: linear-gradient(to bottom, rgba($color-blue-darkest, 0) 0%, rgba($color-blue-darkest, 0.55) 10%, rgba($color-blue-darkest, 0.55) 100%);
+        //background: rgba($color-blue-darkest, 0.55);
         mix-blend-mode: darken;
         height: 100%;
         width: 100%;
@@ -82,16 +82,13 @@
     .char-main {
         display:flex;
         flex-wrap: wrap;
-        
         position: relative;
-        z-index: 1;
 
         margin-top: 288px;
         //background: rgba($color-blue-darkest, 0.55);
         //mix-blend-mode: darken;
         
         .noisy-texture {
-            z-index: 1;
 
             height: 96px;
             width: 90%;
@@ -102,7 +99,10 @@
             max-width: 672px;
 
             margin-right: 48px;
+            margin-top: 48px;
             //background-color: $color-red-dark;
+
+            z-index: 5;
 
             h5 {
                 padding-top: 4px;
@@ -125,7 +125,6 @@
             position: absolute;
             top: 0;
             right: 0;
-            z-index: 0;
 
             width: 336px;
             height: 216px;
@@ -136,7 +135,6 @@
         .char-sidebar-gradient {
             position: absolute;
             bottom: 0;
-            z-index: 1;
 
             width: 90%;
             height: 96px;
@@ -144,8 +142,6 @@
 
         .char-sidebar-container {
             position: relative;
-            z-index: 2;
-
             padding: 152px 0 18px 120px;
         }
 
@@ -155,7 +151,9 @@
         }
 
         .char-main-content {
-            margin:0 48px;
+            margin:48px 48px 0 48px;
+
+            z-index: 5;
 
             h6 {
                 margin: 72px 0 24px 0;
@@ -217,10 +215,10 @@
     bottom: 0;
     left: 0;
     right: 0;
-    
+    z-index: 2;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center top;
+    background-position: 75% 0;
 
     /* Individual background images */
     &.Athena {
@@ -342,12 +340,16 @@
 
         .char-main {
             flex-wrap: nowrap;
+            padding-bottom: 288px;
 
             .char-side{
+                margin-top: 192px;
                 margin-right: 0;
             }
 
             .char-main-content {
+                margin-top: 192px;
+
                 h6 {
                     margin: 0 0 72px 0;
                 }
@@ -362,14 +364,14 @@
 
 @media screen and (min-width: 1200px) {
     .char-bg {
-        margin-top: 144px;
+        margin-top: 96px;
     }
     
     .char-container {
         .char-main {
             .char-main-content {
                 max-width: 960px;
-                margin:0 48px 0 192px;
+                margin:192px 48px 0 192px;
 
             }
         }

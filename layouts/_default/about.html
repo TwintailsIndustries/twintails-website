@@ -1,0 +1,19 @@
+{{define "main"}}
+<main class="main section-list-wrapper">
+    <header class="col-12 section-list-header">
+        <h1 class="main-heading">{{ .Title}}</h1>
+        <h2 class="kana-subheading">{{$.Param "subtitle"}}</h2>
+    </header>
+
+    <article class="col-12 about-me">
+        <div class="col-4 about-image">
+            <p>Lorem ipsum.</p>
+        </div>
+       
+        <div class="col-8 about-content">
+            <article class="about-content-article">{{ .Content }}</article>
+        </div>
+        <div class="col-12 about-grid"></div>
+    </section>
+</main>
+{{end}}
