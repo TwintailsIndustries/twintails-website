@@ -5,9 +5,9 @@ draft: true
 
 story: "lorem-ipsum"
 char-class: "char-red"
-subtitle: "アテーナー"
-affilation: "Unknown"
-path: "Seer"
+subtitle: "アシーナ"
+first-appearance: "TBD"
+path: "Harbinger"
 ---
 
 ##### They fear me yet! {.font-char-red .char-article-heading}

@@ -1,13 +1,13 @@
 ---
-title: "Samara"
+title: "Sepideh"
 date: 2020-02-16T00:49:03+01:00
 draft: true
 
 story: "lorem-ipsum"
 char-class: "char-gold"
-subtitle: "サマラ"
-affilation: "Unknown"
-path: "???"
+subtitle: "セピデ"
+first-appearance: "Chapter 01"
+path: "Lightbringer"
 ---
 
 ##### Hello world! {.font-char-gold .char-article-heading}

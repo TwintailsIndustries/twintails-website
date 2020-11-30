@@ -51,7 +51,7 @@ body {
         height: 100%;
         width: 100%;
         z-index: 0;
-		background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.2) 4px), linear-gradient(transparent, transparent 3px, rgba(0,0,0,0.2) 4px);
+		background-image: linear-gradient(90deg, transparent, transparent 3px, rgba(0,0,0,0.35) 4px), linear-gradient(transparent, transparent 3px, rgba(0,0,0,0.35) 4px);
 		background-size: 4px 4px;
 	}
 }
@@ -154,12 +154,65 @@ img {
 
 	z-index: 1;
 
-	padding-top: 72px;
+	margin-top: 72px;
 }
 
 //=== Main Navigation Container =====
 .main-navigation {
 	display: none;
+}
+
+.link-effect {
+	overflow:hidden;
+
+	   span {
+		position:relative;
+		width:100%;
+
+		background:$color-blue-darkest;
+		-moz-transition: all 0.4s cubic-bezier(0.89,0.2,0.25,1);
+		-o-transition: all 0.4s cubic-bezier(0.89,0.2,0.25,1);
+		-webkit-transition: all 0.4s cubic-bezier(0.89,0.2,0.25,1);
+		transition: all 0.4s cubic-bezier(0.89,0.2,0.25,1);
+		/*-moz-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+		-o-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+		-webkit-transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+		transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
+		transition: all 0.5s cubic-bezier(0.165,0.84,0.44,1);*/
+
+	  }
+	
+	.transition {
+		position: absolute;
+		top: 0;
+		left: 0%;
+		width: 0;
+		height: 100%;
+		background: linear-gradient(to bottom, rgba($color-menu-dark, 1) 0%, rgba($color-menu-light, 1) 100%); 
+		z-index:-1;
+	}
+	  
+	  &:hover {
+		
+		span {
+			color: $color-menu-light;
+		}
+	
+		.transition {
+			left:110%;
+
+			width:120%;
+			-moz-transition: all 0.6s cubic-bezier(0.89,0.2,0.25,1);
+			-o-transition: all 0.6s cubic-bezier(0.89,0.2,0.25,1);
+			-webkit-transition: all 0.6s cubic-bezier(0.89,0.2,0.25,1);
+			transition: all 0.6s cubic-bezier(0.89,0.2,0.25,1);
+		
+			/*-moz-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			-o-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			-webkit-transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);
+			transition: all .7s cubic-bezier(0.77, 0, 0.175, 1);*/
+		}	
+	}
 }
 
 .main-navigation-mobile {
@@ -284,6 +337,7 @@ img {
 				li{
 					margin: 15px 0;
 					font-size: $font-size-big;
+					font-family: $font-family-special;
 					color: $color-text-lightest;
 					text-transform: uppercase;
 					
@@ -303,51 +357,14 @@ img {
 				}
 			}
 		}
-
-		/*
-		* Make this absolute positioned
-		* at the top left of the screen
-		*/
-		/*.navigation-ul-mobile {
-			position: fixed;
-			width: calc(100vw + 85px);
-			height: calc(100vh + 25px);
-			margin: -96px 0 0 0;
-			padding: 24px 144px 48px 48px;
-			right: -100px;
-
-			text-align: center;
-
-			background: rgba($color-blue-darkest, 0.9);
-			list-style-type: none;
-			-webkit-font-smoothing: antialiased;
-			/* to stop flickering of text in safari */
-			/*
-
-			transform-origin: 0% 0%;
-			transform: translate(100%, 0);
-
-			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-			.navigation-list-item {
-				padding: 0 0 16px 0;
-
-				font-size: $font-size-big;
-				text-transform: uppercase;
-			}
-		}*/
-
-		/*
-		* And let's slide it in from the left
-		
-		input:checked ~ ul {
-			transform: none;
-			opacity: 1;
-		}*/
 	}
 }
 
-.imprint {
+.helper-textwidth {
+	max-width: 1008px;
+
 	margin: 0 auto;
+	padding: 0 24px;
 }
 
 footer {
@@ -446,8 +463,7 @@ footer {
 		position: absolute;
 		left: 0;
 		right: 0;
-		z-index: 5;
-
+		
 		min-height: 288px;
 
 		text-transform: uppercase;
@@ -456,6 +472,7 @@ footer {
 		color: $color-text-lightest;
 
 		a {
+			z-index: 5;
 			height: max-content;
 		}
 
@@ -463,6 +480,7 @@ footer {
 		// === Main Navigation Lists =====
 		ul {
 			display: flex;
+			z-index: 5;
 
 			width: 432px;
 			margin-top: 48px;
@@ -480,21 +498,22 @@ footer {
 
 		//=== Main Navigation List Items =====
 		.navigation-list-item {
+			position: relative;
+
 			margin: 0 0 auto 0;
 			padding: 9px 12px 10px 12px;
 			cursor: pointer;
+			overflow:hidden;
 
 			&:nth-child(3) {
 				margin-right: 0;
 			}
 
-			&:hover {
-				color: #fff;
-				border-top-right-radius: 5px;
-				border-top-left-radius: 5px;
-				background: $color-violet-light;
-				//background: linear-gradient(to bottom, rgba($color-blue-darkest, 1) 0%, rgba($color-violet-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			}
+			/* &:hover {
+				//color: #fff;
+				//background: $color-menu-dark;
+				//background: linear-gradient(to bottom, rgba($color-blue-darkest, 1) 0%, rgba($color-violet-light, 1) 100%); 
+			} */
 		}
 
 		//=== Main Navigation Background ===
