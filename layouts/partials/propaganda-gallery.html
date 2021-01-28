@@ -1,17 +1,37 @@
 
-{{ $url := .Title | printf "/img/propaganda/%s" }}
-{{ $folder := .Title | printf "/static/img/propaganda/%s" }}
+{{ $url := .Title | printf "/img/propaganda/full-size/%s" }}
+{{ $url2 := .Title | printf "/img/propaganda/thumbnails/%s" }}
+{{ $folder := .Title | printf "/static/img/propaganda/full-size/%s" }}
 {{ $files := readDir $folder }}
 {{ $counter := 0 }}
+
 {{ range $files }}
-    {{ $counter = add $counter 1 }}
-    <figure>
-        <a href="{{$url}}/{{.Name | urlize }}" >
+    {{if gt $files 1 }}
+        {{ $counter = add $counter 1 }}
+        <!--<figure>
+            <a href="{{$url}}/{{.Name | urlize }}" >
+                <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
+            </a>
+            <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}" onclick="openModal();currentSlide('{{$counter}}')" class="hover-shadow">
+        </figure>-->
+        <li>
+            <input type="radio" id="tab-{{$counter}}" name="gallery-group" {{ if eq $counter 1 }} checked {{ end }} >
+            <label for="tab-{{$counter}}">
+                <div class="tab">
+                    <img src="{{$url2}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
+                </div>
+            </label>
+            <div class="gallery-content">
+                <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
+            </div>
+        </li>
+    {{ else }}
+        <div class="gallery-content is-visible">
             <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
-        </a>
-        <!--<img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}" onclick="openModal();currentSlide('{{$counter}}')" class="hover-shadow">-->
-    </figure>
+        </div>
+    {{ end }}
 {{ end }}
+
 <!--
 {{ $counter := 0 }}
 

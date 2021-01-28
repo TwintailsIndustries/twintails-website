@@ -1,0 +1,31 @@
+.hex-container {
+
+    /***** CHARACTERS *****/
+
+    .athena {
+    background-image: url("https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg");
+    }
+
+
+    /***** PROPAGANDA *****/
+
+
+    .spaceship {
+        background-image: url("/img/propaganda/thumbnails/spaceship/1-spaceship-main.jpg");
+    }
+
+    .marble {
+        background-image: url("/img/propaganda/thumbnails/marble/marble-catseye-600px.jpg");
+    }
+
+    .harbinger {
+        background-image: url("/img/propaganda/thumbnails/harbinger/harbinger-seal-600px.jpg");
+    }
+
+    .hex {
+        > .hook {
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

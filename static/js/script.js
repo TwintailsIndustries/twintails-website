@@ -3,35 +3,51 @@
     $("h1").fadeToggle( 400, "swing" );
 });
 
-$(document).on('change', '.checkbox.call-my-name', function() {
-    $(".hex.call-my-name").fadeToggle( 400, "swing" );
+$(document).on('change', '.checkbox.daughters-nemesis', function() {
+    $(".hex.daughters-nemesis").fadeToggle( 400, "swing" );
 });*/
 
 
- $(document).on('change', '.checkbox.lorem-ipsum', function() {
-    if ($(".hex.lorem-ipsum").hasClass('hide-hex')) {
+ $(document).on('change', '.checkbox.nemesis-anti', function() {
+    if ($(".hex.nemesis-anti").hasClass('hide-hex')) {
         // $(".hex.lorem-ipsum").height($(".hex-lorem-ipsum").find('.hook').height());
-        $(".hex.lorem-ipsum").removeClass('hide-hex');
+        $(".hex.nemesis-anti").removeClass('hide-hex');
     } else {
         // $(".hex.lorem-ipsum").height(''); 
-        $(".hex.lorem-ipsum").addClass('hide-hex');
+        $(".hex.nemesis-anti").addClass('hide-hex');
     }
 });
 
-$(document).on('change', '.checkbox.call-my-name', function() {
-    if ($(".hex.call-my-name").hasClass('hide-hex')) {
-        // $(".hex.call-my-name").height($(".hex-call-my-name").find('.hook').height());
-        $(".hex.call-my-name").removeClass('hide-hex');
+$(document).on('change', '.checkbox.nemesis-pro', function() {
+    if ($(".hex.nemesis-pro").hasClass('hide-hex')) {
+        // $(".hex.daughters-nemesis").height($(".hex-daughters-nemesis").find('.hook').height());
+        $(".hex.nemesis-pro").removeClass('hide-hex');
     } else {
-        // $(".hex.call-my-name").height(''); 
-        $(".hex.call-my-name").addClass('hide-hex');
+        // $(".hex.daughters-nemesis").height(''); 
+        $(".hex.nemesis-pro").addClass('hide-hex');
     }
 });
 
-$(document).on('change', '.checkbox.twod-art', function() {
-    if ($(".hex.twod-art").hasClass('hide-hex')) {
-        $(".hex.twod-art").removeClass('hide-hex');
+$(document).on('change', '.checkbox.threed-art', function() {
+    if ($(".hex.threed-art").hasClass('hide-hex')) {
+        $(".hex.threed-art").removeClass('hide-hex');
     } else {
-        $(".hex.twod-art").addClass('hide-hex');
+        $(".hex.threed-art").addClass('hide-hex');
+    }
+});
+
+$(document).on('change', '.checkbox.character-design', function() {
+    if ($(".hex.character-design").hasClass('hide-hex')) {
+        $(".hex.character-design").removeClass('hide-hex');
+    } else {
+        $(".hex.character-design").addClass('hide-hex');
+    }
+});
+
+$(document).on('change', '.checkbox.illustration', function() {
+    if ($(".hex.illustration").hasClass('hide-hex')) {
+        $(".hex.illustration").removeClass('hide-hex');
+    } else {
+        $(".hex.illustration").addClass('hide-hex');
     }
 });

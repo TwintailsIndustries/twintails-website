@@ -118,6 +118,16 @@
             &:nth-child(2) {
                 margin-top: 96px;
             }
+
+            &.path {
+                .char-sidebar-flag {
+                    &.athena {
+                        background-image: url("/img/characters/harbinger-seal-char.png");
+                        background-position: 50% 10%;
+                        background-size: 180%;
+                    }
+                }
+            }
         }
 
         .char-sidebar-flag {
@@ -220,7 +230,7 @@
     background-position: 50% 0;
 
     /* Individual background images */
-    &.Athena {
+    &.athena {
         background-image: url("/img/profile-desktop.png");
     }
 

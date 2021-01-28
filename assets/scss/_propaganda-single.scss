@@ -1,16 +1,89 @@
-.propaganda-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    figure {
-        margin:0;
-        width: 50%;
-        
-        &:first-child {
-            width:100%;
+.propaganda-gallery-container {
+    .propaganda-gallery {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+        [type="radio"] {
+            display: none;
+
+            &:checked ~ label ~ .gallery-content{
+                display: block;
+                text-align: center;
+                z-index: 8;
+            }
         }
+        .gallery-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+
+            display:none;
+
+            max-width: 1200px;
+            margin: 0 auto;
+
+            text-align: center;
+
+            img {
+                max-height: 100vh;
+            }
+
+            &.is-visible {
+                display: block;
+            }
+           
+        }
+
+        li {
+            flex: 1 1 1%;
+        }
+
+        label {
+            line-height: 0;
+            opacity: .3;
+            transition: all 0.3s $ease-out-quart;
+
+            &:hover, &:focus {
+                opacity: 1;
+                transition: all 0.3s $ease-out-quart;
+            }
+        }
+    }
+
+    #fullimagecontainer {
+        min-height: 100vh;
     }
 }
 
+.footer-propaganda-navigation {
+    position: relative;
+    min-height: auto;
+    margin: 48px 0 24px 0;
+
+    background: none;
+
+    .footer-propaganda-navigation-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        font-weight: 500;
+        color: $color-text-lightest;
+    }
+
+    #next {
+        padding-right: 46px;
+    }
+
+    #prev {
+        padding-left: 28px;
+    }
+}
 
 @media screen and (min-width: 1023px) {
     .propaganda-gallery {
@@ -26,9 +99,5 @@
                 margin-right: 48px;
             }
         }
-    }
-
-    .propaganda-text-container {
-        float: right;
     }
 }

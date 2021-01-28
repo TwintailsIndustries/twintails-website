@@ -209,9 +209,8 @@
 		*/
 		margin-top: 45%;
 
-		color: $color-blue-darkest;
-		font-size: $font-size-big;
-		font-weight: 500;
+		color: $color-text-lightest;
+		font-size: $font-size-standard;
 		font-family: $font-family-special;
 		text-transform: uppercase;
 	}
@@ -235,11 +234,6 @@
 	// 	transition: all 0.75s $ease-out-quart;
 	// 	transition-delay: 0s;
 	// }
-
-	.athena {
-		background-image: url("https://andrewhawkes.github.io/codepen-assets/steam-game-cards/game_2.jpg");
-		background-size: cover;
-	}
 
 	@include clearfix;
 }
@@ -340,23 +334,35 @@
 		}
 		// CHARACTERS COLOURS
 
-		&.call-my-name {
+		&.nemesis-pro {
 			+ label:after {
-				background-color: $color-blue-lighter;
+				background-color: $color-blue-light;
 			}
 		}
 
-		&.lorem-ipsum {
+		&.nemesis-anti {
 			+ label:after {
-				background-color: $color-gold-light;
+				background-color: $color-red-light;
 			}
 		}
 
 		// PROPAGANDA COLOURS
 
-		&.twod-art {
+		&.threed-art {
 			+ label:after {
-				background-color: $color-blue-lighter;
+				background-color: $color-blue-light;
+			}
+		}
+
+		&.character-design {
+			+ label:after {
+				background-color: $color-red-light;
+			}
+		}
+
+		&.illustration {
+			+ label:after {
+				background-color: $color-gold-light;
 			}
 		}
 	}

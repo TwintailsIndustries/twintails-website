@@ -3,7 +3,7 @@ title: "Sepideh"
 date: 2020-02-16T00:49:03+01:00
 draft: true
 
-story: "lorem-ipsum"
+story: "nemesis-pro"
 char-class: "char-gold"
 subtitle: "セピデ"
 first-appearance: "Chapter 01"

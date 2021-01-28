@@ -10,7 +10,7 @@
         </div>
     </header>
 
-    <figure class="char-bg {{$.Param "title"}} animate__animated animate__fadeIn animate__delay-1s"></figure>
+    <figure class="char-bg {{lower .Title}} animate__animated animate__fadeIn animate__delay-1s"></figure>
 
     <div class="col-12 char-main">
         <div class="col-12 char-background"></div>
@@ -24,8 +24,8 @@
                     <div class="char-sidebar-content">{{$.Param "first-appearance"}}</div>
                 </div>
             </section>
-            <section class="char-sidebar">
-                <div class="char-sidebar-flag"></div>
+            <section class="char-sidebar path">
+                <div class="char-sidebar-flag {{lower .Title}}"></div>
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>
                 <div class="char-sidebar-container">
