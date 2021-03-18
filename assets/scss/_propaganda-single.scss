@@ -46,19 +46,22 @@
 
         label {
             line-height: 0;
-            opacity: .3;
-            transition: all 0.3s $ease-out-quart;
 
-            &:hover, &:focus {
-                opacity: 1;
+            .tab {
+                opacity: .3;
                 transition: all 0.3s $ease-out-quart;
+
+                &:hover, &:focus {
+                    opacity: 1;
+                    transition: all 0.3s $ease-out-quart;
+                }
             }
         }
     }
-
+/*
     #fullimagecontainer {
         min-height: 100vh;
-    }
+    }*/
 }
 
 .footer-propaganda-navigation {

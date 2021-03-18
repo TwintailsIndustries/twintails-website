@@ -22,8 +22,93 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-width: 1440px;
+    min-width: 400px;
+    margin: 48px auto;
 
-    margin: 48px 0;
+    .index-list-item {
+        position: relative;
+        height: 144px;
+        margin-bottom: 24px;
+        overflow: hidden;
+
+        .image-background {
+            position: relative;
+            width: 100%;
+            max-width: none;
+            max-height: none;
+            
+            opacity: .3;
+            transition: all 0.3s $ease-out-quart;
+
+            &:hover, &:focus {
+                opacity: 1;
+                transition: all 0.3s $ease-out-quart;
+            }
+            
+        }
+
+        .index-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            width: 100%;
+            height: 100%;
+        }
+
+        .list-header {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            padding-right: 10px;
+            transition: all 0.3s $ease-out-quart;
+
+            font-family: $font-family-special;
+            font-size: $font-size-headline;
+            line-height: $font-size-headline;
+            font-style: italic;
+            text-transform: uppercase;
+
+            &:hover {
+                transition: all 0.3s $ease-out-quart;
+
+                ~ .image-background {
+                    opacity: 1;
+                    transition: all 0.3s $ease-out-quart;
+                }
+            }
+        }
+
+        .list-header-subtitle {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            padding: 0 10px 2px 0;
+            transition: all 0.3s $ease-out-quart;
+
+            font-family: $font-family-special;
+            font-size: $font-size-standard;
+            line-height: $font-size-standard;
+            
+            &:hover {
+                transition: all 0.3s $ease-out-quart;
+
+                ~ .image-background {
+                    opacity: 1;
+                    transition: all 0.3s $ease-out-quart;
+                }
+            }
+        }
+    }
+    
+    .latest-propaganda {
+        .index-list-item {
+            .list-header {
+                bottom: 20px;
+            }
+        }
+    }
 }
 
 .latest-propaganda, .latest-character, .latest-archive {

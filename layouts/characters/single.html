@@ -9,8 +9,14 @@
             <h2 class="char-kana-subheading">{{$.Param "subtitle"}}</h2>
         </div>
     </header>
-
-    <figure class="char-bg {{lower .Title}} animate__animated animate__fadeIn animate__delay-1s"></figure>
+    {{ with .Resources.Match "images/profile-background.png" }}
+        {{ range . }}
+            <figure class="char-bg animate__animated animate__fadeIn animate__delay-1s">
+                <img src="{{ .RelPermalink }}">
+            </figure>
+        {{ end }}
+    {{ end }}
+    
 
     <div class="col-12 char-main">
         <div class="col-12 char-background"></div>
@@ -25,7 +31,13 @@
                 </div>
             </section>
             <section class="char-sidebar path">
-                <div class="char-sidebar-flag {{lower .Title}}"></div>
+                <div class="char-sidebar-flag {{lower .Title}}">
+                    {{ with .Resources.Match "images/seal-char.png" }}
+                        {{ range . }}
+                            <img src="{{ .RelPermalink }}">
+                        {{ end }}
+                    {{ end }}
+                </div>
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>
                 <div class="char-sidebar-container">

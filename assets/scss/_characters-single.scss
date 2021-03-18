@@ -35,6 +35,7 @@
             bottom: 10px;
     
             width: 100%;
+            z-index: 10;
 
             padding-left: 24px;
 
@@ -119,13 +120,15 @@
                 margin-top: 96px;
             }
 
-            &.path {
+            .path {
                 .char-sidebar-flag {
-                    &.athena {
-                        background-image: url("/img/characters/harbinger-seal-char.png");
+                    background-position: 50% 10%;
+                    background-size: 180%;
+                    /*&.athena {
+                        background-image: url("{{ (.Resources.GetMatch 'seal-char.png').Content}}");
                         background-position: 50% 10%;
                         background-size: 180%;
-                    }
+                    }*/
                 }
             }
         }
@@ -136,7 +139,7 @@
             right: 0;
 
             width: 336px;
-            height: 216px;
+            height: 224px;
 
             background-color: $color-red-dark;
         }
@@ -151,7 +154,7 @@
 
         .char-sidebar-container {
             position: relative;
-            padding: 152px 0 18px 120px;
+            padding: 160px 0 18px 24px;
         }
 
         .char-sidebar-content {
@@ -180,13 +183,14 @@
         color: $color-gold-light;
     }
 
-    .font-char-blue {
-        color: $color-blue-light;
+    .font-char-cyan {
+        color: $color-blue-lighter;
     }
 
     .sub-char-red {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba(#832A3B, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, scale-color(rgba($color-red-light, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
+       //background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba(#832A3B, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .char-red {
@@ -201,7 +205,8 @@
 
     .sub-char-gold {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba(#A48055, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, scale-color(rgba($color-gold-light, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
+        //background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba(#A48055, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .char-gold {
@@ -209,11 +214,26 @@
         background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba($color-gold-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
     }
-
     .mini-char-gold {
         background: $color-blue-darkest; /* Old browsers */
         background: linear-gradient(to left, rgba($color-blue-darkest, 0) 0%, rgba($color-gold-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
+    }
+
+    .sub-char-cyan {
+        background: $color-blue-darkest; /* Old browsers */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-blue-grad-inter, 1) 25%, scale-color(rgba($color-blue-lighter, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
+        //background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-blue-grad-inter, 1) 25%, rgba($color-blue-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .char-cyan {
+        background: $color-blue-darkest; /* Old browsers */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-blue-grad-inter, 1) 25%, rgba($color-blue-lighter, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    .mini-char-cyan {
+        background: $color-blue-darkest; /* Old browsers */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 0) 0%, rgba($color-blue-lighter, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 }
 
@@ -225,14 +245,18 @@
     left: 0;
     right: 0;
     z-index: 2;
+
+    margin-top: 48px;
+
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 0;
+    //background-image: url("/img/placeholder-website-charsprite.png");
 
-    /* Individual background images */
+    /* Individual background images 
     &.athena {
-        background-image: url("/img/profile-desktop.png");
-    }
+        
+    }*/
 
 }
 
@@ -285,7 +309,7 @@
         position: absolute;
         top: 232px;
         right: 0;
-        z-index: -1;
+        z-index: -100;
 
         width: 48%;
         height: 288px;
@@ -296,6 +320,16 @@
         transform: skewY(-12deg);
     }
 
+}
+
+@media screen and (min-width: 479px) {
+    .char-container {
+        .char-main {
+            .char-sidebar-container {
+                padding: 160px 0 18px 120px;
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1023px) {
@@ -315,11 +349,6 @@
             margin-top: 288px;
     
             .char-headline {
-                position: absolute;
-                bottom: 10px;
-        
-                width: 100%;
-    
                 padding-left: 48px;
         
                 h3 {
@@ -377,7 +406,7 @@
 
 @media screen and (min-width: 1200px) {
     .char-bg {
-        margin-top: 96px;
+        margin-top: 168px;
     }
     
     .char-container {

@@ -138,7 +138,8 @@
 	visibility: hidden;
 	overflow: hidden;
 	pointer-events: auto;
-	background: $color-violet-light;
+	//background: $color-violet-light;
+	background: $color-violet-darker;
 	transform: scale(1) rotate(120deg);
 	transition: all 0.3s $ease-out-quart;
 	transition-delay: 0.15s;
@@ -207,12 +208,23 @@
 		transform: translateY(-50%);
 		
 		*/
+		width: 100%;
 		margin-top: 45%;
 
 		color: $color-text-lightest;
 		font-size: $font-size-standard;
 		font-family: $font-family-special;
+		line-height: calc(2* #{$font-size-big});
 		text-transform: uppercase;
+		text-align: center;
+
+		&.nemesis-anti {
+			background-color: $color-red;
+		}
+
+		&.nemesis-pro {
+			background-color: scale-color(rgba($color-blue-light, 1), $lightness: -20%, $saturation: 10%, $hue: -2%);
+		}
 	}
 }
 
@@ -336,7 +348,7 @@
 
 		&.nemesis-pro {
 			+ label:after {
-				background-color: $color-blue-light;
+				background-color: $color-blue-lighter;
 			}
 		}
 
@@ -350,7 +362,7 @@
 
 		&.threed-art {
 			+ label:after {
-				background-color: $color-blue-light;
+				background-color: $color-blue-lighter;
 			}
 		}
 

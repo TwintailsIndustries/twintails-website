@@ -1,63 +1,26 @@
-
-{{ $url := .Title | printf "/img/propaganda/full-size/%s" }}
-{{ $url2 := .Title | printf "/img/propaganda/thumbnails/%s" }}
-{{ $folder := .Title | printf "/static/img/propaganda/full-size/%s" }}
-{{ $files := readDir $folder }}
 {{ $counter := 0 }}
-
-{{ range $files }}
-    {{if gt $files 1 }}
-        {{ $counter = add $counter 1 }}
-        <!--<figure>
-            <a href="{{$url}}/{{.Name | urlize }}" >
-                <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
-            </a>
-            <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}" onclick="openModal();currentSlide('{{$counter}}')" class="hover-shadow">
-        </figure>-->
-        <li>
-            <input type="radio" id="tab-{{$counter}}" name="gallery-group" {{ if eq $counter 1 }} checked {{ end }} >
-            <label for="tab-{{$counter}}">
-                <div class="tab">
-                    <img src="{{$url2}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
-                </div>
-            </label>
-            <div class="gallery-content">
-                <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
-            </div>
-        </li>
+{{ with .Resources.ByType "image" }}
+    {{if gt . 1 }}    
+        {{ range . }}
+            {{ $counter = add $counter 1 }}
+            {{ $scaled := .Fill "600x600" }}
+                <li>
+                    <input type="radio" class="js-gallery-tab" id="tab-{{$counter}}" name="gallery-group" {{ if eq $counter 1 }} checked {{ end }} >
+                    <label for="tab-{{$counter}}">
+                        <div class="tab">
+                            <img src="{{ $scaled.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
+                        </div>
+                    </label>
+                    <div class="gallery-content">
+                        <img src="{{ .RelPermalink }}" alt='{{$.Param "subtitle"}}'>
+                    </div>
+                </li>
+        {{ end }}
     {{ else }}
-        <div class="gallery-content is-visible">
-            <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
-        </div>
+        {{ range . }}
+            <li class="gallery-content is-visible">
+                <img src="{{ .RelPermalink }}" alt='{{$.Param "subtitle"}}'>
+            </li>
+        {{ end }}
     {{ end }}
 {{ end }}
-
-<!--
-{{ $counter := 0 }}
-
-<div id="myModal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-        {{ range $files }}
-            <section class="mySlides">
-                <figure>
-                    <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}">
-                </figure>
-            </section>
-        {{ end }}
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-        <div class="thumbnail-modal">
-            {{ range $files }}
-                {{ $counter = add $counter 1 }}
-                <section >
-                    <img src="{{$url}}/{{.Name | urlize }}" alt="{{$.Param "subtitle"}}" onclick="currentSlide('{{$counter}}')" class="thumbnail-demo">
-                </section>
-            {{ end }}
-        </div>
-    </div>
-</div>
--->

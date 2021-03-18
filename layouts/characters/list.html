@@ -18,7 +18,7 @@
         <a href="{{.Permalink}}" class="hex {{.Params.story}}">
             <div class="hook {{lower .Title}}">
                 <div class="hook">
-                    <div class="caption">{{.Title}}</div>
+                    <div class="caption {{lower .Params.story}}">{{.Title}}</div>
                 </div>
             </div>
         </a>

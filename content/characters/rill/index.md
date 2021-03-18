@@ -1,7 +1,8 @@
 ---
-title: "Lorem Ipsum"
+title: "Rill"
 date: 2020-02-16T00:49:23+01:00
 draft: true
 
-category: "lorem-ipsum"
+story: "nemesis-pro"
 ---
+

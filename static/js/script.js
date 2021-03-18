@@ -7,6 +7,25 @@ $(document).on('change', '.checkbox.daughters-nemesis', function() {
     $(".hex.daughters-nemesis").fadeToggle( 400, "swing" );
 });*/
 
+/* Fixes height for propaganda-image-container */
+
+$( window ).on( "load", function() {
+    if($('gallery-content.is-visible')) {
+        var propagandaheight = $('.is-visible').css('height');
+        $("#fullimagecontainer").height(propagandaheight);
+    }
+    var test = '1000px';
+    var propagandaheight = $('.propaganda-gallery-container .propaganda-gallery [type="radio"]:checked ~ label ~ .gallery-content').css('height');
+    $("#fullimagecontainer").height(propagandaheight);
+});
+
+/*
+$('input[type=radio][name="student[course][disability]"]').change(function () {  
+$(document).on('change', 'js-gallery-tab', function() {*/
+$(document).on('input[type=radio][name="gallery-group"]').change(function () {
+    var propagandaheight = $('.propaganda-gallery-container .propaganda-gallery [type="radio"]:checked ~ label ~ .gallery-content').css('height');
+    $("#fullimagecontainer").height(propagandaheight);
+});
 
  $(document).on('change', '.checkbox.nemesis-anti', function() {
     if ($(".hex.nemesis-anti").hasClass('hide-hex')) {
