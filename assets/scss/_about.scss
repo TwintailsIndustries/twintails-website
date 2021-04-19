@@ -10,6 +10,23 @@
     padding:0 48px 48px 48px;
 }
 
+.about-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    .about-flex-child {
+        width: 192px;
+        max-height: 96px;
+        margin: 24px 12px;
+        background-color: $color-blue-light;
+
+        text-align: center;
+    }
+}
+
 .about-content-article {
     p { 
         padding-left: 48px;

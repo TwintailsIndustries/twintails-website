@@ -5,7 +5,11 @@
         <h2 class="kana-subheading">{{$.Param "subtitle"}}</h2>
     </header>
 
-    <article class="col-12 about-me">
+    <article class="col-12 about-me helper-textwidth">
+        {{ .Content }}
+
+
+        <!--
         <div class="col-4 about-image">
             <p>Lorem ipsum.</p>
         </div>
@@ -13,7 +17,19 @@
         <div class="col-8 about-content">
             <article class="about-content-article">{{ .Content }}</article>
         </div>
-        <div class="col-12 about-grid"></div>
-    </section>
+        -->
+        <!--<div class="about-flex-container">  
+            <h5 class="list-header">Art software</h5>
+            <div class="col-12 about-flex">
+                {{ with .Resources.Match "svg/tech/*" }}
+                    {{ range . }}
+                        <div class="about-flex-child">
+                            <img src="{{ .RelPermalink }}">
+                        </div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>-->
+    </article>
 </main>
 {{end}}
