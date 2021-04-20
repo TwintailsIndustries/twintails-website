@@ -12,7 +12,7 @@ André Eggmann\
 Kleinlellenfeld 22\
 91722 Arberg
 
-E-Mail: hello@twintails.art
+E-Mail: andre.eggmann(at)web.de
 
 ## EU-Streitschlichtung {.section-heading}
 
