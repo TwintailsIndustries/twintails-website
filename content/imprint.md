@@ -9,7 +9,6 @@ layout: imprint
 ## Angaben gem&auml;&szlig; &sect; 5 TMG {.section-heading}
 
 André Eggmann\
-Twintails Industries\
 Kleinlellenfeld 22\
 91722 Arberg
 
