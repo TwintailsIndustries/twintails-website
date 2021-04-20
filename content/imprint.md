@@ -13,7 +13,7 @@ Twintails Industries\
 Kleinlellenfeld 22\
 91722 Arberg
 
-E-Mail: konnichiwa@twintailsindustries.art
+E-Mail: hello@twintails.art
 
 ## EU-Streitschlichtung {.section-heading}
 
