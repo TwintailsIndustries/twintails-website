@@ -2,8 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://twintails.art/characters/athena/</loc>
+    <lastmod>2021-04-20T10:00:00+01:00</lastmod>
+  </url><url>
     <loc>https://twintails.art/characters/</loc>
-    <lastmod>2021-04-20T00:30:00+01:00</lastmod>
+    <lastmod>2021-04-20T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://twintails.art/</loc>
+    <lastmod>2021-04-20T00:49:43+01:00</lastmod>
   </url><url>
     <loc>https://twintails.art/characters/meiyu/</loc>
     <lastmod>2021-04-20T00:30:00+01:00</lastmod>
@@ -25,12 +31,6 @@
   </url><url>
     <loc>https://twintails.art/propaganda/spaceship/</loc>
     <lastmod>2021-03-18T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://twintails.art/characters/athena/</loc>
-    <lastmod>2020-04-20T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://twintails.art/</loc>
-    <lastmod>2020-02-16T00:49:43+01:00</lastmod>
   </url><url>
     <loc>https://twintails.art/about/</loc>
     <lastmod>2018-01-10T23:10:07-02:00</lastmod>
