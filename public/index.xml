@@ -2,76 +2,112 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Twintails Industries</title>
-    <link>http://example.org/</link>
+    <link>https://twintails.art/</link>
     <description>Recent content on Twintails Industries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Feb 2020 00:49:43 +0100</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twintails.art/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Mei-Yu</title>
-      <link>http://example.org/characters/mei-yu/</link>
+      <title>harbinger</title>
+      <link>https://twintails.art/propaganda/harbinger/</link>
+      <pubDate>Fri, 16 Apr 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/propaganda/harbinger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marble</title>
+      <link>https://twintails.art/propaganda/marble/</link>
+      <pubDate>Thu, 18 Mar 2021 13:00:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/propaganda/marble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spaceship</title>
+      <link>https://twintails.art/propaganda/spaceship/</link>
+      <pubDate>Thu, 18 Mar 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/propaganda/spaceship/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meiyu</title>
+      <link>https://twintails.art/characters/meiyu/</link>
       <pubDate>Sun, 16 Feb 2020 00:49:43 +0100</pubDate>
       
-      <guid>http://example.org/characters/mei-yu/</guid>
-      <description></description>
+      <guid>https://twintails.art/characters/meiyu/</guid>
+      <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
     </item>
     
     <item>
-      <title>2d-art-test</title>
-      <link>http://example.org/propaganda/2d-art-test/</link>
+      <title>Rill</title>
+      <link>https://twintails.art/characters/rill/</link>
       <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
       
-      <guid>http://example.org/propaganda/2d-art-test/</guid>
+      <guid>https://twintails.art/characters/rill/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Alizée</title>
-      <link>http://example.org/characters/alizee/</link>
-      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
-      
-      <guid>http://example.org/characters/alizee/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>http://example.org/propaganda/lorem-ipsum/</link>
-      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
-      
-      <guid>http://example.org/propaganda/lorem-ipsum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>space-ship</title>
-      <link>http://example.org/propaganda/space-ship/</link>
-      <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
-      
-      <guid>http://example.org/propaganda/space-ship/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Samara</title>
-      <link>http://example.org/characters/samara/</link>
+      <title>Sepideh</title>
+      <link>https://twintails.art/characters/sepideh/</link>
       <pubDate>Sun, 16 Feb 2020 00:49:03 +0100</pubDate>
       
-      <guid>http://example.org/characters/samara/</guid>
+      <guid>https://twintails.art/characters/sepideh/</guid>
       <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
     </item>
     
     <item>
       <title>Athena</title>
-      <link>http://example.org/characters/athena/</link>
+      <link>https://twintails.art/characters/athena/</link>
       <pubDate>Sat, 15 Feb 2020 23:53:42 +0100</pubDate>
       
-      <guid>http://example.org/characters/athena/</guid>
+      <guid>https://twintails.art/characters/athena/</guid>
       <description>They fear me yet! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://twintails.art/about/</link>
+      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+      
+      <guid>https://twintails.art/about/</guid>
+      <description>Hi, I am a web designer with a bachelor’s degree in Media Engineering (B.Eng), acquired at the Georg-Simon-Ohm college of technology in Nuremberg, Germany. The website was built from scratch with</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://twintails.art/contact/</link>
+      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+      
+      <guid>https://twintails.art/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imprint</title>
+      <link>https://twintails.art/imprint/</link>
+      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+      
+      <guid>https://twintails.art/imprint/</guid>
+      <description>Angaben gemäß § 5 TMG André Eggmann Twintails Industries Kleinlellenfeld 22 91722 Arberg E-Mail: konnichiwa@twintailsindustries.art EU-Streitschlichtung Die Europäische Kommission stellt eine Plattform</description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>https://twintails.art/privacy/</link>
+      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+      
+      <guid>https://twintails.art/privacy/</guid>
+      <description>Personal data (usually referred to just as &amp;ldquo;data&amp;rdquo; below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there. Per Art.</description>
     </item>
     
   </channel>

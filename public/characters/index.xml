@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Characters on Twintails Industries</title>
-    <link>http://example.org/characters/</link>
+    <link>https://twintails.art/characters/</link>
     <description>Recent content in Characters on Twintails Industries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Feb 2020 00:49:43 +0100</lastBuildDate>
     
-	<atom:link href="http://example.org/characters/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twintails.art/characters/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Mei-Yu</title>
-      <link>http://example.org/characters/mei-yu/</link>
+      <title>Meiyu</title>
+      <link>https://twintails.art/characters/meiyu/</link>
       <pubDate>Sun, 16 Feb 2020 00:49:43 +0100</pubDate>
       
-      <guid>http://example.org/characters/mei-yu/</guid>
-      <description></description>
+      <guid>https://twintails.art/characters/meiyu/</guid>
+      <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
     </item>
     
     <item>
-      <title>Alizée</title>
-      <link>http://example.org/characters/alizee/</link>
+      <title>Rill</title>
+      <link>https://twintails.art/characters/rill/</link>
       <pubDate>Sun, 16 Feb 2020 00:49:23 +0100</pubDate>
       
-      <guid>http://example.org/characters/alizee/</guid>
+      <guid>https://twintails.art/characters/rill/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Samara</title>
-      <link>http://example.org/characters/samara/</link>
+      <title>Sepideh</title>
+      <link>https://twintails.art/characters/sepideh/</link>
       <pubDate>Sun, 16 Feb 2020 00:49:03 +0100</pubDate>
       
-      <guid>http://example.org/characters/samara/</guid>
+      <guid>https://twintails.art/characters/sepideh/</guid>
       <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
     </item>
     
     <item>
       <title>Athena</title>
-      <link>http://example.org/characters/athena/</link>
+      <link>https://twintails.art/characters/athena/</link>
       <pubDate>Sat, 15 Feb 2020 23:53:42 +0100</pubDate>
       
-      <guid>http://example.org/characters/athena/</guid>
+      <guid>https://twintails.art/characters/athena/</guid>
       <description>They fear me yet! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales</description>
     </item>
     

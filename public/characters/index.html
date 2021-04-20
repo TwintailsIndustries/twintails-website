@@ -7,31 +7,64 @@
 		<title>Characters</title>
 		
 		
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|family=Noto+Serif+JP:400,500,700|Oswald:400,500,700&display=swap&subset=japanese" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet"> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous" />
 		
 		
-		<link rel="stylesheet" href="http://example.org/scss/style.min.css">
+		<link rel="stylesheet" href="https://twintails.art/scss/style.min.css">
 		<link rel="alternate" type="application/rss+xml" href="/characters/index.xml" title="Twintails Industries">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>		
-		<script src="http://example.org//js/script.js"></script>
+		<script src="https://twintails.art//js/script.js"></script>
 		
 	</head>
 	<body>
 		<div class="body-container">
+			<div class="container-background"></div>
 			<header>
 	<nav class="main-navigation">
 		<div class="navigation-bg"></div>
 		<ul class="navigation-left-ul">
-			<li class="navigation-list-item"><a href="http://example.org/">Top</a></li>
-			<li class="navigation-list-item"><a href="/about/">About</a></li>
-			<li class="navigation-list-item"><a href="/propaganda/">Propaganda</a></li>
+			<li class="navigation-list-item">
+				<a  class="link-effect" href="https://twintails.art/">
+					<span>Top</span>
+					<div class="link-effect-bg darkest-blue-bg"></div>
+					<div class="transition effect-violet"></div>
+				</a>
+			</li>
+			<li class="navigation-list-item">
+				<a class="link-effect" href="/about/">
+					<span>About</span>
+					<div class="link-effect-bg darkest-blue-bg"></div>
+					<div class="transition effect-violet"></div>
+				</a>
+			</li>
+			<li class="navigation-list-item">
+				<a class="link-effect" href="/propaganda/">
+					<span>Propaganda</span>
+					<div class="link-effect-bg darkest-blue-bg"></div>
+					<div class="transition effect-violet"></div>
+				</a>
+			</li>
 		</ul>
-		<a href="http://example.org/"><img class="logo-desktop" src="/img/TwintailsIndustries-Logo-2020-small.png"></a>
+		<a class="logo-desktop" href="https://twintails.art/"><img src="/img/TwintailsIndustries-Logo-2020-free.png"></a>
 		<ul class="navigation-right-ul">
-			<li class="navigation-list-item">Story</li>
-			<li class="navigation-list-item"><a href="/characters/">Characters</a></li>
-			<li class="navigation-list-item">Archive</li>
+			<li class="navigation-list-item">
+				<span style="text-decoration: line-through; color: rgb(170, 192, 231);">Story</span>
+				<div class="link-effect-bg darkest-blue-bg"></div>
+				<div class="transition effect-violet"></div>
+			</li>
+			<li class="navigation-list-item">
+				<a class="link-effect" href="/characters/">
+					<span>Characters</span>
+					<div class="link-effect-bg darkest-blue-bg"></div>
+					<div class="transition effect-violet"></div>
+				</a>
+			</li>
+			<li class="navigation-list-item">
+				<span style="text-decoration: line-through; color: rgb(170, 192, 231);">Archive</span>
+				<div class="link-effect-bg darkest-blue-bg"></div>
+				<div class="transition effect-violet"></div>
+			</li>
 		</ul>
 	</nav>
 	
@@ -47,8 +80,8 @@
 
 			<div class="navigation-mobile-wrapper">
 				<ul class="navigation-ul-mobile">
-					<li><img class="logo-mobile" src="/img/TwintailsIndustries-Logo-2020-small.png" alt="It's the logo of the website. It depicts the face of a woman wearing twintails, framed by a futuristic gear or cogwheel."></li>
-					<li class="navigation-list-item"><a href="http://example.org/">Top</a></li>
+					<li><img class="logo-mobile" src="/img/TwintailsIndustries-Logo-2020-free.png" alt="It's the logo of the website. It depicts the face of a woman sporting twintails, framed by a futuristic gear or cogwheel."></li>
+					<li class="navigation-list-item"><a href="https://twintails.art/">Top</a></li>
 					<li class="navigation-list-item"><a href="/about/">About</a></li>
 					<li class="navigation-list-item"><a href="/propaganda/">Propaganda</a></li>
 		
@@ -69,44 +102,44 @@
         <h2 class="kana-subheading">キャラクター</h2>
     </header>
     <div class="col-12 input-hex-container">
-        <header>Stories:</header>
-        <input class="checkbox call-my-name" type="checkbox" name="color" id="color-1" checked />
-        <label for="color-1">Call My Name</label>
+        <header>Filter:</header>
+        <input class="checkbox nemesis-pro" type="checkbox" name="color" id="color-1" checked />
+        <label for="color-1">Protagonists</label>
 
-        <input class="checkbox lorem-ipsum" type="checkbox" name="color" id="color-2" checked />
-        <label for="color-2">Lorem Ipsum</label>
+        <input class="checkbox nemesis-anti" type="checkbox" name="color" id="color-2" checked />
+        <label for="color-2">Antagonists</label>
 
     </div>
     <div class="col-12 hex-container">
         
-        <a href="http://example.org/characters/mei-yu/" class="hex lorem-ipsum">
-            <div class="hook mei-yu">
+        <a href="https://twintails.art/characters/meiyu/" class="hex nemesis-pro">
+            <div class="hook meiyu">
                 <div class="hook">
-                    <div class="caption">Mei-Yu</div>
+                    <div class="caption nemesis-pro">Meiyu</div>
                 </div>
             </div>
         </a>
         
-        <a href="http://example.org/characters/alizee/" class="hex call-my-name">
-            <div class="hook alizée">
+        <a href="https://twintails.art/characters/rill/" class="hex nemesis-pro">
+            <div class="hook rill">
                 <div class="hook">
-                    <div class="caption">Alizée</div>
+                    <div class="caption nemesis-pro">Rill</div>
                 </div>
             </div>
         </a>
         
-        <a href="http://example.org/characters/samara/" class="hex lorem-ipsum">
-            <div class="hook samara">
+        <a href="https://twintails.art/characters/sepideh/" class="hex nemesis-pro">
+            <div class="hook sepideh">
                 <div class="hook">
-                    <div class="caption">Samara</div>
+                    <div class="caption nemesis-pro">Sepideh</div>
                 </div>
             </div>
         </a>
         
-        <a href="http://example.org/characters/athena/" class="hex lorem-ipsum">
+        <a href="https://twintails.art/characters/athena/" class="hex nemesis-anti">
             <div class="hook athena">
                 <div class="hook">
-                    <div class="caption">Athena</div>
+                    <div class="caption nemesis-anti">Athena</div>
                 </div>
             </div>
         </a>
@@ -115,14 +148,70 @@
 </main>
 
 			<footer>
+	<div class="footer-bg"></div>
 	<ul class="footer-navigation">
-		<li class="footer-navigation-item">Contact</li>
-		<li class="footer-navigation-item">Imprint</li>
-		<li class="footer-navigation-item">Privacy</li>
+		<li class="footer-navigation-item">
+			<a class="link-effect" href="/contact/">
+				<span>Contact</span>
+				<div class="link-effect-bg footer-bg"></div>
+				<div class="transition effect-violet"></div>
+			</a>
+		</li>
+		<li class="footer-navigation-item">
+			<a class="link-effect" href="/imprint/">
+				<span>Imprint</span>
+				<div class="link-effect-bg footer-bg"></div>
+				<div class="transition effect-violet"></div>
+			</a>
+		</li>
+		<li class="footer-navigation-item">
+			<a class="link-effect" href="/privacy/">
+				<span>Privacy</span>
+				<div class="link-effect-bg footer-bg"></div>
+				<div class="transition effect-violet"></div>
+			</a>
+		</li>
 	</ul>
-	<p class="footer-copyright">&copy; 2020 <a href="http://example.org/">Twintails Industries</a></p>
+	<p class="footer-copyright">&copy; 2021 <a href="https://twintails.art/">Twintails Industries</a></p>
 </footer>
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.addEventListener('load', function(){
+  window.cookieconsent.initialise({
+   revokeBtn: "<div class='cc-revoke'></div>",
+   type: "opt-in",
+   position: "bottom-right",
+   theme: "classic",
+   palette: {
+       popup: {
+           background: "#9d75e2",
+           text: "#131418"
+        },
+       button: {
+           background: "#5c40b8",
+           text: "#ddb4ff"
+        }
+    },
+   content: {
+       link: "About consent",
+       href: "/privacy/"
+    },
+    onInitialise: function(status) {
+      if(status == cookieconsent.status.allow) myScripts();
+    },
+    onStatusChange: function(status) {
+      if (this.hasConsented()) myScripts();
+    }
+  })
+});
 
+function myScripts() {
+
+   
+
+}
+</script>
 		</div>
 	</body>
 </html>
