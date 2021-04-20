@@ -7,11 +7,6 @@ pluralizelisttitles = false
 hasCJKLanguage = true
 summarylength = 40
 
-[markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-            unsafe = true
-
 [privacy]
     [privacy.disqus]
         disable = true
