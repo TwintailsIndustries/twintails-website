@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Characters on Twintails Industries</title>
+    <link>https://twintails.art/characters/</link>
+    <description>Recent content in Characters on Twintails Industries</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Apr 2021 10:00:00 +0100</lastBuildDate><atom:link href="https://twintails.art/characters/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Athena</title>
+      <link>https://twintails.art/characters/athena/</link>
+      <pubDate>Tue, 20 Apr 2021 10:00:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/characters/athena/</guid>
+      <description>They fear me yet Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales</description>
+    </item>
+    
+    <item>
+      <title>Meiyu</title>
+      <link>https://twintails.art/characters/meiyu/</link>
+      <pubDate>Tue, 20 Apr 2021 00:30:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/characters/meiyu/</guid>
+      <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
+    </item>
+    
+    <item>
+      <title>Rill</title>
+      <link>https://twintails.art/characters/rill/</link>
+      <pubDate>Tue, 20 Apr 2021 00:01:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/characters/rill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sepideh</title>
+      <link>https://twintails.art/characters/sepideh/</link>
+      <pubDate>Tue, 20 Apr 2021 00:00:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/characters/sepideh/</guid>
+      <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
+    </item>
+    
+  </channel>
+</rss>
