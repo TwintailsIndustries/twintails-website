@@ -22,13 +22,12 @@ III. Information about the data processing
 
 ### I. Information about us as controllers of your data {.section-heading}
 
-The party responsible for this website (the "controller") for purposes of data protection law is:
-Sample company/entrepreneur
-Any street 1
-12345 Anytown
-Germany
+The party responsible for this website (the "controller") for purposes of data protection law is:\
+André Eggmann\
+Kleinlellenfeld 22\
+91722 Arberg
 
-Email: muster@mustermail.xy
+Email: hello(at)twintails.art
 
 ### II. The rights of users and data subjects {.section-heading}
 
@@ -122,6 +121,7 @@ To secure our website and to optimize loading times, we use the CloudFlare CDN (
 The legal basis for collecting and processing this information is Art. 6 Para. 1 lit. f) GDPR. Our legitimate interest lies in the secure operation of our website and in its optimization.
 
 If you access our website, your queries are forwarded to CloudFlare servers. Statistical access data about your visit to our website is collected and CloudFlare stores a cookie on your terminal device via your browser. Access data includes
+
 * your IP address;
 * the page(s) on our site that you access;
 * type and version of internet browser you are using;
