@@ -23,7 +23,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 1440px;
-    min-width: 400px;
     margin: 48px auto;
 
     .index-list-item {
@@ -35,11 +34,12 @@
         .image-background {
             position: relative;
             width: 100%;
-            max-width: none;
-            max-height: none;
+            min-height: 144px;
             
             opacity: .3;
             transition: all 0.3s $ease-out-quart;
+
+            object-fit: cover;
 
             &:hover, &:focus {
                 opacity: 1;
@@ -114,7 +114,7 @@
 .latest-propaganda, .latest-character, .latest-archive {
     padding: 24px 0;
     ul {
-        padding: 0 24px;
+       margin: 0;
     }
 }
 
@@ -128,6 +128,14 @@
 .latest-character {
     .index-section-header {
         background-image: url("/img/section-line-character.png");
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .latest-propaganda, .latest-character, .latest-archive {
+        ul {
+            padding: 0 24px;
+        }
     }
 }
 

@@ -14,7 +14,7 @@
 					<h4 class="kana-subheading index-section-subheading">最新創作活動</h4>
 				</header>
 				<ul class="index-list no-decoration">
-					{{ range first 5 (where site.RegularPages "Section" "propaganda") }}
+					{{ range first 3 (where site.RegularPages "Section" "propaganda") }}
 						<li class="index-list-item"> 
 							<a class="index-link" href="{{ .Permalink }}">
 								<h5 class="list-header">{{ .Title }}</h5>
@@ -38,7 +38,7 @@
 					<h4 class="kana-subheading index-section-subheading">最新キャラクター</h4>
 				</header>
 				<ul class="index-list no-decoration">
-					{{ range first 4 (where site.RegularPages "Section" "characters") }}
+					{{ range first 3 (where site.RegularPages "Section" "characters") }}
 						<li class="index-list-item"> 
 							<a class="index-link" href="{{ .Permalink }}">
 								<h5 class="list-header">{{ .Title }}</h5>

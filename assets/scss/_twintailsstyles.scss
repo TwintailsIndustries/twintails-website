@@ -173,6 +173,8 @@ strong {
 }
 
 .form-style {
+	margin: 24px 0;
+
 	input, textarea {
 		width: 100%;
 		margin-bottom: 24px;
@@ -186,7 +188,7 @@ strong {
 	}
 
 	button {
-		padding: 24px;
+		padding: 12px;
 
 		background-color: $color-blue-darker;
 		border: 2px solid $color-menu-dark;
@@ -194,6 +196,17 @@ strong {
 		font-size: $font-size-standard;
 		font-family: $font-family-standard;
 		color: $color-text-lightest;
+
+		-moz-transition: all 0.6s $ease-out-expo;
+		-o-transition: all 0.6s $ease-out-expo;
+		-webkit-transition: all 0.6s $ease-out-expo;
+		transition: all 0.6s $ease-out-expo;
+
+		&:hover, &:focus, &:active {
+			background-color: $color-menu-dark;
+			//color: $color-menu-light;
+			
+		}
 	}
 }
 
@@ -269,7 +282,7 @@ img {
 
 			transition: color 0.3s ease;
 
-			&:hover {
+			&:hover, &:focus, &:active {
 				color: $color-violet-lighter;
 			}
 		}
@@ -383,7 +396,7 @@ img {
 						position: relative;
 						transition: all 0.3s ease;
 
-						&:hover{
+						&:hover &:focus, &:active {
 							color: #fff;
 							&:after{
 								transform: scaleY(1);
@@ -459,7 +472,7 @@ footer {
 .link-effect {
 	overflow:hidden;
 
-	   span {
+	span {
 		position:relative;
 		z-index: 5;
 
@@ -473,7 +486,7 @@ footer {
 		transition: all .65s cubic-bezier(0.77, 0, 0.175, 1);
 		transition: all 0.5s cubic-bezier(0.165,0.84,0.44,1);*/
 
-	  }
+	}
 	
 	.link-effect-bg {
 		position: absolute;
@@ -512,7 +525,7 @@ footer {
 
 	}
 	  
-	  &:hover {
+	&:hover, &:focus, &:active {
 		
 		span {
 			color: $color-menu-light;
