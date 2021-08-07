@@ -21,6 +21,16 @@
         <a href="{{.Permalink}}" class="hex {{.Params.category}}">
             <div class="hook {{lower .Title}}">
                 <div class="hook">
+                    <img class="hex-image-background"
+                        {{ with .Resources }}
+                            {{ with .GetMatch "images/*.jpg" }}
+                                {{ $thumbnail := .Fill "420x420 center webp q100" }}
+                                {{ with $thumbnail }}
+                                    src='{{ .Permalink }}'  
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    alt="{{ .Params.imagealt }}"/>
                     <!--<div class="caption">{{.Title}}</div>-->
                 </div>
             </div>

@@ -19,11 +19,16 @@
 							<a class="index-link" href="{{ .Permalink }}">
 								<h5 class="list-header">{{ .Title }}</h5>
 								<h6 class="list-header-subtitle">{{.Params.subtitle}}</h5>
-								{{ with .Resources.ByType "image" }}
-									{{ range first 1 .}}
-									<img class="image-background" src="{{ .RelPermalink }}">
+								<img class="image-background"
+									{{ with .Resources }}
+										{{ with .GetMatch "images/*.jpg" }}
+											{{ $thumbnail := .Fill "954x200 webp q100" }}
+											{{ with $thumbnail }}
+												src='{{ .Permalink }}'  
+											{{ end }}
+										{{ end }}
 									{{ end }}
-								{{ end }}
+								alt="{{ .Params.imagealt }}"/>
 								
 								<!--{{ .Render "summary"}}--> 
 							</a>
@@ -42,12 +47,16 @@
 						<li class="index-list-item"> 
 							<a class="index-link" href="{{ .Permalink }}">
 								<h5 class="list-header">{{ .Title }}</h5>
-								{{ with .Resources.Match "images/seal-char.png" }}
-									{{ range . }}
-									<img class="image-background" src="{{ .RelPermalink }}">
+								<img class="image-background"
+									{{ with .Resources }}
+										{{ with .GetMatch "images/seal-char.png" }}
+											{{ $thumbnail := .Fill "954x150 webp q100" }}
+											{{ with $thumbnail }}
+												src='{{ .Permalink }}'  
+											{{ end }}
+										{{ end }}
 									{{ end }}
-								{{ end }}
-								
+								alt="{{ .Params.imagealt }}"/>
 								<!--{{ .Render "summary"}}-->
 							</a>
 						</li>

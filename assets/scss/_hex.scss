@@ -176,6 +176,13 @@
 		justify-content: center;
 	}
 
+	.hex-image-background {
+		height: 110%;
+		max-width: none;
+		max-height: none;
+		
+	}
+
 	// GRID
 
 	@media (max-width: 499px) {
@@ -229,6 +236,8 @@
 }
 
 .hex-container {
+	max-width: 1920px;
+	margin: 0 auto;
 	padding: 48px;
 
 	//background-image: url("/img/background-hexagons-empty.jpg");
