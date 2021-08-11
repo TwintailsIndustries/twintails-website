@@ -32,11 +32,16 @@
             </section>
             <section class="char-sidebar path">
                 <div class="char-sidebar-flag {{lower .Title}}">
-                    {{ with .Resources.Match "images/seal-char.png" }}
-                        {{ range . }}
-                            <img src="{{ .RelPermalink }}">
+                    <img class="hex-image-background"
+                    {{ with .Resources }}
+                        {{ with .GetMatch "images/seal-char.png" }}
+                            {{ $seal := .Resize "336x webp q100" }}
+                            {{ with $seal }}
+                                src='{{ .Permalink }}'  
+                            {{ end }}
                         {{ end }}
                     {{ end }}
+                    alt="{{ .Params.imagealt }}"/>
                 </div>
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>

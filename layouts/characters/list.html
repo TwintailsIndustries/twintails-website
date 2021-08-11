@@ -18,6 +18,16 @@
         <a href="{{.Permalink}}" class="hex {{.Params.story}}">
             <div class="hook {{lower .Title}}">
                 <div class="hook">
+                    <img class="hex-image-background"
+                        {{ with .Resources }}
+                            {{ with .GetMatch "images/seal-char.png" }}
+                                {{ $thumbnail := .Fill "420x420 center webp q100" }}
+                                {{ with $thumbnail }}
+                                    src='{{ .Permalink }}'  
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    alt="{{ .Params.imagealt }}"/>
                     <div class="caption {{lower .Params.story}}">{{.Title}}</div>
                 </div>
             </div>

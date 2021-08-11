@@ -7,7 +7,7 @@ story: "nemesis-pro"
 char-class: "char-gold"
 subtitle: "セピデ"
 first-appearance: "Chapter 01"
-path: "Lightbringer"
+path: "???"
 ---
 
 ##### Hello world! {.font-char-gold .char-article-heading}
