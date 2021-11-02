@@ -265,6 +265,9 @@ img {
 }
 
 .main-navigation-mobile {
+	position: relative;
+	z-index: 1000;
+	
 	#menuToggle {
 		display: block;
 		position: fixed;
