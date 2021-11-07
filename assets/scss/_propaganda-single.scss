@@ -49,6 +49,7 @@
             line-height: 0;
 
             .tab {
+                cursor: pointer;
                 opacity: .3;
                 transition: all 0.3s $ease-out-quart;
 
