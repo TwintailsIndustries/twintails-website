@@ -22,7 +22,7 @@
 								<img class="image-background"
 									{{ with .Resources }}
 										{{ with .GetMatch "images/*.jpg" }}
-											{{ $thumbnail := .Fill "954x200 webp q100" }}
+											{{ $thumbnail := .Fill "954x150 webp q100" }}
 											{{ with $thumbnail }}
 												src='{{ .Permalink }}'  
 											{{ end }}
