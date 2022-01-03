@@ -1,6 +1,6 @@
 ---
-title: "Twintails Industries"
-date: 2021-04-20T00:49:43+01:00
+title: "Art and other neat stuff coming soon!"
+date: 2022-01-20T00:49:43+01:00
 draft: false
 ---
 
