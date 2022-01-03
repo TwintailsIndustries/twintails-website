@@ -1,7 +1,7 @@
 baseURL = "https://twintails.art/"
 languageCode = "en-us"
 
-title = "Twintails Industries"
+title = "Twintails.art"
 pluralizelisttitles = false
 
 hasCJKLanguage = true
