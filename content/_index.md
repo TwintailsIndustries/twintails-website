@@ -1,5 +1,5 @@
 ---
-title: "Art and other neat stuff coming soon!"
+title: "My website for art and other neat stuff"
 date: 2022-01-20T00:49:43+01:00
 draft: false
 ---
