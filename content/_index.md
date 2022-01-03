@@ -1,6 +1,6 @@
 ---
 title: "Art and other neat stuff"
-date: 2022-01-01T00:49:43+01:00
+date: 2021-04-20T00:49:43+01:00
 draft: false
 ---
 
