@@ -8,6 +8,6 @@ subtitle: "3D - Blender"
 
 ---
 
-CN: Motion Sickness
+CN: motion sickness
 
 Geometry nodes were used to create the tunnel made out of cubes. Render Engine is Eevee.
