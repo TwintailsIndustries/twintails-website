@@ -1,5 +1,20 @@
-.propaganda-gallery-container {
-    min-height: 100vh;
+.propaganda-gallery-container, .propaganda-gallery-single-container {
+
+
+    .propaganda-image, .propaganda-video {
+        position: relative;
+        display: flex;
+        margin-bottom: 24px;
+        
+        img, video {
+            max-height: 100vh;
+            margin: 0 auto;
+        }
+
+        video {
+            max-width: 1200px;
+        }
+    }
     
     .propaganda-gallery {
         position: relative;
@@ -38,6 +53,10 @@
             &.is-visible {
                 display: block;
             }
+
+            &.is-single {
+                position: relative;
+            }
            
         }
 
@@ -64,6 +83,10 @@
     #fullimagecontainer {
         min-height: 100vh;
     }*/
+}
+
+.propaganda-gallery-container {
+    min-height: 100vh;
 }
 
 .footer-propaganda-navigation {

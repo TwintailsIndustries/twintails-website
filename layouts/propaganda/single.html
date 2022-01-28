@@ -8,12 +8,8 @@
     <article class="col-12 propaganda-text-container helper-textwidth">
         {{.Content}}
     </article>
-    <div class="col-12 propaganda-gallery-container" tabindex="0">
-        <ul class="propaganda-gallery">
-            {{ partial "propaganda-gallery.html" . }}
-        </ul>
-        <figure id="fullimagecontainer"></figure>
-    </div>
+    {{ partial "propaganda-gallery.html" . }}
+    
 </main>
 <footer class="footer-propaganda-navigation">
     <div class="footer-propaganda-navigation-buttons">
