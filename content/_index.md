@@ -1,5 +1,5 @@
 ---
-title: "Twintails Industries"
+title: "twintails.art"
 date: 2021-04-20T00:49:43+01:00
 draft: false
 ---
