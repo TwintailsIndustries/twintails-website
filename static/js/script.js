@@ -1,72 +1,108 @@
-/*$(document).on('change', '.checkbox.lorem-ipsum', function() {
-    $(".hex.lorem-ipsum").fadeToggle( 400, "swing" );
-    $("h1").fadeToggle( 400, "swing" );
-});
-
-$(document).on('change', '.checkbox.daughters-nemesis', function() {
-    $(".hex.daughters-nemesis").fadeToggle( 400, "swing" );
-});*/
-
 /* Fixes height for propaganda-image-container */
 
-$( window ).on( "load", function() {
-    if($('gallery-content.is-visible')) {
-        var propagandaheight = $('.is-visible').css('height');
-        $("#fullimagecontainer").height(propagandaheight);
-    }
-    var test = '1000px';
-    var propagandaheight = $('.propaganda-gallery-container .propaganda-gallery [type="radio"]:checked ~ label ~ .gallery-content').css('height');
-    $("#fullimagecontainer").height(propagandaheight);
-});
+window.onload = function() {
+    if(document.getElementsByClassName("propaganda-gallery").length > 0) {
+        getGalleryContainerHeight();
+    };
 
-/*
-$('input[type=radio][name="student[course][disability]"]').change(function () {  
-$(document).on('change', 'js-gallery-tab', function() {*/
-$(document).on('input[type=radio][name="gallery-group"]').change(function () {
-    var propagandaheight = $('.propaganda-gallery-container .propaganda-gallery [type="radio"]:checked ~ label ~ .gallery-content').css('height');
-    $("#fullimagecontainer").height(propagandaheight);
-});
+    if(document.querySelector(".checkbox.nemesis-anti")) {
+        document.querySelector(".checkbox.nemesis-anti").addEventListener("click", hideNemesisAntagonist);
+    } 
 
- $(document).on('change', '.checkbox.nemesis-anti', function() {
-    if ($(".hex.nemesis-anti").hasClass('hide-hex')) {
-        // $(".hex.lorem-ipsum").height($(".hex-lorem-ipsum").find('.hook').height());
-        $(".hex.nemesis-anti").removeClass('hide-hex');
-    } else {
-        // $(".hex.lorem-ipsum").height(''); 
-        $(".hex.nemesis-anti").addClass('hide-hex');
-    }
-});
+    if(document.querySelector(".checkbox.nemesis-pro")) {
+        document.querySelector(".checkbox.nemesis-pro").addEventListener("click", hideNemesisProtagonist);
+    } 
 
-$(document).on('change', '.checkbox.nemesis-pro', function() {
-    if ($(".hex.nemesis-pro").hasClass('hide-hex')) {
-        // $(".hex.daughters-nemesis").height($(".hex-daughters-nemesis").find('.hook').height());
-        $(".hex.nemesis-pro").removeClass('hide-hex');
-    } else {
-        // $(".hex.daughters-nemesis").height(''); 
-        $(".hex.nemesis-pro").addClass('hide-hex');
+    if(document.querySelector(".checkbox.threed-art")) {
+        document.querySelector(".checkbox.threed-art").addEventListener("click", hideThreeDArt);
     }
-});
 
-$(document).on('change', '.checkbox.threed-art', function() {
-    if ($(".hex.threed-art").hasClass('hide-hex')) {
-        $(".hex.threed-art").removeClass('hide-hex');
-    } else {
-        $(".hex.threed-art").addClass('hide-hex');
+    if(document.querySelector(".checkbox.character-design")) {
+        document.querySelector(".checkbox.character-design").addEventListener("click", hideCharacterDesign);
     }
-});
 
-$(document).on('change', '.checkbox.character-design', function() {
-    if ($(".hex.character-design").hasClass('hide-hex')) {
-        $(".hex.character-design").removeClass('hide-hex');
-    } else {
-        $(".hex.character-design").addClass('hide-hex');
+    if(document.querySelector(".checkbox.illustration")) {
+        document.querySelector(".checkbox.illustration").addEventListener("click", hideIllustration);
     }
-});
+};
 
-$(document).on('change', '.checkbox.illustration', function() {
-    if ($(".hex.illustration").hasClass('hide-hex')) {
-        $(".hex.illustration").removeClass('hide-hex');
-    } else {
-        $(".hex.illustration").addClass('hide-hex');
+function getGalleryContainerHeight() {
+    let tabs = document.getElementsByClassName('js-gallery-tab');
+    let i;
+    let propagandaheight;
+    let x;
+    for (i = 0 ; i < tabs.length; i++) {
+        if (tabs[i].checked) {
+            x = tabs[i].parentNode;
+            propagandaheight = x.lastElementChild.offsetHeight;            
+        }
     }
-});
+
+    let fullimage = document.querySelector("#fullimagecontainer");
+    fullimage.style.height = propagandaheight + "px";
+}
+
+function hideNemesisAntagonist() {
+    let antagonistarray = document.querySelectorAll(".hex.nemesis-anti");
+    let i;
+
+    for (i=0 ; i < antagonistarray.length; i++) {
+        if(antagonistarray[i].classList.contains("hide-hex")) {
+            antagonistarray[i].classList.remove("hide-hex");
+        } else {
+            antagonistarray[i].classList.add("hide-hex");
+        }
+    }
+}
+
+function hideNemesisProtagonist() {
+    let protagonistarray = document.querySelectorAll(".hex.nemesis-pro");
+    let i;
+
+    for (i=0 ; i < protagonistarray.length; i++) {
+        if(protagonistarray[i].classList.contains("hide-hex")) {
+            protagonistarray[i].classList.remove("hide-hex");
+        } else {
+            protagonistarray[i].classList.add("hide-hex");
+        }
+    }
+}
+
+function hideThreeDArt() {
+    let threearray = document.querySelectorAll(".hex.threed-art");
+    let i;
+
+    for (i=0 ; i < threearray.length; i++) {
+        if(threearray[i].classList.contains("hide-hex")) {
+            threearray[i].classList.remove("hide-hex");
+        } else {
+            threearray[i].classList.add("hide-hex");
+        }
+    }
+}
+
+function hideCharacterDesign() {
+    let chardesignarray = document.querySelectorAll(".hex.character-design");
+    let i;
+
+    for (i=0 ; i < chardesignarray.length; i++) {
+        if(chardesignarray[i].classList.contains("hide-hex")) {
+            chardesignarray[i].classList.remove("hide-hex");
+        } else {
+            chardesignarray[i].classList.add("hide-hex");
+        }
+    }
+}
+
+function hideIllustration() {
+    let illustrationarray = document.querySelectorAll(".hex.illustration");
+    let i;
+
+    for (i=0 ; i < illustrationarray.length; i++) {
+        if(illustrationarray[i].classList.contains("hide-hex")) {
+            illustrationarray[i].classList.remove("hide-hex");
+        } else {
+            illustrationarray[i].classList.add("hide-hex");
+        }
+    }
+}

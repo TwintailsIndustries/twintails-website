@@ -9,7 +9,7 @@
             <h2 class="char-kana-subheading">{{$.Param "subtitle"}}</h2>
         </div>
     </header>
-    {{ with .Resources.Match "images/profile-background.png" }}
+    {{ with .Resources.Match "images/profile-background.webp" }}
         {{ range . }}
             <figure class="char-bg animate__animated animate__fadeIn animate__delay-1s">
                 <img src="{{ .RelPermalink }}">

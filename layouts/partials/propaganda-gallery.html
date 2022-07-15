@@ -22,9 +22,9 @@
         <ul class="propaganda-gallery">
             {{ range . }}
                 {{ $counter = add $counter 1 }}
-                {{ $scaled := .Fill "600x600" }}
+                {{ $scaled := .Fill "600x600 webp 100q" }}
                     <li>
-                        <input type="radio" class="js-gallery-tab" id="tab-{{$counter}}" name="gallery-group" {{ if eq $counter 1 }} checked {{ end }} >
+                        <input type="radio" class="js-gallery-tab" id="tab-{{$counter}}" name="gallery-group" onchange="getGalleryContainerHeight()" {{ if eq $counter 1 }} checked {{ end }} >
                         <label for="tab-{{$counter}}">
                             <div class="tab">
                                 <img src="{{ $scaled.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
