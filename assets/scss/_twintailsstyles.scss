@@ -500,6 +500,7 @@ footer {
 		font-size: $font-size-small;
 		text-align: center;
 	}
+	
 }
 
 .hidden {
@@ -541,8 +542,9 @@ footer {
 			
 		}
 
-		&.footer-bg {
+		&.footer-link {
 			background: $color-blue-darker;
+			top: 3px;
 		}
 	}
 
