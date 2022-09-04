@@ -7,16 +7,6 @@
 		<title>{{ .Title }}</title>
 		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 		{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-		<!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		
-		<link rel="preload"
-			as ="style"
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap" /> 
-		
-		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap" 
-			media="print" onload="this.media='all'" /> 
-		
 		<link rel="preload" 
 		as ="style"
 		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg=="
@@ -24,9 +14,8 @@
 
 		<link rel="stylesheet" 
 		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg=="
-		media="print" onload="this.media='all'" crossorigin="anonymous"/>-->
+		media="print" onload="this.media='all'" crossorigin="anonymous"/>
 		<noscript>
-			<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;700&display=swap" />-->
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous"/>
 		</noscript>
 		{{ $scss := resources.Get "scss/style.scss" }}
@@ -36,9 +25,7 @@
 			{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 		{{- end }}
 
-		<link rel="icon" type="image/png" href="/TwintailsIndustries-Favicon.png">
-		
-		<!--<script src="{{ .Site.BaseURL }}/js/openModal.js"></script>-->
+		<link rel="icon" type="image/png" href="/TwintailsIndustries-Favicon.png">	
 	</head>
 	<body>
 		<div class="body-container">
