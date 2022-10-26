@@ -135,7 +135,7 @@
 
 .hex {
 
-	visibility: hidden;
+	visibility: inherit;
 	overflow: hidden;
 	pointer-events: auto;
 	//background: $color-violet-light;
@@ -162,7 +162,7 @@
 	}
 
 	.hook {
-		overflow: hidden;
+		overflow: inherit;
 		width: 100%;
 		height: 100%;
 		background: inherit;
