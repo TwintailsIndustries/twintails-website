@@ -38,4 +38,4 @@ HUGO_ENABLEGITINFO = "true"
     #  Multi-value headers are expressed with multi-line strings
     cache-Control = '''
     public,
-	max-age=86400'''
+	max-age=2592000'''
