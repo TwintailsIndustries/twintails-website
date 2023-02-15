@@ -99,21 +99,15 @@ The following social networks are integrated into our site by linked graphics:
 Twitter Inc., 795 Folsom St., Suite 600, San Francisco, CA 94107, USA
 Privacy Policy: <https://twitter.com/privacy>
 
-#### Google Fonts {.section-heading .small-heading}
+#### Bunny Fonts {.section-heading .small-heading}
 
-Our website uses Google Fonts to display external fonts. This is a service provided by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland (hereinafter: Google).
-To enable the display of certain fonts on our website, a connection to the Google server in the USA is established whenever our website is accessed.
-The legal basis is Art. 6 Para. 1 lit. f) GDPR. Our legitimate interest lies in the optimization and economic operation of our site.
+Our website uses Bunny Fonts to display external fonts. Bunny Fonts are hosted by BunnyWay d.o.o. - an EU-based company - and were designed to help website owners stay fully GDPR compliant. When you access our site, a connection to Bunny Fonts is established. No data or logs are ever collected or passed to a third party.
 
-When you access our site, a connection to Google is established from which Google can identify the site from which your request has been sent and to which IP address the fonts are being transmitted for display.
+You can find more information here: 
 
-Google offers detailed information at
+<https://bunny.net/gdpr/>
 
-<https://adssettings.google.com/authenticated>
-
-<https://policies.google.com/privacy>
-
-in particular on options for preventing the use of data.
+<https://fonts.bunny.net/about>
 
 #### CloudFlare {.section-heading .small-heading}
 
