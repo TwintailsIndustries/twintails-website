@@ -1,6 +1,8 @@
 baseURL = "https://twintails.art/"
 languageCode = "en-us"
 
+enableRobotsTXT = true
+
 title = "Twintails Industries"
 pluralizelisttitles = false
 

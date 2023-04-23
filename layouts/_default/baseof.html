@@ -27,7 +27,12 @@
 		{{- end }}
 		<link rel="icon" type="image/png" href="/TwintailsIndustries-Favicon.png">	
 	</head>
-	<body>
+	{{if eq .Section "saladdork"}}
+	<body class="saladdork-body">
+		{{ block "main" . }}{{ end }}
+	</body>
+	{{else}}
+	<body class="body">
 		<div class="body-container">
 			{{ partial "header" . }}
 			{{ block "main" . }}{{ end }}
@@ -36,4 +41,5 @@
 		<script src="{{ .Site.BaseURL }}/js/script.js"></script>
 		{{ partial "cookieconsent" . }}
 	</body>
+	{{end}}
 </html>
