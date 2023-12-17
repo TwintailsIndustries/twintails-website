@@ -21,7 +21,7 @@
 								<h6 class="list-header-subtitle">{{.Params.subtitle}}</h5>
 								<img class="image-background"
 									{{ with .Resources }}
-										{{ with .GetMatch "images/*.jpg" }}
+										{{ with .GetMatch "images/*" }}
 											{{ $thumbnail := .Fill "954x150 webp q100" }}
 											{{ with $thumbnail }}
 												src='{{ .Permalink }}'  

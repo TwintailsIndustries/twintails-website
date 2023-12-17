@@ -23,7 +23,7 @@
                 <div class="hook">
                     <img class="hex-image-background"
                         {{ with .Resources }}
-                            {{ with .GetMatch "images/*.jpg" }}
+                            {{ with .GetMatch "images/*" }}
                                 {{ $thumbnail := .Fill "420x420 center webp q100" }}
                                 {{ with $thumbnail }}
                                     src='{{ .Permalink }}'  

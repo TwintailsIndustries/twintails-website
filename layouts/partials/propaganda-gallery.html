@@ -44,9 +44,10 @@
         <div class="main-carousel" data-flickity='{ "wrapAround": true, "adaptiveHeight" : true }'>
             {{ range . }}
                 {{ $counter = add $counter 1 }}
-                    <div class="carousel-cell">
-                        <img src="{{ .RelPermalink }}" alt='{{$.Param "subtitle"}}'>
-                    </div>
+                <div class="carousel-cell">
+                    {{ $res := .Resize "1200x webp q90" }}
+                    <img src="{{ $res.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
+                </div>
             {{ end }}
         </div>
     </section>
@@ -55,7 +56,8 @@
         {{ range . }}
             <section class="col-12 propaganda-gallery-single-container" tabindex="0">
                 <div class="propaganda-image">
-                    <img src="{{ .RelPermalink }}" alt='{{$.Param "subtitle"}}'>
+                    {{ $res := .Resize "1200x webp q90" }}
+                    <img src="{{ $res.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
                 </div>
             </section>
         {{ end }}
