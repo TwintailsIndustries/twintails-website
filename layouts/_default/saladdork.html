@@ -1,9 +1,33 @@
 {{define "main"}}
-<main class="main section-list-wrapper">
-    <header class="col-12 section-list-header">
-        <h1 class="main-heading">{{ .Title}}</h1>
-    </header>
+<nav class="ork-nav">
+    <div class="ork-logo">Logo</div>
+    <ul class="ork-nav-list">
+        <li>Food</li>
+        <li>Location</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+<main class="col-12 main ork-main section-list-wrapper">
+    <div class="col-12 ork-hero-container">
+        <header class="col-12 section-list-header">
+            <h1 class="main-heading">Salad d'<span class="ork-green">ork</span></h1>
+        </header>    
+        <p class="col-6 ork-hero-subtitles">This is filler text for a fictional salad bar run by orks. In order to get the full experience, activate your fantasy center inside your brain and insert some more orkiness into it.</p>
+    </div>
+<div style="display: flex; align-items: flex-end;">
+    <div class="ork-green-bg" style="height: 672px; width: 96px; margin-right: 48px;"></div>
+    <div class="ork-green-bg" style="height: 384px; width: 96px; margin-right: 48px;"></div>
+    <div class="ork-green-bg" style="height: 192px; width: 96px; margin-right: 48px;"></div>
+    <div class="ork-address-container">
+        <div class="ork-get-in-here">GET IN HERE</div>
+        <div class="ork-address">
+            <p class="ork-green">Green Street 123, Orkhaven</p>
+            <p>Tel: XXXX/XXXXXXX, E-Mail: XXXX.XXXXX</p>
+        </div>
+    </div>
+</div>
 
+    
     <article class="col-12 privacy helper-textwidth ">
         {{ .Content }}
     </article>

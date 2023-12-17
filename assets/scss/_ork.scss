@@ -1,0 +1,102 @@
+.ork-main {
+    font-family: $font-family-ork-standard;
+    font-size: $font-size-standard;
+
+    margin-top: 0;
+
+    .ork-hero-container {
+        //max-height: 768px;
+        background-image: linear-gradient(to bottom, rgba(20,42,38,0) 35%, rgba(20,42,38,1)), url('/img/saladork/salad-d-ork-luisa-brimble-2RrBE90w0T8-unsplash.webp');
+        background-size: cover;
+
+        .section-list-header {
+            padding-left: calc(72px + 16.67%);
+            margin-bottom: 24px;
+            text-align: initial;
+        }
+
+        .main-heading {
+            margin-top: 552px;
+            font-family: $font-family-ork-headline;
+            font-size: calc(3.0 * #{$font-size-big});
+        }
+
+        .ork-hero-subtitles {
+            margin-left: calc(72px + 16.67%);
+            margin-bottom: 42px;
+            color: $color-text-lightest;
+            //font-size: $font-size-big;
+            //line-height:  calc(1.5 * #{$font-size-big});
+        }
+    }
+    .ork-address-container {
+        display: flex;
+        flex-wrap: wrap;
+        font-family: $font-family-ork-headline;
+
+        .ork-get-in-here {
+            font-size: 110px;
+            line-height: 96px;
+            padding-right: 24px; 
+        }
+
+        .ork-address {
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            
+            :first-child {
+                font-size: 48px;
+                line-height: 48px;
+            }
+
+            :last-child {
+                font-size: 24px;
+                line-height: 22px;
+                margin-bottom: 0;
+            }
+        }
+    }
+   
+}
+
+.ork-green {
+    color: $ork-green;
+}
+
+.ork-green-bg {
+    background-color: $ork-green;
+}
+
+.ork-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 72px;
+    padding: 0 96px;
+
+    font-family: $font-family-ork-special;
+    font-size: $font-size-big;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .ork-nav-list {
+        display: flex;
+        margin: 0;
+
+        list-style: none;
+
+        li {
+            padding: 0 18px;
+            
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}

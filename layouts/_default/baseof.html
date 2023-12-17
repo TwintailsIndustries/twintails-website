@@ -19,17 +19,35 @@
 		<noscript>
 			<link rel="stylesheet" href="https://fonts.bunny.net/css?family=noto-sans:400,500,700|noto-serif:400,700|oswald:400,500,700&display=swap" />
 		</noscript>
+		{{if eq .Section "saladdork"}}
+			<link rel="preload"
+			as ="style"
+			href="https://fonts.bunny.net/css?family=barlow:400,700|raleway:200,400,700|family=anton:400&display=swap" /> 
+
+			<link rel="stylesheet"
+				href="https://fonts.bunny.net/css?family=barlow:400,700|raleway:200,400,700|family=anton:400&display=swap" 
+				media="print" onload="this.media='all'" /> 
+			<noscript>
+				<link rel="stylesheet" href="https://fonts.bunny.net/css?family=barlow:400,700|raleway:200,400,700|family=anton:400&display=swap" />
+			</noscript>
+		{{ end }}
 		{{ $scss := resources.Get "scss/style.scss" }}
 		{{ $style := $scss | resources.ToCSS | resources.Minify }}
 		<link rel="stylesheet" href="{{ $style.Permalink }}">
+		{{ $css := resources.Get "css/flickity.css" }}
+		{{ $styleflickity := $css | resources.Minify }}
+		<link rel="stylesheet" href="{{ $styleflickity.Permalink }}">
 		{{ with .OutputFormats.Get "RSS" -}}
 			{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 		{{- end }}
-		<link rel="icon" type="image/png" href="/TwintailsIndustries-Favicon.png">	
+		
+
+		<link rel="icon" type="image/png" href="/TwintailsIndustries-Favicon.png">
 	</head>
 	{{if eq .Section "saladdork"}}
 	<body class="saladdork-body">
 		{{ block "main" . }}{{ end }}
+		<script src="{{ .Site.BaseURL }}/js/script.js"></script>
 	</body>
 	{{else}}
 	<body class="body">
@@ -39,7 +57,9 @@
 			{{ partial "footer" . }}
 		</div>
 		<script src="{{ .Site.BaseURL }}/js/script.js"></script>
-		{{ partial "cookieconsent" . }}
+		<script src="{{ .Site.BaseURL }}/js/flickity.pkgd.min.js"></script>
+		<script src="{{ .Site.BaseURL }}/js/fullscreen.js"></script>
+		
 	</body>
 	{{end}}
 </html>

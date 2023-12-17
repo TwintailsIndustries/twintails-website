@@ -56,48 +56,12 @@ The data thus collected will be temporarily stored, but not in association with 
 The basis for this storage is Art. 6 Para. 1 lit. f) GDPR. Our legitimate interest lies in the improvement, stability, functionality, and security of our website.
 The data will be deleted within no more than seven days, unless continued storage is required for evidentiary purposes. In which case, all or part of the data will be excluded from deletion until the investigation of the relevant incident is finally resolved.
 
-#### Cookies {.section-heading .small-heading}
-
-##### a) Session cookies {.section-heading .smallest-heading}
-
-We use cookies on our website. Cookies are small text files or other storage technologies stored on your computer by your browser. These cookies process certain specific information about you, such as your browser, location data, or IP address.
-
-This processing makes our website more user-friendly, efficient, and secure, allowing us, for example, to display our website in different languages or to offer a shopping cart function.
-
-The legal basis for such processing is Art. 6 Para. 1 lit. b) GDPR, insofar as these cookies are used to collect data to initiate or process contractual relationships.
-If the processing does not serve to initiate or process a contract, our legitimate interest lies in improving the functionality of our website. The legal basis is then Art. 6 Para. 1 lit. f) GDPR.
-
-When you close your browser, these session cookies are deleted.
-
-##### b) Third-party cookies {.section-heading .smallest-heading}
-
-If necessary, our website may also use cookies from companies with whom we cooperate for the purpose of advertising, analyzing, or improving the features of our website.
-Please refer to the following information for details, in particular for the legal basis and purpose of such third-party collection and processing of data collected through cookies.
-
-##### c) Disabling cookies {.section-heading .smallest-heading}
-
-You can refuse the use of cookies by changing the settings on your browser. Likewise, you can use the browser to delete cookies that have already been stored. However, the steps and measures required vary, depending on the browser you use. If you have any questions, please use the help function or consult the documentation for your browser or contact its maker for support. Browser settings cannot prevent so-called flash cookies from being set. Instead, you will need to change the setting of your Flash player. The steps and measures required for this also depend on the Flash player you are using. If you have any questions, please use the help function or consult the documentation for your Flash player or contact its maker for support.
-If you prevent or restrict the installation of cookies, not all of the functions on our site may be fully usable.
-
 #### Contact {.section-heading .small-heading}
 
 If you contact us via email or the contact form, the data you provide will be used for the purpose of processing your request. We must have this data in order to process and answer your inquiry; otherwise we will not be able to answer it in full or at all.
 The legal basis for this data processing is Art. 6 Para. 1 lit. b) GDPR.
 
 Your data will be deleted once we have fully answered your inquiry and there is no further legal obligation to store your data, such as if an order or contract resulted therefrom.
-
-#### Social media links via graphics {.section-heading .small-heading}
-
-We also integrate the following social media sites into our website. The integration takes place via a linked graphic of the respective site. The use of these graphics stored on our own servers prevents the automatic connection to the servers of these networks for their display. Only by clicking on the corresponding graphic will you be forwarded to the service of the respective social network.
-
-Once you click, that network may record information about you and your visit to our site. It cannot be ruled out that such data will be processed in the United States.
-Initially, this data includes such things as your IP address, the date and time of your visit, and the page visited. If you are logged into your user account on that network, however, the network operator might assign the information collected about your visit to our site to your personal account. If you interact by clicking Like, Share, etc., this information can be stored your personal user account and possibly posted on the respective network. To prevent this, you need to log out of your social media account before clicking on the graphic. The various social media networks also offer settings that you can configure accordingly.
-The following social networks are integrated into our site by linked graphics:
-
-#### twitter {.section-heading .small-heading}
-
-Twitter Inc., 795 Folsom St., Suite 600, San Francisco, CA 94107, USA
-Privacy Policy: <https://twitter.com/privacy>
 
 #### Bunny Fonts {.section-heading .small-heading}
 

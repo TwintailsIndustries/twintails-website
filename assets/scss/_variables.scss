@@ -6,7 +6,7 @@ $ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
 $ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
 
 $color-text-lightest: #ffffff;
-$color-text-light: rgb(170, 192, 231);
+$color-text-light: rgb(196, 207, 226);
 
 $color-menu-lightest: #ddb4ff;
 $color-menu-light: #9d75e2;
@@ -50,8 +50,18 @@ $font-size-headline: 48px;
 $font-size-second-headline: 66px;
 $font-size-biggest: 180px;
 $font-family-special: "Oswald", "Noto Sans", "Noto Sans JP", sans-serif;
+$font-family-ork-special: "Barlow", "Oswald", "Raleway", sans-serif;
+$font-family-ork-standard: "Raleway", sans-serif;
+$font-family-ork-headline: "Anton", "Oswald", "Barlow", "Raleway", sans-serif;
+
 $font-family-standard: "Noto Sans", "Noto Sans JP", sans-serif;
 $font-family-kana: "Noto Serif JP", "游明朝", "Yu Mincho", "Yu Gothic UI", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Osaka,  "游ゴシック", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "Noto Serif", sans-serif;;
 
 $nav-split-position: 49%;
 $nav-split-thickness: 1px;
+
+
+
+// ORK COLORS
+
+$ork-green: #09B04D;

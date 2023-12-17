@@ -26,6 +26,7 @@ window.onload = function() {
     }
 };
 
+/*
 function getGalleryContainerHeight() {
     let tabs = document.getElementsByClassName('js-gallery-tab');
     let i;
@@ -40,7 +41,7 @@ function getGalleryContainerHeight() {
 
     let fullimage = document.querySelector("#fullimagecontainer");
     fullimage.style.height = propagandaheight + "px";
-}
+}*/
 
 function hideNemesisAntagonist() {
     let antagonistarray = document.querySelectorAll(".hex.nemesis-anti");
