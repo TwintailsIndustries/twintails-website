@@ -2,15 +2,18 @@
     .propaganda-image, .propaganda-video {
         position: relative;
         display: flex;
-        margin-bottom: 72px;
-        
+
+        max-height: 100vh;
+        margin: 0 auto 72px auto;
+        max-width: 1200px;
+
         img, video {
             max-height: 100vh;
             margin: 0 auto;
         }
 
         video {
-            max-width: 1200px;
+            max-width:100%;
         }
     }
     
