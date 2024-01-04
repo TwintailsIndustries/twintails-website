@@ -14,20 +14,26 @@
         </header>    
         <p class="col-6 ork-hero-subtitles">This is filler text for a fictional salad bar run by orks. In order to get the full experience, activate your fantasy center inside your brain and insert some more orkiness into it.</p>
     </div>
-<div style="display: flex; align-items: flex-end;">
-    <div class="ork-green-bg" style="height: 672px; width: 96px; margin-right: 48px;"></div>
-    <div class="ork-green-bg" style="height: 384px; width: 96px; margin-right: 48px;"></div>
-    <div class="ork-green-bg" style="height: 192px; width: 96px; margin-right: 48px;"></div>
-    <div class="ork-address-container">
-        <div class="ork-get-in-here">GET IN HERE</div>
-        <div class="ork-address">
-            <p class="ork-green">Green Street 123, Orkhaven</p>
-            <p>Tel: XXXX/XXXXXXX, E-Mail: XXXX.XXXXX</p>
-        </div>
-    </div>
-</div>
-
-    
+    <section class="col-12 ork-section flex-direction-reverse">
+        <div class="col-7"></div>
+        <div class="col-5"></div>
+    </section>
+    <section class="col-12 ork-section flex-direction-normal">
+        <div class="col-7"></div>
+        <div class="col-5"></div>
+    </section>
+    <section class="col-12 ork-address-section">
+        <div class="ork-green-bg ork-first-bg-line"></div>
+        <div class="ork-green-bg ork-second-bg-line"></div>
+        <div class="ork-green-bg ork-third-bg-line"></div>
+        <article class="ork-address-container">
+            <div class="ork-get-in-here">GET IN HERE</div>
+            <div class="ork-address">
+                <p class="ork-green">Green Street 123, Orkhaven</p>
+                <p>Tel: XXXX/XXXXXXX, E-Mail: XXXX.XXXXX</p>
+            </div>
+        </article>
+    </section>
     <article class="col-12 privacy helper-textwidth ">
         {{ .Content }}
     </article>

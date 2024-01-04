@@ -29,6 +29,34 @@
             //line-height:  calc(1.5 * #{$font-size-big});
         }
     }
+
+    .ork-address-section {
+        display: flex;
+        align-items: flex-end;
+
+        .ork-first-bg-line, .ork-second-bg-line, .ork-third-bg-line {
+            width: 96px;
+            margin-right: 48px;
+            background-image: url('/img/saladork/monika-grabkowska-i14VzlCp-Eo-unsplash-test2.jpg');
+            background-size: auto 672px;
+            background-repeat: no-repeat;
+        }
+        .ork-first-bg-line {
+            height: 672px;
+            background-position: 0% 100%;
+        }
+
+        .ork-second-bg-line {
+            height: 384px;
+            background-position: 50% 100%;
+        }
+
+        .ork-third-bg-line {
+            height: 192px;
+            background-position: 100% 100%;
+        }
+    }
+
     .ork-address-container {
         display: flex;
         flex-wrap: wrap;
@@ -47,7 +75,7 @@
             
             :first-child {
                 font-size: 48px;
-                line-height: 48px;
+                line-height: 44px;
             }
 
             :last-child {
@@ -57,7 +85,6 @@
             }
         }
     }
-   
 }
 
 .ork-green {
