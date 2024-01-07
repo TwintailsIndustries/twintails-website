@@ -45,7 +45,7 @@
             {{ range . }}
                 {{ $counter = add $counter 1 }}
                 <div class="carousel-cell">
-                    {{ $res := .Resize "1200x webp q90" }}
+                    {{ $res := .Resize "1200x jpg q90" }}
                     <img src="{{ $res.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
                 </div>
             {{ end }}
@@ -56,7 +56,7 @@
         {{ range . }}
             <section class="col-12 propaganda-gallery-single-container" tabindex="0">
                 <div class="propaganda-image">
-                    {{ $res := .Resize "1200x webp q90" }}
+                    {{ $res := .Resize "1200x jpg q90" }}
                     <img src="{{ $res.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
                 </div>
             </section>
