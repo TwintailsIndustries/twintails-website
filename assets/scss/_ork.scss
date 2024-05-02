@@ -1,59 +1,80 @@
 .ork-main {
     font-family: $font-family-ork-standard;
     font-size: $font-size-standard;
-
+    color: #262626;
     margin-top: 0;
+
+    .ork-section {
+        padding: 0 24px;
+    }
 
     .ork-hero-container {
         //max-height: 768px;
-        background-image: linear-gradient(to bottom, rgba(20,42,38,0) 35%, rgba(20,42,38,1)), url('/img/saladork/salad-d-ork-luisa-brimble-2RrBE90w0T8-unsplash.webp');
+        background-image: linear-gradient(to bottom, rgba(20,42,38,0) 15%, rgba(20,42,38,1)), url('/img/saladork/salad-d-ork-luisa-brimble-2RrBE90w0T8-unsplash.webp');
         background-size: cover;
+        background-position: right;
 
         .section-list-header {
-            padding-left: calc(72px + 16.67%);
+            padding: 0 12px;
             margin-bottom: 24px;
             text-align: initial;
         }
 
         .main-heading {
-            margin-top: 552px;
+            margin-top: 192px;
             font-family: $font-family-ork-headline;
-            font-size: calc(3.0 * #{$font-size-big});
+            font-size: calc(2.0 * #{$font-size-ork-big});
         }
 
         .ork-hero-subtitles {
-            margin-left: calc(72px + 16.67%);
             margin-bottom: 42px;
+            padding: 0 12px;
             color: $color-text-lightest;
-            //font-size: $font-size-big;
-            //line-height:  calc(1.5 * #{$font-size-big});
+        }
+    }
+
+    .ork-subheadline {
+        font-family: $font-family-ork-headline;
+        font-size: calc(1.5 * #{$font-size-ork-big});
+        line-height: 48px;
+        text-transform: uppercase;
+
+        
+    }
+    .ork-flex-bg-line {
+        display: none;
+    }
+
+
+    .ork-flex-direction-normal, .ork-flex-direction-reverse {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        .ork-flex-img {
+            padding-top: 24px;
+
+            > img {
+                border-radius: 16px;
+            }
+        }
+
+        .ork-subheadline {
+            margin-top: 48px;
+        }
+
+        .ork-flex-text {
+            margin-top: 16px;
         }
     }
 
     .ork-address-section {
         display: flex;
-        align-items: flex-end;
+        flex-direction: row;
+        flex-wrap:wrap;
 
         .ork-first-bg-line, .ork-second-bg-line, .ork-third-bg-line {
-            width: 96px;
-            margin-right: 48px;
-            background-image: url('/img/saladork/monika-grabkowska-i14VzlCp-Eo-unsplash-test2.jpg');
-            background-size: auto 672px;
-            background-repeat: no-repeat;
-        }
-        .ork-first-bg-line {
-            height: 672px;
-            background-position: 0% 100%;
-        }
-
-        .ork-second-bg-line {
-            height: 384px;
-            background-position: 50% 100%;
-        }
-
-        .ork-third-bg-line {
-            height: 192px;
-            background-position: 100% 100%;
+            display: none;
         }
     }
 
@@ -61,10 +82,11 @@
         display: flex;
         flex-wrap: wrap;
         font-family: $font-family-ork-headline;
+        margin-top: 48px;
 
         .ork-get-in-here {
-            font-size: 110px;
-            line-height: 96px;
+            font-size: 96px;
+            line-height: 84px;
             padding-right: 24px; 
         }
 
@@ -74,8 +96,8 @@
             justify-content: space-between;
             
             :first-child {
-                font-size: 48px;
-                line-height: 44px;
+                font-size: 40px;
+                line-height: 36px;
             }
 
             :last-child {
@@ -104,7 +126,7 @@
     padding: 0 96px;
 
     font-family: $font-family-ork-special;
-    font-size: $font-size-big;
+    font-size: $font-size-ork-big;
     font-weight: 700;
     text-transform: uppercase;
 
@@ -123,6 +145,296 @@
 
             &:last-child {
                 padding-right: 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1023px) {
+    .ork-main {
+        .ork-section {
+            padding: 0;
+        }
+    
+        .ork-hero-container {
+            //max-height: 768px;
+            background-image: linear-gradient(to bottom, rgba(20,42,38,0) 35%, rgba(20,42,38,1)), url('/img/saladork/salad-d-ork-luisa-brimble-2RrBE90w0T8-unsplash.webp');
+            background-size: cover;
+    
+            .section-list-header {
+                padding-left: calc(96px + 16.67%);
+                margin-bottom: 24px;
+                text-align: initial;
+            }
+    
+            .main-heading {
+                margin-top: 552px;
+                font-family: $font-family-ork-headline;
+                font-size: calc(3.0 * #{$font-size-ork-big});
+            }
+    
+            .ork-hero-subtitles {
+                max-width: 1080px;
+                padding-left: calc(96px + 16.67%);
+                margin-bottom: 42px;
+                color: $color-text-lightest;
+                //font-size: $font-size-ork-big;
+                //line-height:  calc(1.5 * #{$font-size-ork-big});
+            }
+        }
+
+        .ork-subheadline {
+            line-height: 36px;       
+        }
+
+        .ork-flex-bg-line {
+            width: calc((100% - 192px) * (5 / 12) + 96px);
+            position: absolute;
+            display: block;
+            height: 96px;
+            background-image: url('/img/saladork/salad-d-ork-luisa-brimble-2RrBE90w0T8-unsplash.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+    
+        .ork-flex-direction-normal, .ork-flex-direction-reverse {
+            padding: 0px 48px;
+
+            .ork-subheadline { 
+                margin-top: 60px;
+            }
+            .ork-flex-img {
+                padding-top: 192px;
+            }
+    
+            .ork-flex-text {
+                margin-top: 88px;
+            }
+        }
+    
+    
+    
+        .ork-flex-direction-reverse {
+            flex-direction: row-reverse;
+            padding-bottom: 144px;
+       
+            .ork-flex-text-container {
+                padding-left: 72px;
+            }
+            .ork-flex-text {
+                padding:0 0 0 42px;
+            }
+    
+            .ork-flex-bg-line {
+                left: 0;
+                border-top-right-radius: 16px;
+                border-bottom-right-radius: 16px;
+            }
+        }
+    
+        .ork-flex-direction-normal {
+            flex-direction: row;
+            margin-bottom: -24px;
+    
+            .ork-subheadline {
+                text-align: right;
+            }
+    
+
+            .ork-flex-text-container {
+                padding-right: 72px;
+            }
+    
+            .ork-flex-text {
+                padding:0 0 0 24px;
+            }
+    
+            .ork-flex-bg-line {
+                right: 0;
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+            }
+        }
+
+        .ork-address-section {
+            display: flex;
+            align-items: flex-end;
+    
+            .ork-first-bg-line, .ork-second-bg-line, .ork-third-bg-line {
+                display: block;
+                width: 72px;
+                margin-right: 24px;
+                background-image: url('/img/saladork/monika-grabkowska-i14VzlCp-Eo-unsplash.webp');
+                background-size: auto 672px;
+                background-repeat: no-repeat;
+            }
+
+            .ork-first-bg-line {
+                display: none;
+            }
+    
+            .ork-second-bg-line {
+                height: 384px;
+                background-position: 50% 100%;
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+            }
+    
+            .ork-third-bg-line {
+                height: 192px;
+                background-position: 100% 100%;
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+            }
+        }
+
+        .ork-address-container {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: $font-family-ork-headline;
+            margin-top: 48px;
+    
+            .ork-get-in-here {
+                font-size: 96px;
+                line-height: 84px;
+                padding-right: 22px; 
+            }
+    
+            .ork-address {
+                display: flex; 
+                flex-direction: column;
+                justify-content: space-between;
+                
+                :first-child {
+                    margin-bottom: 0;
+                    font-size: 35px;
+                    line-height: 33px;
+                }
+    
+                :last-child {
+                    font-size: 24px;
+                    line-height: 22px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .ork-main { 
+        .ork-address-section {
+            .ork-first-bg-line, .ork-second-bg-line, .ork-third-bg-line {
+                width: 96px;
+            }
+        }
+
+        .ork-address-container {
+            .ork-address {             
+                :first-child {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    .ork-main {
+
+        .ork-subheadline {
+            font-size: calc(2.0 * #{$font-size-ork-big});
+            line-height: 48px;
+        }
+
+        .ork-flex-direction-normal, .ork-flex-direction-reverse {
+            padding: 0px 96px;
+
+            .ork-subheadline { 
+                margin-top: 48px;
+            }
+
+            ork-flex-img {
+                padding-top: 192px;
+    
+                > img {
+                    border-radius: 16px;
+                }
+            }
+        }
+    
+    
+    
+        .ork-flex-direction-reverse {
+            padding-bottom: 288px;
+    
+            .ork-flex-img {
+                padding-left: 8.33%;
+            }
+    
+            .ork-flex-text-container {
+                padding-left: 96px;
+            }
+            .ork-flex-text {
+                padding:0 144px 0 48px;
+            }
+        }
+    
+        .ork-flex-direction-normal {
+            margin-bottom: -192px;
+   
+            .ork-flex-img {
+                padding-right: 8.33%;
+            }
+    
+            .ork-flex-text-container {
+                padding-right: 96px;
+            }
+    
+            .ork-flex-text {
+                padding:0 48px 0 144px;
+            }
+        }
+
+        .ork-address-section {
+            .ork-first-bg-line, .ork-second-bg-line, .ork-third-bg-line {
+                margin-right: 48px;
+            }
+
+            .ork-first-bg-line {
+                display: block;
+                height: 672px;
+                background-position: 0% 100%;
+                border-top-right-radius: 16px;
+            }
+        }
+
+        .ork-address-container {
+            margin-left: 0;
+        
+            .ork-get-in-here {
+                font-size: 110px;
+                line-height: 96px;
+                padding-right: 24px; 
+            }
+
+            .ork-address {
+                display: flex; 
+                flex-direction: column;
+                justify-content: space-between;
+                
+                :first-child {
+                    font-size: 48px;
+                    line-height: 44px;
+                }
+
+                :last-child {
+                    font-size: 24px;
+                    line-height: 22px;
+                    margin-bottom: 0;
+                }
             }
         }
     }

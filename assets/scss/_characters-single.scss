@@ -183,13 +183,13 @@
 
     .sub-char-red {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, scale-color(rgba($color-red-light, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) -20%, rgba($color-red-grad-inter, 1) 25%, scale-color(rgba($color-red-light, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
        //background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba(#832A3B, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .char-red {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-red-grad-inter, 1) 25%, rgba($color-red-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) -20%, rgba($color-red-grad-inter, 1) 25%, rgba($color-red-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .mini-char-red {
@@ -199,13 +199,13 @@
 
     .sub-char-gold {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, scale-color(rgba($color-gold-light, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) -20%, rgba($color-gold-grad-inter, 1) 25%, scale-color(rgba($color-gold-light, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
         //background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba(#A48055, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .char-gold {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-gold-grad-inter, 1) 25%, rgba($color-gold-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) -20%, rgba($color-gold-grad-inter, 1) 25%, rgba($color-gold-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
     }
     .mini-char-gold {
@@ -216,13 +216,13 @@
 
     .sub-char-cyan {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-blue-grad-inter, 1) 25%, scale-color(rgba($color-blue-lighter, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) -20%, rgba($color-blue-grad-inter, 1) 25%, scale-color(rgba($color-blue-lighter, 1), $lightness: -40%, $saturation: -15%, $hue: -2%) 100%);
         //background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-blue-grad-inter, 1) 25%, rgba($color-blue-light, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .char-cyan {
         background: $color-blue-darkest; /* Old browsers */
-        background: linear-gradient(to left, rgba($color-blue-darkest, 1) 0%, rgba($color-blue-grad-inter, 1) 25%, rgba($color-blue-lighter, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        background: linear-gradient(to left, rgba($color-blue-darkest, 1) -20%, rgba($color-blue-grad-inter, 1) 25%, rgba($color-blue-lighter, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     }
 
     .mini-char-cyan {
