@@ -13,6 +13,7 @@
         background-image: linear-gradient(to bottom, rgba(20,42,38,0) 15%, rgba(20,42,38,1)), url('/img/saladork/salad-d-ork-luisa-brimble-2RrBE90w0T8-unsplash.webp');
         background-size: cover;
         background-position: right;
+        margin-bottom: 96px;
 
         .section-list-header {
             padding: 0 12px;
@@ -72,6 +73,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
+        margin-bottom: 192px;
 
         .ork-first-bg-line, .ork-second-bg-line, .ork-third-bg-line {
             display: none;
