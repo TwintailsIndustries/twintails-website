@@ -17,8 +17,8 @@ window.onload = function() {
         document.querySelector(".checkbox.threed-art").addEventListener("click", hideThreeDArt);
     }
 
-    if(document.querySelector(".checkbox.character-design")) {
-        document.querySelector(".checkbox.character-design").addEventListener("click", hideCharacterDesign);
+    if(document.querySelector(".checkbox.design")) {
+        document.querySelector(".checkbox.design").addEventListener("click", hideDesign);
     }
 
     if(document.querySelector(".checkbox.illustration")) {
@@ -26,6 +26,7 @@ window.onload = function() {
     }
 };
 
+/*
 function getGalleryContainerHeight() {
     let tabs = document.getElementsByClassName('js-gallery-tab');
     let i;
@@ -40,7 +41,7 @@ function getGalleryContainerHeight() {
 
     let fullimage = document.querySelector("#fullimagecontainer");
     fullimage.style.height = propagandaheight + "px";
-}
+}*/
 
 function hideNemesisAntagonist() {
     let antagonistarray = document.querySelectorAll(".hex.nemesis-anti");
@@ -81,15 +82,15 @@ function hideThreeDArt() {
     }
 }
 
-function hideCharacterDesign() {
-    let chardesignarray = document.querySelectorAll(".hex.character-design");
+function hideDesign() {
+    let designarray = document.querySelectorAll(".hex.design");
     let i;
 
-    for (i=0 ; i < chardesignarray.length; i++) {
-        if(chardesignarray[i].classList.contains("hide-hex")) {
-            chardesignarray[i].classList.remove("hide-hex");
+    for (i=0 ; i < designarray.length; i++) {
+        if(designarray[i].classList.contains("hide-hex")) {
+            designarray[i].classList.remove("hide-hex");
         } else {
-            chardesignarray[i].classList.add("hide-hex");
+            designarray[i].classList.add("hide-hex");
         }
     }
 }

@@ -85,6 +85,12 @@
         min-height: 100vh;
     }*/
 }
+
+.propaganda-text-container {
+    margin-top: calc(0.5 * #{$grid-unit});
+    margin-bottom: calc(0.25 * #{$grid-unit});
+}
+
 /*
 .propaganda-gallery-container {
     min-height: 100vh;

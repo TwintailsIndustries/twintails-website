@@ -7,38 +7,32 @@
 		<title>Imprint</title>
 		
 		
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.bunny.net" crossorigin="anonymous" />
 		
 		<link rel="preload"
 			as ="style"
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;500;700&display=swap" /> 
+			href="https://fonts.bunny.net/css?family=noto-sans:400,500,700|noto-serif:400,700|oswald:400,500,700&display=swap" /> 
 		
 		<link rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;500;700&display=swap" 
+			href="https://fonts.bunny.net/css?family=noto-sans:400,500,700|noto-serif:400,700|oswald:400,500,700&display=swap" 
 			media="print" onload="this.media='all'" /> 
-		
-		<link rel="preload" 
-		as ="style"
-		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg=="
-		crossorigin="anonymous"/>
-
-		<link rel="stylesheet" 
-		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg=="
-		media="print" onload="this.media='all'" crossorigin="anonymous"/>
 		<noscript>
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans:wght@400;700&family=Noto+Serif+JP:wght@400;500;700&family=Noto+Serif:wght@400;700&family=Oswald:wght@400;500;700&display=swap" />
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous"/>
+			<link rel="stylesheet" href="https://fonts.bunny.net/css?family=noto-sans:400,500,700|noto-serif:400,700|oswald:400,500,700&display=swap" />
 		</noscript>
+		
 		
 		
 		<link rel="stylesheet" href="https://twintails.art/scss/style.min.css">
 		
+		
+		<link rel="stylesheet" href="https://twintails.art/css/flickity.min.css">
+		
+		
 
 		<link rel="icon" type="image/png" href="/TwintailsIndustries-Favicon.png">
-		
-		
 	</head>
-	<body>
+	
+	<body class="body">
 		<div class="body-container">
 			<header>
 	<nav class="main-navigation">
@@ -66,7 +60,7 @@
 				</a>
 			</li>
 		</ul>
-		<a class="logo-desktop" href="https://twintails.art/"><img src="/img/TwintailsIndustries-Logo-2020-free.png"></a>
+		<a class="logo-desktop" href="https://twintails.art/"><img src="/img/TwintailsIndustries-Logo.png"></a>
 		<ul class="navigation-right-ul">
 			<li class="navigation-list-item">
 				<span style="text-decoration: line-through; color: rgb(170, 192, 231);">Story</span>
@@ -87,9 +81,13 @@
 			</li>
 		</ul>
 	</nav>
-	
+
+	<div class="logo-mobile-container">
+		<a href="https://twintails.art/">
+			<img class="logo-mobile" src="/img/TwintailsIndustries-Logo.png" alt="It's the logo of the website. It depicts the face of a woman sporting twintails, framed by a futuristic gear or cogwheel.">
+		</a>
+	</div>
 	<nav class="main-navigation-mobile">
-		
 		<div id="menuToggle">
 			<input type="checkbox" />
 			
@@ -100,7 +98,6 @@
 
 			<div class="navigation-mobile-wrapper">
 				<ul class="navigation-ul-mobile">
-					<li><img class="logo-mobile" src="/img/TwintailsIndustries-Logo-2020-free.png" alt="It's the logo of the website. It depicts the face of a woman sporting twintails, framed by a futuristic gear or cogwheel."></li>
 					<li class="navigation-list-item"><a href="https://twintails.art/">Top</a></li>
 					<li class="navigation-list-item"><a href="/about/">About</a></li>
 					<li class="navigation-list-item"><a href="/propaganda/">Propaganda</a></li>
@@ -154,66 +151,32 @@ Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden 
 		<li class="footer-navigation-item">
 			<a class="link-effect" href="/contact/">
 				<span>Contact</span>
-				<div class="link-effect-bg footer-bg"></div>
+				<div class="link-effect-bg footer-link"></div>
 				<div class="transition effect-violet"></div>
 			</a>
 		</li>
 		<li class="footer-navigation-item">
 			<a class="link-effect" href="/imprint/">
 				<span>Imprint</span>
-				<div class="link-effect-bg footer-bg"></div>
+				<div class="link-effect-bg footer-link"></div>
 				<div class="transition effect-violet"></div>
 			</a>
 		</li>
 		<li class="footer-navigation-item">
 			<a class="link-effect" href="/privacy/">
 				<span>Privacy</span>
-				<div class="link-effect-bg footer-bg"></div>
+				<div class="link-effect-bg footer-link"></div>
 				<div class="transition effect-violet"></div>
 			</a>
 		</li>
 	</ul>
-	<p class="footer-copyright">&copy; 2022 <a href="https://twintails.art/">twintails.art</a></p>
+	<p class="footer-copyright">&copy; 2021 - 2024 <a href="https://twintails.art/">Twintails Industries</a></p>
 </footer>
 		</div>
 		<script src="https://twintails.art//js/script.js"></script>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.1/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-window.addEventListener('load', function(){
-  window.cookieconsent.initialise({
-   revokeBtn: "<div class='cc-revoke'></div>",
-   type: "opt-in",
-   position: "bottom-right",
-   theme: "classic",
-   palette: {
-       popup: {
-           background: "#9d75e2",
-           text: "#131418"
-        },
-       button: {
-           background: "#5c40b8",
-           text: "#ddb4ff"
-        }
-    },
-   content: {
-       link: "About consent",
-       href: "/privacy/"
-    },
-    onInitialise: function(status) {
-      if(status == cookieconsent.status.allow) myScripts();
-    },
-    onStatusChange: function(status) {
-      if (this.hasConsented()) myScripts();
-    }
-  })
-});
-
-function myScripts() {
-
-   
-
-}
-</script>
+		<script src="https://twintails.art//js/flickity.pkgd.min.js"></script>
+		<script src="https://twintails.art//js/fullscreen.js"></script>
+		
 	</body>
+	
 </html>

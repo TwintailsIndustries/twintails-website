@@ -12,8 +12,8 @@
         <input class="checkbox illustration" type="checkbox" name="color" id="color-2" checked />
         <label for="color-2">Illustration</label>
 
-        <input class="checkbox character-design" type="checkbox" name="color" id="color-3" checked />
-        <label for="color-3">Character Design</label>
+        <input class="checkbox design" type="checkbox" name="color" id="color-3" checked />
+        <label for="color-3">Design</label>
 
     </div>
     <div class="col-12 hex-container">
@@ -24,7 +24,7 @@
                     <img class="hex-image-background"
                         {{ with .Resources }}
                             {{ with .GetMatch "images/*" }}
-                                {{ $thumbnail := .Fill "420x420 center webp q100" }}
+                                {{ $thumbnail := .Fill "420x420 webp q100" }}
                                 {{ with $thumbnail }}
                                     src='{{ .Permalink }}'  
                                 {{ end }}
