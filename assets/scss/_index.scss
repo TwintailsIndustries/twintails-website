@@ -70,6 +70,7 @@
             line-height: $font-size-headline;
             font-style: italic;
             text-transform: uppercase;
+            text-align: right;
 
             &:hover {
                 transition: all 0.3s $ease-out-quart;
@@ -88,6 +89,7 @@
             z-index: 1;
             padding: 0 10px 2px 0;
             transition: all 0.3s $ease-out-quart;
+            text-align: right;
 
             font-family: $font-family-special;
             font-size: $font-size-standard;
