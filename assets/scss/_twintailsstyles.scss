@@ -120,7 +120,7 @@ strong {
 	color: $color-text-lightest;
 }
 
-.propaganda-subheading {
+.portfolio-subheading {
 	font-size: $font-size-standard;
 	font-family: $font-family-special;
 
@@ -239,13 +239,13 @@ strong {
 
 /**** Character Single Article Headline ****/
 
-.char-article-heading, .char-next-prev, .propaganda-next-prev {
+.char-article-heading, .char-next-prev, .portfolio-next-prev {
 	font: italic $font-size-bigger $font-family-special;
 	text-transform: uppercase;
 	line-height: $font-size-bigger;
 }
 
-.char-next-prev, .propaganda-next-prev {
+.char-next-prev, .portfolio-next-prev {
 	a {
 		transition: all .3s cubic-bezier(.165,.84,.44,1);
 	}
@@ -647,7 +647,7 @@ footer {
 		font-size: $font-size-biggest;
 	}
 
-	.char-article-heading, .char-next-prev, .propaganda-next-prev {
+	.char-article-heading, .char-next-prev, .portfolio-next-prev {
 		font: italic $font-size-second-headline $font-family-special;
 		text-transform: uppercase;
 		line-height: $font-size-second-headline;
