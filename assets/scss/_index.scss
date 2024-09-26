@@ -106,7 +106,7 @@
         }
     }
     
-    .latest-propaganda {
+    .latest-portfolio {
         .index-list-item {
             .list-header {
                 bottom: 36px;
@@ -115,14 +115,14 @@
     }
 }
 
-.latest-propaganda, .latest-character, .latest-archive {
+.latest-portfolio, .latest-character, .latest-archive {
     padding: 24px 0;
     ul {
        margin: 0;
     }
 }
 
-.latest-archive, .latest-propaganda {
+.latest-archive, .latest-portfolio {
     .index-section-header {
         background-image: url("/img/section-line-creation.png");
     }
@@ -136,7 +136,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .latest-propaganda, .latest-character, .latest-archive {
+    .latest-portfolio, .latest-character, .latest-archive {
         ul {
             padding: 0 24px;
         }

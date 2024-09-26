@@ -1,0 +1,29 @@
+{{define "main"}}
+<main class="main section-list-wrapper">
+    <header class="col-12 section-list-header">
+        <h1 class="main-heading">{{.Title}}</h1>
+        <h2 class="portfolio-subheading">{{$.Param "subtitle"}}</h2>
+    </header>
+
+    <article class="col-12 portfolio-text-container helper-textwidth">
+        {{.Content}}
+    </article>
+    {{ partial "portfolio-gallery.html" . }}
+    
+</main>
+<footer class="footer-portfolio-navigation">
+    <div class="footer-portfolio-navigation-buttons">
+        {{ if .PrevInSection }}
+        <div class="portfolio-next-prev" id="prev"><a href="{{.PrevInSection.Permalink}}">Prev</a></div>
+        {{else}}
+        <div>&nbsp;</div>
+        {{ end }}
+
+        {{ if .NextInSection }}
+        <div class="portfolio-next-prev" id="next"><a href="{{.NextInSection.Permalink}}">Next</a></div>
+        {{else}}
+        <div>&nbsp;</div>
+        {{ end }}
+    </div>
+</footer>
+{{end}}

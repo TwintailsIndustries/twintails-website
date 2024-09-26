@@ -8,13 +8,13 @@
 		</article> 
 
 		<article class="col-12 latest-container">
-			<section class="col-6 latest-propaganda">
+			<section class="col-6 latest-portfolio">
 				<header class="index-section-header">
 					<h2 class="main-heading index-section-heading">Latest Creation</h3>
 					<h3 class="kana-subheading index-section-subheading">最新創作活動</h4>
 				</header>
 				<ul class="index-list no-decoration">
-					{{ range first 3 (where site.RegularPages "Section" "propaganda") }}
+					{{ range first 3 (where site.RegularPages "Section" "portfolio") }}
 						<li class="index-list-item"> 
 							<a class="index-link" href="{{ .Permalink }}">
 								<h5 class="list-header">{{ .Title }}</h5>
