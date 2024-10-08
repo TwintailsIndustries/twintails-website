@@ -100,6 +100,11 @@ strong {
 	font-weight: 700;
 }
 
+sup {
+	vertical-align: super;
+	font-size: $font-size-small;
+	line-height: calc(1.25 * #{$font-size-small});
+}
 /**** HEADINGS ****/
 
 /**** Categories ****/
