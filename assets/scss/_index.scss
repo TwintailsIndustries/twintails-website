@@ -30,6 +30,8 @@
         margin-bottom: 24px;
         overflow: hidden;
 
+        clip-path: polygon(24px 0, calc(100% - 24px) 0, 100% 24px, 100% calc(100% - 24px), calc(100% - 24px) 100%, 24px 100%, 0 calc(100% - 24px), 0 24px);
+
         .image-background {
             position: relative;
             width: 100%;
@@ -59,7 +61,7 @@
         .list-header {
             position: absolute;
             bottom: 12px;
-            right: 4px;
+            right: 12px;
             z-index: 1;
             padding-right: 10px;
             transition: all 0.3s $ease-out-quart;
@@ -84,7 +86,7 @@
         .list-header-subtitle {
             position: absolute;
             bottom: 12px;
-            right: 4px;
+            right: 12px;
             z-index: 1;
             padding: 0 10px 2px 0;
             transition: all 0.3s $ease-out-quart;
