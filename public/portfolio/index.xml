@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Propaganda on Twintails Industries</title>
+    <title>Portfolio on Twintails Industries</title>
     <link>https://twintails.art/portfolio/</link>
-    <description>Recent content in Propaganda on Twintails Industries</description>
+    <description>Recent content in Portfolio on Twintails Industries</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Apr 2021 00:49:43 +0100</lastBuildDate><atom:link href="https://twintails.art/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>donkey wash</title>
+      <link>https://twintails.art/portfolio/donkey-wash/</link>
+      <pubDate>Thu, 26 Sep 2024 12:00:00 +0100</pubDate>
+      
+      <guid>https://twintails.art/portfolio/donkey-wash/</guid>
+      <description>&amp;ldquo;Had a little off-road adventure and got your donkey pal&amp;rsquo;s underbody dirty? Don&amp;rsquo;t worry bud, we&amp;rsquo;ve gotchu.&amp;rdquo; - some ad slogan probably.
+As some things are too good to be true, you probably realised that the Donkey Wash Inc. is only a fictional enterprise.</description>
+    </item>
+    
     <item>
       <title>PS Shopware 6 Redesign</title>
       <link>https://twintails.art/portfolio/ps-sw6-redesign/</link>
