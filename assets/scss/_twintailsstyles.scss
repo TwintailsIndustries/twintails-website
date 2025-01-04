@@ -543,7 +543,7 @@ footer {
 		left: 0;
 		z-index: -1;
 		
-		height: 36px;
+		height: 35px;
 		width: auto;
 		
 		margin: 4px 12px 4px 12px;
@@ -680,13 +680,6 @@ footer {
 		font-family: $font-family-special;
 		color: $color-text-lightest;
 
-		a {
-			height: -webkit-max-content;
-			height: -moz-max-content;
-			height: max-content;
-		}
-
-
 		// === Main Navigation Lists =====
 		ul {
 			display: flex;
@@ -709,9 +702,11 @@ footer {
 		//=== Main Navigation List Items =====
 		.navigation-list-item {
 			position: relative;
-
+			height: 43px;
 			margin: 0 0 auto 0;
 			padding: 10px 12px 8px 12px;
+
+			line-height: 25px;
 			cursor: pointer;
 			overflow:hidden;
 
