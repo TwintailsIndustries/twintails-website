@@ -11,7 +11,7 @@
     {{ partial "portfolio-gallery.html" . }}
     
 </main>
-<footer class="footer-portfolio-navigation">
+<div class="footer-portfolio-navigation">
     <div class="footer-portfolio-navigation-buttons">
         {{ if .PrevInSection }}
         <div class="portfolio-next-prev" id="prev"><a href="{{.PrevInSection.Permalink}}">Prev</a></div>
@@ -25,5 +25,5 @@
         <div>&nbsp;</div>
         {{ end }}
     </div>
-</footer>
+</div>
 {{end}}
