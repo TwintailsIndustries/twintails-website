@@ -217,21 +217,26 @@
 		z-index: 10;
 		
 		width: 100%;
+		padding: 12px 0;
 		margin-top: 45%;
 
 		color: $color-text-lightest;
 		font-size: $font-size-standard;
 		font-family: $font-family-special;
-		line-height: calc(2* #{$font-size-big});
+		line-height: $font-size-big;
 		text-transform: uppercase;
 		text-align: center;
 
-		&.nemesis-anti {
+		&.nemesis-anti, &.design {
 			background-color: $color-red;
 		}
 
-		&.nemesis-pro {
+		&.nemesis-pro, &.threed-art {
 			background-color: scale-color(rgba($color-blue-light, 1), $lightness: -20%, $saturation: 10%, $hue: -2%);
+		}
+
+		&.illustration {
+				background-color: scale-color(rgba($color-gold-light, 1), $lightness: -20%, $saturation: 10%, $hue: -2%);
 		}
 	}
 }
