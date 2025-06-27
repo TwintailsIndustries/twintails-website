@@ -2,19 +2,19 @@
 <main class="main section-list-wrapper">
     <header class="col-12 section-list-header">
         <h1 class="main-heading">{{ .Title}}</h1>
-        <h2 class="kana-subheading">{{$.Param "subtitle"}}</h2>
+        <div class="kana-subheading">{{$.Param "subtitle"}}</div>
     </header>
     <article class="col-12 contact helper-textwidth ">
         <form class="form-style" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <div class="hidden">
-                <h4 class="form-title ">Don’t fill this out if you’re a real human: </h4>
+                <label class="form-title ">Don’t fill this out if you’re a real human: </label>
                 <input  name="bot-field" />
             </div>
-            <h4 class="form-title">Name | <span class="kana">名前</span></h4>
+            <label class="form-title">Name | <span class="kana">名前</span></label>
             <input type="text" name="name" required />
-            <h4 class="form-title">E-mail | <span class="kana">メール </span></h4>
+            <label class="form-title">E-mail | <span class="kana">メール </span></label>
             <input type="email" name="email" required />
-            <h4 class="form-title">Message | <span class="kana">メッセージ</span></h4>
+            <label class="form-title">Message | <span class="kana">メッセージ</span></label>
             <textarea name="message"></textarea>
 
             <button type="submit">Send</button>

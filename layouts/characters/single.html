@@ -6,7 +6,7 @@
         <div class="noisy-texture"></div>
         <div class='char-headline'>
             <h1 class="char-heading">{{.Title}}</h1>
-            <h2 class="char-kana-subheading">{{$.Param "subtitle"}}</h2>
+            <div class="char-kana-subheading">{{$.Param "subtitle"}}</div>
         </div>
     </header>
     {{ with .Resources.Match "images/profile-background.webp" }}
@@ -26,7 +26,7 @@
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>
                 <div class="char-sidebar-container">
-                    <h3 class="char-sidebar-heading">First appearance</h3>
+                    <h2 class="char-sidebar-heading">First appearance</h2>
                     <div class="char-sidebar-content">{{$.Param "first-appearance"}}</div>
                 </div>
             </section>
@@ -46,7 +46,7 @@
                 <div class="char-sidebar-gradient mini-{{$.Param "char-class"}}"></div>
                 <div class="noisy-texture"></div>
                 <div class="char-sidebar-container">
-                    <h3 class="char-sidebar-heading">Path</h3>
+                    <h2 class="char-sidebar-heading">Path</h2>
                     <div class="char-sidebar-content">{{$.Param "path"}}</div>
                 </div>
             </section>

@@ -10,15 +10,15 @@
 		<article class="col-12 latest-container">
 			<section class="col-6 latest-portfolio">
 				<header class="index-section-header">
-					<h2 class="main-heading index-section-heading">Latest Creation</h3>
-					<h3 class="kana-subheading index-section-subheading">最新創作活動</h4>
+					<h2 class="main-heading index-section-heading">Latest Creation</h2>
+					<div class="kana-subheading index-section-subheading">最新創作活動</div>
 				</header>
 				<ul class="index-list no-decoration">
 					{{ range first 3 (where site.RegularPages "Section" "portfolio") }}
 						<li class="index-list-item"> 
 							<a class="index-link" href="{{ .Permalink }}">
-								<h5 class="list-header">{{ .Title }}</h5>
-								<h6 class="list-header-subtitle">{{.Params.subtitle}}</h5>
+								<h3 class="list-header">{{ .Title }}</h3>
+								<div class="list-header-subtitle">{{.Params.subtitle}}</div>
 								<img class="image-background"
 									{{ with .Resources }}
 										{{ with .GetMatch "images/*" }}
@@ -39,14 +39,14 @@
 
 			<section class="col-6 latest-character">
 				<header class="index-section-header">
-					<h2 class="main-heading index-section-heading">Latest Character</h3>
-					<h3 class="kana-subheading index-section-subheading">最新キャラクター</h4>
+					<h2 class="main-heading index-section-heading">Latest Character</h2>
+					<div class="kana-subheading index-section-subheading">最新キャラクター</div>
 				</header>
 				<ul class="index-list no-decoration">
 					{{ range first 3 (where site.RegularPages "Section" "characters") }}
 						<li class="index-list-item"> 
 							<a class="index-link" href="{{ .Permalink }}">
-								<h5 class="list-header">{{ .Title }}</h5>
+								<h3 class="list-header">{{ .Title }}</h3>
 								<img class="image-background"
 									{{ with .Resources }}
 										{{ with .GetMatch "images/seal-char.png" }}

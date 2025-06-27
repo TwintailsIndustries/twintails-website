@@ -178,6 +178,7 @@ sup {
 /**** Forms ****/
 
 .form-title {
+	display: block;
 	margin-bottom: 12px;
 
 	font-size: $font-size-standard;
@@ -222,6 +223,10 @@ sup {
 			
 		}
 	}
+}
+
+textarea {
+	resize: vertical;
 }
 
 /**** Imprint & Privacy Links ****/
