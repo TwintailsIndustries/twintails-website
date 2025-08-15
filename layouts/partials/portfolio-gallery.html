@@ -46,7 +46,7 @@
                 {{ $counter = add $counter 1 }}
                 <div class="carousel-cell">
                     {{ $res := .Resize "1200x jpg q90" }}
-                    <img src="{{ $res.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
+                    <img class="carousel-image" src="{{ $res.RelPermalink }}" alt='{{$.Param "subtitle"}}'>
                 </div>
             {{ end }}
         </div>
