@@ -8,6 +8,8 @@
 		<title>{{ .Title }}</title>
 		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 		{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+		<link rel="preload" href="/fonts/FunnelSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+		<link rel="preload" href="/fonts/Oswald-Regular.ttf" as="font" type="font/ttf" crossorigin>
 		<!--<link rel="preconnect" href="https://fonts.bunny.net" crossorigin="anonymous" />
 		
 		<link rel="preload"
