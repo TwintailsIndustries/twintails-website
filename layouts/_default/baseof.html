@@ -8,7 +8,7 @@
 		<title>{{ .Title }}</title>
 		{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 		{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-		<link rel="preconnect" href="https://fonts.bunny.net" crossorigin="anonymous" />
+		<!--<link rel="preconnect" href="https://fonts.bunny.net" crossorigin="anonymous" />
 		
 		<link rel="preload"
 			as ="style"
@@ -32,6 +32,7 @@
 				<link rel="stylesheet" href="https://fonts.bunny.net/css?family=anton:400|family=barlow:400,700|raleway:200,400,700&display=swap" />
 			</noscript>
 		{{ end }}
+		 -->
 		{{ $scss := resources.Get "scss/style.scss" }}
 		{{ $style := $scss | resources.ToCSS | resources.Minify }}
 		<link rel="stylesheet" href="{{ $style.Permalink }}">

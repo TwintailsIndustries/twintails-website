@@ -63,16 +63,6 @@ The legal basis for this data processing is Art. 6 Para. 1 lit. b) GDPR.
 
 Your data will be deleted once we have fully answered your inquiry and there is no further legal obligation to store your data, such as if an order or contract resulted therefrom.
 
-#### Bunny Fonts {.section-heading .small-heading}
-
-Our website uses Bunny Fonts to display external fonts. Bunny Fonts are hosted by BunnyWay d.o.o. - an EU-based company - and were designed to help website owners stay fully GDPR compliant. When you access our site, a connection to Bunny Fonts is established. No data or logs are ever collected or passed to a third party.
-
-You can find more information here: 
-
-<https://bunny.net/gdpr/>
-
-<https://fonts.bunny.net/about>
-
 [Model Data Protection Statement][def] for [Anwaltskanzlei Weiß &amp; Partner](https://www.ratgeberrecht.eu/)
 
 [def]: https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html
