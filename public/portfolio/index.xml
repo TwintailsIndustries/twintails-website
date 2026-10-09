@@ -1,103 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Portfolio on Twintails Industries</title>
-    <link>https://twintails.art/portfolio/</link>
-    <description>Recent content in Portfolio on Twintails Industries</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 20 Apr 2021 00:49:43 +0100</lastBuildDate><atom:link href="https://twintails.art/portfolio/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Restaurant Website Mockup</title>
-      <link>https://twintails.art/portfolio/restaurant-mockup/</link>
-      <pubDate>Sun, 15 Jun 2025 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/restaurant-mockup/</guid>
-      <description>Information will follow shortly. Probably. Hopefully.</description>
-    </item>
-    
-    <item>
-      <title>Red Planet Render</title>
-      <link>https://twintails.art/portfolio/red-planet/</link>
-      <pubDate>Thu, 15 May 2025 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/red-planet/</guid>
-      <description>Information will follow shortly. Probably. Hopefully.</description>
-    </item>
-    
-    <item>
-      <title>donkey wash</title>
-      <link>https://twintails.art/portfolio/donkey-wash/</link>
-      <pubDate>Thu, 26 Sep 2024 12:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/donkey-wash/</guid>
-      <description>&amp;ldquo;Had a little off-road adventure and got your donkey pal&amp;rsquo;s underbody dirty? Don&amp;rsquo;t worry bud, we&amp;rsquo;ve gotchu.&amp;rdquo; - some ad slogan probably.
-As some things are too good to be true, you probably realised that the Donkey Wash Inc. is only a fictional enterprise.</description>
-    </item>
-    
-    <item>
-      <title>PS Shopware 6 Redesign</title>
-      <link>https://twintails.art/portfolio/ps-sw6-redesign/</link>
-      <pubDate>Thu, 15 Aug 2024 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/ps-sw6-redesign/</guid>
-      <description>UI design iterations for the update of a webshop to Shopware 6. Main focus for me was decluttering the existing website and updating it to a more modern look.</description>
-    </item>
-    
-    <item>
-      <title>PS Shopware Banners</title>
-      <link>https://twintails.art/portfolio/ps-werbebanner/</link>
-      <pubDate>Wed, 14 Aug 2024 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/ps-werbebanner/</guid>
-      <description>Banners designed for various campaigns and special discount promotions.</description>
-    </item>
-    
-    <item>
-      <title>desert</title>
-      <link>https://twintails.art/portfolio/desert/</link>
-      <pubDate>Fri, 15 Dec 2023 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/desert/</guid>
-      <description>I wanted to learn more about how to make those vast landscapes in Blender so I tried myself at the environment course from CG Boost.</description>
-    </item>
-    
-    <item>
-      <title>passage</title>
-      <link>https://twintails.art/portfolio/passage/</link>
-      <pubDate>Fri, 28 Jan 2022 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/passage/</guid>
-      <description>CN: motion sickness
-Geometry nodes were used to create the tunnel made out of cubes. Render Engine is Eevee.</description>
-    </item>
-    
-    <item>
-      <title>harbinger</title>
-      <link>https://twintails.art/portfolio/harbinger/</link>
-      <pubDate>Fri, 16 Apr 2021 12:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/harbinger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>marble</title>
-      <link>https://twintails.art/portfolio/marble/</link>
-      <pubDate>Thu, 18 Mar 2021 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/marble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spaceship</title>
-      <link>https://twintails.art/portfolio/spaceship/</link>
-      <pubDate>Thu, 18 Mar 2021 12:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/spaceship/</guid>
-      <description></description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Portfolio on Twintails Industries</title>
+		<link>http://localhost:1313/portfolio/</link>
+		<description>Recent content in Portfolio on Twintails Industries</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 15 Jun 2025 13:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/portfolio/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Restaurant Website Mockup</title>
+				<link>http://localhost:1313/portfolio/restaurant-mockup/</link>
+				<pubDate>Sun, 15 Jun 2025 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/restaurant-mockup/</guid>
+				<description>&lt;p&gt;Information will follow shortly. Probably. Hopefully.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Red Planet Render</title>
+				<link>http://localhost:1313/portfolio/red-planet/</link>
+				<pubDate>Thu, 15 May 2025 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/red-planet/</guid>
+				<description>&lt;p&gt;Information will follow shortly. Probably. Hopefully.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>donkey wash</title>
+				<link>http://localhost:1313/portfolio/donkey-wash/</link>
+				<pubDate>Thu, 26 Sep 2024 12:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/donkey-wash/</guid>
+				<description>&lt;p&gt;&amp;ldquo;Had a little off-road adventure and got your donkey pal&amp;rsquo;s underbody dirty? Don&amp;rsquo;t worry bud, we&amp;rsquo;ve gotchu.&amp;rdquo; - some ad slogan probably.&lt;/p&gt;&#xA;&lt;p&gt;As some things are too good to be true, you probably realised that the Donkey Wash Inc. is only a fictional enterprise. I tried to design a website which would support the friendly character and demeanor known to donkeys. A fun challenge was to avoid greys in the end result which was resolved by using a complementary color scheme with differing luminosity values. The different L&lt;sup&gt;C&lt;/sup&gt; values are there to ensure that color blind people are not left behind in the user experience.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PS Shopware 6 Redesign</title>
+				<link>http://localhost:1313/portfolio/ps-sw6-redesign/</link>
+				<pubDate>Thu, 15 Aug 2024 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/ps-sw6-redesign/</guid>
+				<description>&lt;p&gt;UI design iterations for the update of a webshop to Shopware 6. Main focus for me was decluttering the existing website and updating it to a more modern look.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PS Shopware Banners</title>
+				<link>http://localhost:1313/portfolio/ps-werbebanner/</link>
+				<pubDate>Wed, 14 Aug 2024 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/ps-werbebanner/</guid>
+				<description>&lt;p&gt;Banners designed for various campaigns and special discount promotions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>desert</title>
+				<link>http://localhost:1313/portfolio/desert/</link>
+				<pubDate>Fri, 15 Dec 2023 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/desert/</guid>
+				<description>&lt;p&gt;I wanted to learn more about how to make those vast landscapes in Blender so I tried myself at the environment course from CG Boost.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>passage</title>
+				<link>http://localhost:1313/portfolio/passage/</link>
+				<pubDate>Fri, 28 Jan 2022 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/passage/</guid>
+				<description>&lt;p&gt;CN: motion sickness&lt;/p&gt;&#xA;&lt;p&gt;Geometry nodes were used to create the tunnel made out of cubes. Render Engine is Eevee.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>harbinger</title>
+				<link>http://localhost:1313/portfolio/harbinger/</link>
+				<pubDate>Fri, 16 Apr 2021 12:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/harbinger/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>marble</title>
+				<link>http://localhost:1313/portfolio/marble/</link>
+				<pubDate>Thu, 18 Mar 2021 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/marble/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>spaceship</title>
+				<link>http://localhost:1313/portfolio/spaceship/</link>
+				<pubDate>Thu, 18 Mar 2021 12:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/spaceship/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

@@ -1,175 +1,143 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Twintails Industries</title>
-    <link>https://twintails.art/</link>
-    <description>Recent content on Twintails Industries</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 20 Apr 2021 00:49:43 +0100</lastBuildDate><atom:link href="https://twintails.art/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Restaurant Website Mockup</title>
-      <link>https://twintails.art/portfolio/restaurant-mockup/</link>
-      <pubDate>Sun, 15 Jun 2025 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/restaurant-mockup/</guid>
-      <description>Information will follow shortly. Probably. Hopefully.</description>
-    </item>
-    
-    <item>
-      <title>Red Planet Render</title>
-      <link>https://twintails.art/portfolio/red-planet/</link>
-      <pubDate>Thu, 15 May 2025 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/red-planet/</guid>
-      <description>Information will follow shortly. Probably. Hopefully.</description>
-    </item>
-    
-    <item>
-      <title>donkey wash</title>
-      <link>https://twintails.art/portfolio/donkey-wash/</link>
-      <pubDate>Thu, 26 Sep 2024 12:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/donkey-wash/</guid>
-      <description>&amp;ldquo;Had a little off-road adventure and got your donkey pal&amp;rsquo;s underbody dirty? Don&amp;rsquo;t worry bud, we&amp;rsquo;ve gotchu.&amp;rdquo; - some ad slogan probably.
-As some things are too good to be true, you probably realised that the Donkey Wash Inc. is only a fictional enterprise.</description>
-    </item>
-    
-    <item>
-      <title>PS Shopware 6 Redesign</title>
-      <link>https://twintails.art/portfolio/ps-sw6-redesign/</link>
-      <pubDate>Thu, 15 Aug 2024 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/ps-sw6-redesign/</guid>
-      <description>UI design iterations for the update of a webshop to Shopware 6. Main focus for me was decluttering the existing website and updating it to a more modern look.</description>
-    </item>
-    
-    <item>
-      <title>PS Shopware Banners</title>
-      <link>https://twintails.art/portfolio/ps-werbebanner/</link>
-      <pubDate>Wed, 14 Aug 2024 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/ps-werbebanner/</guid>
-      <description>Banners designed for various campaigns and special discount promotions.</description>
-    </item>
-    
-    <item>
-      <title>Yǔxīn</title>
-      <link>https://twintails.art/characters/yuxin/</link>
-      <pubDate>Sat, 20 Apr 2024 00:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/characters/yuxin/</guid>
-      <description>Sometimes you have to gouge out their eyes to make them see Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis.</description>
-    </item>
-    
-    <item>
-      <title>desert</title>
-      <link>https://twintails.art/portfolio/desert/</link>
-      <pubDate>Fri, 15 Dec 2023 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/desert/</guid>
-      <description>I wanted to learn more about how to make those vast landscapes in Blender so I tried myself at the environment course from CG Boost.</description>
-    </item>
-    
-    <item>
-      <title>passage</title>
-      <link>https://twintails.art/portfolio/passage/</link>
-      <pubDate>Fri, 28 Jan 2022 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/passage/</guid>
-      <description>CN: motion sickness
-Geometry nodes were used to create the tunnel made out of cubes. Render Engine is Eevee.</description>
-    </item>
-    
-    <item>
-      <title>Athena</title>
-      <link>https://twintails.art/characters/athena/</link>
-      <pubDate>Tue, 20 Apr 2021 10:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/characters/athena/</guid>
-      <description>They&amp;rsquo;ll fear me yet Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales</description>
-    </item>
-    
-    <item>
-      <title>Rill</title>
-      <link>https://twintails.art/characters/rill/</link>
-      <pubDate>Tue, 20 Apr 2021 00:01:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/characters/rill/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Sepideh</title>
-      <link>https://twintails.art/characters/sepideh/</link>
-      <pubDate>Tue, 20 Apr 2021 00:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/characters/sepideh/</guid>
-      <description>Hello world! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc</description>
-    </item>
-    
-    <item>
-      <title>harbinger</title>
-      <link>https://twintails.art/portfolio/harbinger/</link>
-      <pubDate>Fri, 16 Apr 2021 12:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/harbinger/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>marble</title>
-      <link>https://twintails.art/portfolio/marble/</link>
-      <pubDate>Thu, 18 Mar 2021 13:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/marble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spaceship</title>
-      <link>https://twintails.art/portfolio/spaceship/</link>
-      <pubDate>Thu, 18 Mar 2021 12:00:00 +0100</pubDate>
-      
-      <guid>https://twintails.art/portfolio/spaceship/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://twintails.art/about/</link>
-      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
-      
-      <guid>https://twintails.art/about/</guid>
-      <description>Hi, I am a web / user interface designer with a bachelor’s degree in Media Engineering (B.Eng), acquired at the Georg-Simon-Ohm college of technology in Nuremberg, Germany. The website was built</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://twintails.art/contact/</link>
-      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
-      
-      <guid>https://twintails.art/contact/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Imprint</title>
-      <link>https://twintails.art/imprint/</link>
-      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
-      
-      <guid>https://twintails.art/imprint/</guid>
-      <description>Angaben gemäß § 5 TMG André Eggmann Kleinlellenfeld 22 91722 Arberg E-Mail: hello(at)twintails.art Contact form EU-Streitschlichtung Die Europäische Kommission stellt eine Plattform</description>
-    </item>
-    
-    <item>
-      <title>Privacy</title>
-      <link>https://twintails.art/privacy/</link>
-      <pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
-      
-      <guid>https://twintails.art/privacy/</guid>
-      <description>Personal data (usually referred to just as &amp;ldquo;data&amp;rdquo; below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there. Per Art.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Twintails Industries</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content on Twintails Industries</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 15 Jun 2025 13:00:00 +0100</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Restaurant Website Mockup</title>
+				<link>http://localhost:1313/portfolio/restaurant-mockup/</link>
+				<pubDate>Sun, 15 Jun 2025 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/restaurant-mockup/</guid>
+				<description>&lt;p&gt;Information will follow shortly. Probably. Hopefully.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Red Planet Render</title>
+				<link>http://localhost:1313/portfolio/red-planet/</link>
+				<pubDate>Thu, 15 May 2025 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/red-planet/</guid>
+				<description>&lt;p&gt;Information will follow shortly. Probably. Hopefully.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>donkey wash</title>
+				<link>http://localhost:1313/portfolio/donkey-wash/</link>
+				<pubDate>Thu, 26 Sep 2024 12:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/donkey-wash/</guid>
+				<description>&lt;p&gt;&amp;ldquo;Had a little off-road adventure and got your donkey pal&amp;rsquo;s underbody dirty? Don&amp;rsquo;t worry bud, we&amp;rsquo;ve gotchu.&amp;rdquo; - some ad slogan probably.&lt;/p&gt;&#xA;&lt;p&gt;As some things are too good to be true, you probably realised that the Donkey Wash Inc. is only a fictional enterprise. I tried to design a website which would support the friendly character and demeanor known to donkeys. A fun challenge was to avoid greys in the end result which was resolved by using a complementary color scheme with differing luminosity values. The different L&lt;sup&gt;C&lt;/sup&gt; values are there to ensure that color blind people are not left behind in the user experience.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PS Shopware 6 Redesign</title>
+				<link>http://localhost:1313/portfolio/ps-sw6-redesign/</link>
+				<pubDate>Thu, 15 Aug 2024 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/ps-sw6-redesign/</guid>
+				<description>&lt;p&gt;UI design iterations for the update of a webshop to Shopware 6. Main focus for me was decluttering the existing website and updating it to a more modern look.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>PS Shopware Banners</title>
+				<link>http://localhost:1313/portfolio/ps-werbebanner/</link>
+				<pubDate>Wed, 14 Aug 2024 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/ps-werbebanner/</guid>
+				<description>&lt;p&gt;Banners designed for various campaigns and special discount promotions.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Yǔxīn</title>
+				<link>http://localhost:1313/characters/yuxin/</link>
+				<pubDate>Sat, 20 Apr 2024 00:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/characters/yuxin/</guid>
+				<description>&lt;h3 class=&#34;font-char-cyan char-article-heading&#34; id=&#34;sometimes-you-have-to-gouge-out-their-eyes-to-make-them-see&#34;&gt;Sometimes you have to gouge out their eyes to make them see&lt;/h3&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc eleifend hendrerit sapien, non gravida augue tempus ac. Nunc consequat nunc odio, vel euismod est aliquet vitae. Praesent convallis nulla eu nisi efficitur, ac ullamcorper turpis iaculis. Praesent imperdiet felis velit, at pulvinar arcu laoreet sit amet. Donec egestas tortor ac ex convallis tempor. Nullam eleifend, diam nec euismod ultricies, lectus urna convallis ex, eu lacinia neque diam eu lorem. Nam sit amet ex eget tortor maximus fermentum ac hendrerit libero. Duis tempus dignissim velit, eu dignissim metus venenatis vel.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>desert</title>
+				<link>http://localhost:1313/portfolio/desert/</link>
+				<pubDate>Fri, 15 Dec 2023 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/desert/</guid>
+				<description>&lt;p&gt;I wanted to learn more about how to make those vast landscapes in Blender so I tried myself at the environment course from CG Boost.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>passage</title>
+				<link>http://localhost:1313/portfolio/passage/</link>
+				<pubDate>Fri, 28 Jan 2022 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/passage/</guid>
+				<description>&lt;p&gt;CN: motion sickness&lt;/p&gt;&#xA;&lt;p&gt;Geometry nodes were used to create the tunnel made out of cubes. Render Engine is Eevee.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Athena</title>
+				<link>http://localhost:1313/characters/athena/</link>
+				<pubDate>Tue, 20 Apr 2021 10:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/characters/athena/</guid>
+				<description>&lt;h3 class=&#34;font-char-red char-article-heading&#34; id=&#34;theyll-fear-me-yet&#34;&gt;They&amp;rsquo;ll fear me yet&lt;/h3&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc eleifend hendrerit sapien, non gravida augue tempus ac. Nunc consequat nunc odio, vel euismod est aliquet vitae. Praesent convallis nulla eu nisi efficitur, ac ullamcorper turpis iaculis. Praesent imperdiet felis velit, at pulvinar arcu laoreet sit amet. Donec egestas tortor ac ex convallis tempor. Nullam eleifend, diam nec euismod ultricies, lectus urna convallis ex, eu lacinia neque diam eu lorem. Nam sit amet ex eget tortor maximus fermentum ac hendrerit libero. Duis tempus dignissim velit, eu dignissim metus venenatis vel.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Rill</title>
+				<link>http://localhost:1313/characters/rill/</link>
+				<pubDate>Tue, 20 Apr 2021 00:01:00 +0100</pubDate>
+				<guid>http://localhost:1313/characters/rill/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Sepideh</title>
+				<link>http://localhost:1313/characters/sepideh/</link>
+				<pubDate>Tue, 20 Apr 2021 00:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/characters/sepideh/</guid>
+				<description>&lt;h3 class=&#34;font-char-gold char-article-heading&#34; id=&#34;hello-world&#34;&gt;Hello world!&lt;/h3&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque ac nisi at lobortis. In sed sollicitudin leo. Vivamus gravida erat sed mi pulvinar, quis egestas lorem sagittis. Proin laoreet feugiat lectus, nec semper turpis sodales id. Nunc eleifend hendrerit sapien, non gravida augue tempus ac. Nunc consequat nunc odio, vel euismod est aliquet vitae. Praesent convallis nulla eu nisi efficitur, ac ullamcorper turpis iaculis. Praesent imperdiet felis velit, at pulvinar arcu laoreet sit amet. Donec egestas tortor ac ex convallis tempor. Nullam eleifend, diam nec euismod ultricies, lectus urna convallis ex, eu lacinia neque diam eu lorem. Nam sit amet ex eget tortor maximus fermentum ac hendrerit libero. Duis tempus dignissim velit, eu dignissim metus venenatis vel.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>harbinger</title>
+				<link>http://localhost:1313/portfolio/harbinger/</link>
+				<pubDate>Fri, 16 Apr 2021 12:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/harbinger/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>marble</title>
+				<link>http://localhost:1313/portfolio/marble/</link>
+				<pubDate>Thu, 18 Mar 2021 13:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/marble/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>spaceship</title>
+				<link>http://localhost:1313/portfolio/spaceship/</link>
+				<pubDate>Thu, 18 Mar 2021 12:00:00 +0100</pubDate>
+				<guid>http://localhost:1313/portfolio/spaceship/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>About</title>
+				<link>http://localhost:1313/about/</link>
+				<pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+				<guid>http://localhost:1313/about/</guid>
+				<description>&lt;p&gt;Hi,  I am a web / user interface designer with a bachelor’s degree in Media Engineering (B.Eng), acquired at the Georg-Simon-Ohm college of technology in Nuremberg, Germany. The website was built from scratch with the open-source static site framework Hugo.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Contact</title>
+				<link>http://localhost:1313/contact/</link>
+				<pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+				<guid>http://localhost:1313/contact/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Imprint</title>
+				<link>http://localhost:1313/imprint/</link>
+				<pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+				<guid>http://localhost:1313/imprint/</guid>
+				<description>&lt;h2 class=&#34;section-heading&#34; id=&#34;angaben-gemäß--5-tmg&#34;&gt;Angaben gemäß § 5 TMG&lt;/h2&gt;&#xA;&lt;p&gt;André Eggmann&lt;br&gt;&#xA;Kleinlellenfeld 22&lt;br&gt;&#xA;91722 Arberg&lt;/p&gt;&#xA;&lt;p&gt;E-Mail: hello(at)twintails.art&lt;br&gt;&#xA;&lt;a href=&#34;https://twintails.art/contact&#34;&gt;Contact form&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 class=&#34;section-heading&#34; id=&#34;eu-streitschlichtung&#34;&gt;EU-Streitschlichtung&lt;/h2&gt;&#xA;&lt;p&gt;Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: &lt;a href=&#34;https://ec.europa.eu/consumers/odr&#34;&gt;https://ec.europa.eu/consumers/odr&lt;/a&gt;&lt;br&gt;&#xA;Unsere E-Mail-Adresse finden Sie oben im Impressum.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Privacy</title>
+				<link>http://localhost:1313/privacy/</link>
+				<pubDate>Wed, 10 Jan 2018 23:10:07 -0200</pubDate>
+				<guid>http://localhost:1313/privacy/</guid>
+				<description>&lt;p&gt;Personal data (usually referred to just as &amp;ldquo;data&amp;rdquo; below) will only be processed by us to the extent necessary and for the purpose of providing a functional and user-friendly website, including its contents, and the services offered there.&lt;/p&gt;&#xA;&lt;p&gt;Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data Protection Regulation (hereinafter referred to as the &amp;ldquo;GDPR&amp;rdquo;), &amp;ldquo;processing&amp;rdquo; refers to any operation or set of operations such as collection, recording, organization, structuring, storage, adaptation, alteration, retrieval, consultation, use, disclosure by transmission, dissemination, or otherwise making available, alignment, or combination, restriction, erasure, or destruction performed on personal data, whether by automated means or not.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

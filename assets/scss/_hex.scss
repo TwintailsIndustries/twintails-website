@@ -232,11 +232,11 @@
 		}
 
 		&.nemesis-pro, &.threed-art {
-			background-color: scale-color(rgba($color-blue-light, 1), $lightness: -20%, $saturation: 10%, $hue: -2%);
+			background-color: adjust-color(rgba($color-blue-light, 1), $lightness: -20%, $saturation: 10%, $hue: -5deg);
 		}
 
 		&.illustration {
-				background-color: scale-color(rgba($color-gold-light, 1), $lightness: -20%, $saturation: 10%, $hue: -2%);
+				background-color: adjust-color(rgba($color-gold-light, 1), $lightness: -20%, $saturation: 10%, $hue: -5deg);
 		}
 	}
 }

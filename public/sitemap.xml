@@ -2,74 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://twintails.art/portfolio/restaurant-mockup/</loc>
+    <loc>http://localhost:1313/portfolio/restaurant-mockup/</loc>
     <lastmod>2025-06-15T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/red-planet/</loc>
+    <loc>http://localhost:1313/portfolio/red-planet/</loc>
     <lastmod>2025-05-15T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/donkey-wash/</loc>
+    <loc>http://localhost:1313/portfolio/donkey-wash/</loc>
     <lastmod>2024-09-26T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/ps-sw6-redesign/</loc>
+    <loc>http://localhost:1313/portfolio/ps-sw6-redesign/</loc>
     <lastmod>2024-08-15T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/ps-werbebanner/</loc>
+    <loc>http://localhost:1313/portfolio/ps-werbebanner/</loc>
     <lastmod>2024-08-14T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/characters/yuxin/</loc>
+    <loc>http://localhost:1313/characters/yuxin/</loc>
     <lastmod>2024-04-20T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/desert/</loc>
+    <loc>http://localhost:1313/portfolio/desert/</loc>
     <lastmod>2023-12-15T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/saladdork/</loc>
+    <loc>http://localhost:1313/saladdork/</loc>
     <lastmod>2023-04-22T23:10:07-02:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/passage/</loc>
+    <loc>http://localhost:1313/portfolio/passage/</loc>
     <lastmod>2022-01-28T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/characters/athena/</loc>
+    <loc>http://localhost:1313/characters/athena/</loc>
     <lastmod>2021-04-20T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/characters/</loc>
+    <loc>http://localhost:1313/characters/</loc>
     <lastmod>2021-04-20T00:49:43+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/</loc>
+    <loc>http://localhost:1313/portfolio/</loc>
     <lastmod>2021-04-20T00:49:43+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2021-04-20T00:49:43+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/characters/rill/</loc>
+    <loc>http://localhost:1313/characters/rill/</loc>
     <lastmod>2021-04-20T00:01:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/characters/sepideh/</loc>
+    <loc>http://localhost:1313/characters/sepideh/</loc>
     <lastmod>2021-04-20T00:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/harbinger/</loc>
+    <loc>http://localhost:1313/portfolio/harbinger/</loc>
     <lastmod>2021-04-16T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/marble/</loc>
+    <loc>http://localhost:1313/portfolio/marble/</loc>
     <lastmod>2021-03-18T13:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/portfolio/spaceship/</loc>
+    <loc>http://localhost:1313/portfolio/spaceship/</loc>
     <lastmod>2021-03-18T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2018-01-10T23:10:07-02:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2018-01-10T23:10:07-02:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/imprint/</loc>
+    <loc>http://localhost:1313/imprint/</loc>
     <lastmod>2018-01-10T23:10:07-02:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/privacy/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
     <lastmod>2018-01-10T23:10:07-02:00</lastmod>
   </url><url>
-    <loc>https://twintails.art/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://twintails.art/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
