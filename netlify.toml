@@ -14,6 +14,7 @@ HUGO_ENV = "production"
 HUGO_ENABLEGITINFO = "true"
 DART_SASS_VERSION = "1.105.1"
 GO_VERSION = "1.27.1"
+TZ = "Europe/Berlin"
 
 [context.split1]
 command = "hugo --gc --minify --enableGitInfo"
