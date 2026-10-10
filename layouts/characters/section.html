@@ -21,7 +21,7 @@
                     <img class="hex-image-background"
                         {{ with .Resources }}
                             {{ with .GetMatch "images/seal-char.png" }}
-                                {{ $thumbnail := .Fill "420x420 center webp q100" }}
+                                {{ $thumbnail := .Fill "420x420 center avif q80" }}
                                 {{ with $thumbnail }}
                                     src='{{ .Permalink }}'  
                                 {{ end }}

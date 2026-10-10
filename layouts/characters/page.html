@@ -35,7 +35,7 @@
                     <img class="hex-image-background"
                     {{ with .Resources }}
                         {{ with .GetMatch "images/seal-char.png" }}
-                            {{ $seal := .Resize "336x webp q100" }}
+                            {{ $seal := .Resize "336x avif q80" }}
                             {{ with $seal }}
                                 src='{{ .Permalink }}'  
                             {{ end }}
